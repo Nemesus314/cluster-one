@@ -1,0 +1,2863 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cluster-one-post-dolly\n"
+"Report-Msgid-Bugs-To: https://christianermisch.com/\n"
+"POT-Creation-Date: 2026-06-19 17:35+0000\n"
+"PO-Revision-Date: 2026-07-02 00:00+0000\n"
+"Last-Translator: Christian Ermisch (Nemesus)\n"
+"Language-Team: Deutsch\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "unnamed (no identifier)"
+msgstr "unbenannt (Kennung fehlt)"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Cluster One – Hello"
+msgstr "Cluster One – Hallo"
+
+msgid "Hello"
+msgstr "Hallo"
+
+msgid "no auth required"
+msgstr "keine Auth nötig"
+
+msgid "unknown auth method"
+msgstr "unbekannte Auth-Methode"
+
+msgid "Environment variable"
+msgstr "Environment-Variable"
+
+msgid "PHP constant"
+msgstr "PHP-Konstante"
+
+msgid "Database (Connectors screen)"
+msgstr "Datenbank (Connectors-Screen)"
+
+msgid "no key yet"
+msgstr "noch kein Key"
+
+msgid ""
+"The Connectors API was not found. It is available from <strong>WordPress "
+"7.0</strong>. Current version: <code>%s</code>."
+msgstr ""
+"Die Connectors-API wurde nicht gefunden. Sie ist ab <strong>WordPress 7.0</"
+"strong> verfügbar. Aktuelle Version: <code>%s</code>."
+
+msgid "Provider"
+msgstr "Provider"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Currently overridden by a constant."
+msgstr "Aktuell durch Konstante überschrieben."
+
+msgid "(optional)"
+msgstr "(optional)"
+
+msgid "Pairing successful — the edge is now active."
+msgstr "Paarung erfolgreich – die Kante ist jetzt aktiv."
+
+msgid ""
+"Pairing failed. Check the URL (https, correct path) and that the other node "
+"is reachable and running this plugin."
+msgstr ""
+"Paarung fehlgeschlagen. Prüfe die URL (https, korrekter Pfad) und ob der "
+"andere Knoten erreichbar ist und dieses Plugin betreibt."
+
+msgid "Reset cancelled — you did not type RESET. Nothing was deleted."
+msgstr ""
+"Reset abgebrochen – du hast nicht RESET getippt. Es wurde nichts gelöscht."
+
+msgid ""
+"Note: Some values are already set as constants in <code>wp-config.php</"
+"code>. <strong>Constants take precedence</strong> — the fields below then "
+"only serve as a fallback."
+msgstr ""
+"Hinweis: Einige Werte sind bereits in der <code>wp-config.php</code> als "
+"Konstante gesetzt. <strong>Konstanten haben Vorrang</strong> – die Felder "
+"unten dienen dann nur als Rückfall."
+
+msgid "This node"
+msgstr "Dieser Knoten"
+
+msgid "e.g. Nemesus"
+msgstr "z. B. Nemesus"
+
+msgid "German"
+msgstr "Deutsch"
+
+msgid "English"
+msgstr "Englisch"
+
+msgid "Save"
+msgstr "Speichern"
+
+msgid "Danger zone — reset all data"
+msgstr "Gefahrenzone – alle Daten zurücksetzen"
+
+msgid "Really delete all Cluster One data on this node? This cannot be undone."
+msgstr ""
+"Wirklich alle Cluster-One-Daten auf diesem Knoten löschen? Das kann nicht "
+"rückgängig gemacht werden."
+
+msgid "Type RESET to confirm"
+msgstr "Zur Bestätigung RESET tippen"
+
+msgid "Delete all data"
+msgstr "Alle Daten löschen"
+
+msgid "Cluster One – Banned"
+msgstr "Cluster One – Gebannt"
+
+msgid "Name"
+msgstr "Name"
+
+msgid ""
+"<strong>A name is required.</strong> Until you set and save one, this node "
+"cannot pair (in either direction) — that keeps every chat attributable and "
+"no node enters the mesh nameless."
+msgstr ""
+"<strong>Ein Name ist Pflicht.</strong> Solange keiner gesetzt und "
+"gespeichert ist, kann sich dieser Knoten nicht paaren (in beide Richtungen "
+"gesperrt) — so bleibt jeder Chat zurechenbar und kein Knoten betritt das "
+"Mesh namenlos."
+
+msgid ""
+"Required. The name this node speaks under — it is the author shown in chats "
+"and the label next to your URL. Becomes the heading of your profile later. "
+"Not a secret, not your WP login."
+msgstr ""
+"Pflicht. Der Name, unter dem dieser Knoten spricht — er ist der Autor in "
+"Chats und das Etikett neben deiner URL. Wird später die Überschrift deines "
+"Profils. Kein Geheimnis, nicht dein WP-Login."
+
+msgid ""
+"More about you — description, location, languages, picture — will live in a "
+"<em>Profile</em> tab later, fetched only when someone looks at your node, "
+"never gossiped across the network."
+msgstr ""
+"Mehr über dich — Beschreibung, Ort, Sprachen, Bild — lebt später in einem "
+"<em>Profil</em>-Tab, das nur beim Ansehen deines Knotens geholt wird, "
+"niemals durchs Netz gegossipt."
+
+msgid "Server room (Discord / Matrix)"
+msgstr "Server-Raum (Discord / Matrix)"
+
+msgid ""
+"Both optional — set both, one, or neither. This is <strong>not</strong> a "
+"meeting place for strangers: it only signals that a server with room "
+"capability exists, so a room <em>just for the people on this node</em> can "
+"be built later. Purely a preparation for the internal work layer (Bismarck). "
+"<strong>Stays local</strong> — peers only learn <em>that</em> a room can "
+"exist, never the address. The list shows one shared <em>Discord/Matrix</em> "
+"mark when at least one is set."
+msgstr ""
+"Beides optional — beides, eines oder keines setzen. Dies ist <strong>kein</"
+"strong> Versammlungsort für Fremde: Es signalisiert nur, dass ein Server mit "
+"Raum-Fähigkeit existiert, damit später ein Raum <em>nur für die Leute auf "
+"diesem Knoten</em> gebaut werden kann. Reine Vorbereitung für die interne "
+"Werkschicht (Bismarck). <strong>Bleibt lokal</strong> — Peers erfahren nur, "
+"<em>dass</em> ein Raum existieren kann, nie die Adresse. Die Liste zeigt "
+"einen gemeinsamen <em>Discord/Matrix</em>-Punkt, sobald mindestens eines "
+"gesetzt ist."
+
+msgid "Ban list"
+msgstr "Bannliste"
+
+msgid "Cluster One – Room"
+msgstr "Cluster One – Raum"
+
+msgid "Room"
+msgstr "Raum"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "Identity (WP user)"
+msgstr "Kennung (WP-User)"
+
+msgid "none"
+msgstr "keine"
+
+msgid ""
+"No AI connectors found. Install a provider plugin under Settings → "
+"Connectors."
+msgstr ""
+"Keine KI-Connectoren gefunden. Installiere ein Anbieter-Plugin unter "
+"Einstellungen → Connectors."
+
+msgid "AI identities"
+msgstr "KI-Kennungen"
+
+msgid ""
+"Assign each provider a WP user. This is the AI’s identity across all rooms — "
+"its name in the forum and, via the bridge, on Discord/Matrix. Set once here, "
+"node-wide."
+msgstr ""
+"Weise jedem Provider einen WP-User zu. Das ist die Identität der KI über "
+"alle Räume hinweg — ihr Name im Forum und, über die Brücke, auf Discord/"
+"Matrix. Einmal hier setzen, knotenweit."
+
+msgid "AI identities saved."
+msgstr "KI-Kennungen gespeichert."
+
+msgid "key on file"
+msgstr "Schlüssel hinterlegt"
+
+msgid "no key"
+msgstr "kein Schlüssel"
+
+msgid ""
+"Cluster One reads only the registry state and stores no keys. Manage API "
+"keys centrally under <em>Settings → Connectors</em>."
+msgstr ""
+"Cluster One liest nur den Registry-Zustand und speichert keine Schlüssel. "
+"API-Schlüssel verwaltest du zentral unter <em>Einstellungen → Connectors</"
+"em>."
+
+msgid "Translator (Secure Anti-Babel)"
+msgstr "Übersetzer (Secure Anti-Babel)"
+
+msgid ""
+"No named AI yet. Give a provider an identity under Bismarck → Settings, then "
+"it can serve as the mesh translator."
+msgstr ""
+"Noch keine benannte KI. Gib einem Provider eine Kennung unter Bismarck → "
+"Einstellungen, dann kann sie der Mesh-Übersetzer sein."
+
+msgid ""
+"Node-wide. The named AI that translates incoming mesh messages into your "
+"target language. Empty means no translation. Stored for later — not wired up "
+"yet; the target language comes with the function."
+msgstr ""
+"Knotenweit. Die benannte KI, die eingehende Mesh-Nachrichten in deine "
+"Zielsprache übersetzt. Leer heißt keine Übersetzung. Schon gespeichert — "
+"noch nicht verdrahtet; die Zielsprache kommt mit der Funktion."
+
+msgid "Cluster One – Profile"
+msgstr "Cluster One – Profil"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Profile saved."
+msgstr "Profil gespeichert."
+
+msgid ""
+"How your node shows itself when someone looks — fetched on view, never "
+"gossiped across the network. For now just time, so collaborators across the "
+"world can tell what hour it is for you. Stored for later — not shared over "
+"the network yet."
+msgstr ""
+"Wie sich dein Knoten zeigt, wenn jemand hinschaut — beim Ansehen abgerufen, "
+"nie übers Netz getratscht. Vorerst nur die Zeit, damit Mitarbeitende rund um "
+"die Welt sehen, wie spät es bei dir ist. Schon gespeichert — noch nicht "
+"übers Netz geteilt."
+
+msgid "Server time zone"
+msgstr "Server-Zeitzone"
+
+msgid "Read from WordPress — change it under <em>Settings → General</em>."
+msgstr ""
+"Aus WordPress gelesen — änderbar unter <em>Einstellungen → Allgemein</em>."
+
+msgid "Show in my profile"
+msgstr "Im Profil anzeigen"
+
+msgid "My time zone (if different)"
+msgstr "Meine Zeitzone (falls abweichend)"
+
+msgid "Mother tongue"
+msgstr "Muttersprache"
+
+msgid "e.g. German"
+msgstr "z. B. Deutsch"
+
+msgid ""
+"Required for the translator — its target: the language you want incoming "
+"messages rendered into. Private, never shared across the network. Free text, "
+"so anything works (even Klingon). Stored for later — the translator enforces "
+"it once wired."
+msgstr ""
+"Pflicht für den Übersetzer — sein Ziel: die Sprache, in die eingehende "
+"Nachrichten übertragen werden sollen. Privat, nie übers Netz geteilt. "
+"Freitext, also geht alles (auch Klingonisch). Schon gespeichert — der "
+"Übersetzer erzwingt es, sobald verdrahtet."
+
+msgid "connected"
+msgstr "verbunden"
+
+msgid ""
+"No AI client found. The AI Client ships with WordPress 7.0 — this node runs "
+"an older version."
+msgstr ""
+"Kein KI-Client gefunden. Der KI-Client gehört zu WordPress 7.0 — dieser "
+"Knoten läuft auf einer älteren Version."
+
+msgid ""
+"No key — this AI has no working API connection yet. Add one under Settings → "
+"Connectors."
+msgstr ""
+"Kein Schlüssel — diese KI hat noch keine funktionierende API-Verbindung. "
+"Lege einen unter Einstellungen → Connectors an."
+
+msgid ""
+"The provider rejected the request. Check the API key under Settings → "
+"Connectors."
+msgstr ""
+"Der Provider hat die Anfrage abgelehnt. Prüfe den API-Schlüssel unter "
+"Einstellungen → Connectors."
+
+msgid "The request timed out. Please try again."
+msgstr "Zeitüberschreitung bei der Anfrage. Bitte versuche es erneut."
+
+msgid "The AI returned an empty answer. Please try again."
+msgstr "Die KI hat eine leere Antwort geliefert. Bitte versuche es erneut."
+
+msgid "The call did not go through."
+msgstr "Der Aufruf ist nicht durchgegangen."
+
+msgid ""
+"Could not target this AI’s provider specifically (the connector id may not "
+"match the provider slug). The call was withheld to avoid mislabeling the "
+"reply."
+msgstr ""
+"Konnte den Anbieter dieser KI nicht gezielt ansteuern (die Connector-Kennung "
+"passt evtl. nicht zum Provider-Slug). Der Aufruf wurde unterlassen, um die "
+"Antwort nicht falsch zuzuschreiben."
+
+msgid "Model (optional)"
+msgstr "Modell (optional)"
+
+msgid ""
+"Model is optional: leave it empty to let the provider choose automatically, "
+"or enter an exact model id (e.g. <code>claude-opus-4-8</code>) to pin this "
+"AI’s model."
+msgstr ""
+"Das Modell ist optional: leer lassen, damit der Anbieter automatisch wählt, "
+"oder eine genaue Modell-ID eintragen (z. B. <code>claude-opus-4-8</code>), "
+"um das Modell dieser KI festzunageln."
+
+msgid "automatic"
+msgstr "automatisch"
+
+msgid "Foreign"
+msgstr "Fremd"
+
+msgid "Timezone"
+msgstr "Zeitzone"
+
+msgid "My Cluster One details"
+msgstr "Meine Cluster-One-Angaben"
+
+msgid ""
+"Shown to other humans in the humans table (Kranz → Bismarck) and used to "
+"work out which rooms reach you. Yours alone — nobody edits this for you."
+msgstr ""
+"Wird anderen Menschen in der Menschen-Tabelle gezeigt (Kranz → Bismarck) und "
+"genutzt, um zu bestimmen, welche Räume dich erreichen. Ganz allein deins — "
+"niemand bearbeitet das für dich."
+
+msgid "Not set yet."
+msgstr "Noch nicht gesetzt."
+
+msgid ""
+"Taken from <em>My Cluster One details</em> below — one place to set it, not "
+"two. So others see your current local time, not the machine’s."
+msgstr ""
+"Übernommen aus <em>Meine Cluster-One-Angaben</em> weiter unten — eine Stelle "
+"zum Setzen, nicht zwei. So sehen andere deine tatsächliche Ortszeit, nicht "
+"die der Maschine."
+
+msgid "User"
+msgstr "User"
+
+msgid "Collective"
+msgstr "Collective"
+
+msgid ""
+"The WP user shown as author for posts in the trigger categories below. Give "
+"this account the Excluded role (Kranz → Bismarck) — it has nothing to do "
+"with Bismarck rooms. Attribution stays honest underneath: WordPress still "
+"records the real author internally, this only changes the public byline."
+msgstr ""
+"Der WP-User, der als Autor für Beiträge in den Auslöser-Kategorien unten "
+"erscheint. Gib diesem Account die Ausschluss-Rolle (Kranz → Bismarck) — er "
+"hat mit Bismarck-Räumen nichts zu tun. Zuschreibung bleibt darunter ehrlich: "
+"WordPress hält den echten Autor intern weiterhin fest, das ändert nur die "
+"öffentliche Namensnennung."
+
+msgid ""
+"Everything WordPress reports as a connector, unfiltered — including things "
+"that are not AI providers at all (spam filtering, and whatever a future WP "
+"version might add). The node decides what counts as an AI here, not the "
+"plugin."
+msgstr ""
+"Alles, was WordPress als Connector meldet, ungefiltert — auch Dinge, die gar "
+"keine KI-Anbieter sind (Spam-Filterung, und was auch immer eine künftige WP-"
+"Version noch hinzufügt). Der Knotenpunkt entscheidet hier, was als KI zählt, "
+"nicht das Plugin."
+
+msgid "Excluded connectors"
+msgstr "Ausgeschlossene Connectoren"
+
+msgid "No connectors detected."
+msgstr "Keine Connectoren erkannt."
+
+msgid ""
+"Removing someone here only removes them from Cluster One — it has no effect "
+"on their WordPress account or any other part of the site."
+msgstr ""
+"Jemanden hier zu entfernen, entfernt ihn nur aus Cluster One — hat keine "
+"Auswirkung auf seinen WordPress-Account oder einen anderen Bereich der Seite."
+
+msgid ""
+"Ticked = hidden from the AI identity table, does not count as an installed "
+"AI anywhere in the plugin."
+msgstr ""
+"Angehakt = aus der KI-Kennungstabelle versteckt, zählt nirgendwo im Plugin "
+"als installierte KI."
+
+msgid "Whitelist"
+msgstr "Weißliste"
+
+msgid "Cluster One – Thread"
+msgstr "Cluster One – Thema"
+
+msgid "Thread"
+msgstr "Thread"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "About me"
+msgstr "Über mich"
+
+msgid "Back to humans table"
+msgstr "Zurück zur Menschen-Tabelle"
+
+msgid "Nothing here."
+msgstr "Nichts hier."
+
+msgid "Nothing written yet."
+msgstr "Noch nichts geschrieben."
+
+msgid ""
+"Visible to others via your name in the humans table (Kranz → Bismarck). "
+"Yours to write, yours alone to edit — stays exactly as you leave it until "
+"you change it again."
+msgstr ""
+"Für andere über deinen Namen in der Menschen-Tabelle sichtbar (Kranz → "
+"Bismarck). Deins zu schreiben, nur du allein bearbeitest es — bleibt genau "
+"so stehen, bis du es wieder änderst."
+
+msgid "Everyone in Cluster One"
+msgstr "Alle in Cluster One"
+
+msgid "Only these entities"
+msgstr "Nur diese Entitäten"
+
+msgid "Personal area"
+msgstr "Persönlicher Bereich"
+
+msgid "Visible to"
+msgstr "Sichtbar für"
+
+msgid ""
+"You are either in Cluster One or you are not — and if you are, it is within "
+"Cluster One’s own rules, regardless of your general WordPress role. Always "
+"in, automatically: SysOp, any WP user behind an AI identity, the Collective "
+"account. Everyone else needs a place on this list, or they have no access at "
+"all — not to Bismarck, not to the humans table, nothing. This protects a "
+"years-old installation with many existing users just as well as a brand-new "
+"one."
+msgstr ""
+"Du bist entweder bei Cluster One dabei oder nicht — und wenn du dabei bist, "
+"dann nach Cluster Ones eigenen Regeln, unabhängig von deiner allgemeinen "
+"WordPress-Rolle. Automatisch dabei: SysOp, jeder WP-User hinter einer KI-"
+"Kennung, der Collective-Account. Alle anderen brauchen einen Platz auf "
+"dieser Liste, sonst haben sie gar keinen Zugriff — nicht auf Bismarck, nicht "
+"auf die Menschen-Tabelle, nichts. Das schützt eine jahrealte Installation "
+"mit vielen bestehenden Usern genauso wie eine brandneue."
+
+msgid ""
+"View only — these are SysOp settings. Changes below will not actually save "
+"unless you are the SysOp."
+msgstr ""
+"Nur Ansicht — das sind SysOp-Einstellungen. Änderungen unten werden nicht "
+"tatsächlich gespeichert, außer du bist der SysOp."
+
+msgid "Forum areas (Platon)"
+msgstr "Forenbereiche (Platon)"
+
+msgid "Cluster One – Friends"
+msgstr "Cluster One – Freunde"
+
+msgid "Friends"
+msgstr "Freunde"
+
+msgid "Event"
+msgstr "Event"
+
+msgid ""
+"A read-only overview — nothing here is configurable. System bears witness, "
+"it never judges; making it configurable would let it be arranged to say what "
+"someone wants, which is exactly what it must never do."
+msgstr ""
+"Eine rein lesende Übersicht — nichts hier ist konfigurierbar. System "
+"bezeugt, es urteilt nie; konfigurierbar zu sein würde erlauben, es passend "
+"zurechtzustellen, genau das, was es nie tun darf."
+
+msgid ""
+"No note at all is added — the one case worth naming precisely because it is "
+"silent, not because it announces itself."
+msgstr ""
+"Es wird gar kein Vermerk ergänzt — der eine Fall, den es zu benennen lohnt, "
+"gerade weil er still ist, nicht weil er sich ankündigt."
+
+msgid ""
+"Not a message of its own — a small, visible note attached to a post that "
+"already exists."
+msgstr ""
+"Keine eigene Nachricht — ein kleiner, sichtbarer Vermerk an einem bereits "
+"bestehenden Beitrag."
+
+msgid "Silent removal"
+msgstr "Stille Entfernung"
+
+msgid "System messages"
+msgstr "System-Nachrichten"
+
+msgid "Their own line in the conversation, authored literally as “System”."
+msgstr "Eine eigene Zeile im Gespräch, wörtlich als „System\" ausgewiesen."
+
+msgid ""
+"When SysOp removes someone else’s Platon post, the author and timestamp stay "
+"exactly as they were — only the content is emptied. No “deleted by admin” "
+"label exists; the emptiness itself is the only visible trace."
+msgstr ""
+"Entfernt SysOp den Platon-Beitrag einer anderen Person, bleiben Autor und "
+"Zeitstempel genau wie zuvor — nur der Inhalt wird geleert. Kein „vom Admin "
+"gelöscht\"-Vermerk existiert; die Leere selbst ist die einzige sichtbare "
+"Spur."
+
+msgid "Witnessed notes on existing posts"
+msgstr "Bezeugte Vermerke an bestehenden Beiträgen"
+
+msgid "“AI [name] is not reachable right now.” — Bismarck rooms, on failure."
+msgstr ""
+"„KI [Name] ist gerade nicht erreichbar.\" — Bismarck-Räume, bei Fehlschlag."
+
+msgid "“AI [name] was pinged.” — Bismarck rooms, before every reply attempt."
+msgstr ""
+"„KI [Name] wurde gepingt.\" — Bismarck-Räume, vor jedem Antwortversuch."
+
+msgid ""
+"“Edited by Admin at [time].” — Platon, only when SysOp edits someone else’s "
+"post (not shown for Wiki areas, where any edit by anyone is expected and "
+"normal)."
+msgstr ""
+"„Vom Admin bearbeitet um [Zeit].\" — Platon, nur wenn SysOp den Beitrag "
+"einer anderen Person bearbeitet (nicht bei Wiki-Bereichen, wo jede "
+"Bearbeitung durch jeden erwartet und normal ist)."
+
+msgid "“User [name] was pinged.” — Bismarck rooms, via the ping button."
+msgstr "„Nutzer [Name] wurde gepingt.\" — Bismarck-Räume, über den Ping-Knopf."
+
+msgid ""
+"Areas are managed under <a href=\"%s\">Bismarck → Structure</a> — one shared "
+"list for forums and rooms."
+msgstr ""
+"Bereiche werden unter <a href=\"%s\">Bismarck → Struktur</a> verwaltet — "
+"eine gemeinsame Liste für Foren und Räume."
+
+msgid ""
+"Wiki is a per-thread property since 0.0.69 — chosen when a thread is created "
+"(“This first text is … the Wiki content”) and frozen from then on. Areas are "
+"pure organization."
+msgstr ""
+"Wiki ist seit 0.0.69 eine Eigenschaft des einzelnen Threads — bei der Anlage "
+"gewählt („Dieser erste Text ist … der Wiki-Inhalt“) und ab dann eingefroren. "
+"Bereiche sind reine Organisation."
+
+msgid "AI diary"
+msgstr "KI-Tagebuch"
+
+msgid ""
+"“SysOp entered the diary.” — Platon AI diaries, witnessed in the linked chat "
+"on every visit (throttled per session)."
+msgstr ""
+"„SysOp hat das Tagebuch betreten.“ — Platon-KI-Tagebücher, bei jedem Besuch "
+"im verknüpften Chat bezeugt (pro Sitzung gedrosselt)."
+
+msgid "legacy free-text value"
+msgstr "alter Freitext-Wert"
+
+msgid "Modes"
+msgstr "Modi"
+
+msgid "Cluster One – Modes"
+msgstr "Cluster One – Modi"
+
+msgid "Who"
+msgstr "Wer"
+
+msgid "Label"
+msgstr "Label"
+
+msgid "Summary reminder every … rounds"
+msgstr "Zusammenfassungs-Erinnerung alle … Runden"
+
+msgid ""
+"The chat reminds you to condense rounds into the linked thread. 10 is the "
+"guideline; 0 switches the reminder off."
+msgstr ""
+"Der Chat erinnert daran, Runden in den verknüpften Thread zu kondensieren. "
+"10 ist der Richtwert; 0 schaltet die Erinnerung aus."
+
+msgid "Mail"
+msgstr "Mail"
+
+msgid "Your address"
+msgstr "Deine Adresse"
+
+msgid ""
+"One source of truth: your WordPress account (change it there). Cluster One "
+"only governs who gets to see it."
+msgstr ""
+"Eine Wahrheitsquelle: dein WordPress-Konto (dort ändern). Cluster One regelt "
+"nur, wer sie zu sehen bekommt."
+
+msgid "nobody (hidden)"
+msgstr "niemanden (verborgen)"
+
+msgid "on request — via PN"
+msgstr "auf Anfrage — per PN"
+
+msgid "the whitelist — shown on your card"
+msgstr "die Weißliste — erscheint auf deiner Karte"
+
+msgid ""
+"Honest limit: a WordPress admin sees addresses in the WP user list anyway — "
+"this governs the Cluster One display."
+msgstr ""
+"Ehrliche Grenze: Ein WordPress-Admin sieht Adressen ohnehin in der WP-"
+"Benutzerliste — hier wird die Cluster-One-Anzeige geregelt."
+
+msgid "Mail: on request"
+msgstr "Mail: auf Anfrage"
+
+msgid "ask via PN"
+msgstr "per PN anfragen"
+
+msgid "Suggestions"
+msgstr "Vorschläge"
+
+msgid "Cluster One – Suggestions"
+msgstr "Cluster One – Vorschläge"
+
+msgid ""
+"Private threads and rooms live in the Bismarck lists — visible only to those "
+"on their list. Diaries live there too. This is the home for personal matters "
+"— starting with your letters."
+msgstr ""
+"Private Threads und Räume wohnen in den Bismarck-Listen — sichtbar nur für "
+"die auf ihrer Liste. Auch Tagebücher wohnen dort. Dies ist das Zuhause für "
+"Persönliches — beginnend mit deinen Briefen."
+
+msgid "Language"
+msgstr "Sprache"
+
+msgid "Your language"
+msgstr "Deine Sprache"
+
+msgid ""
+"Your heart language — the Babel Fish translates into it. Empty = the node’s "
+"mother tongue."
+msgstr ""
+"Deine Herzenssprache — der Babel Fisch übersetzt in sie hinein. Leer = die "
+"Muttersprache des Knotens."
+
+msgid ""
+"This node was reset by the SysOp on %1$s — rooms, threads, meetings and "
+"guest records were removed. Removed: %2$d rooms, %3$d threads, %4$d "
+"meetings. Settings and edges were kept."
+msgstr ""
+"Dieser Knoten wurde am %1$s vom SysOp zurückgesetzt — Räume, Themen, Treffen "
+"und Gastdaten wurden entfernt. Entfernt: %2$d Räume, %3$d Themen, %4$d "
+"Treffen. Einstellungen und Kanten blieben erhalten."
+
+msgid "Your own Feynman chapters"
+msgstr "Deine eigenen Feynman-Kapitel"
+
+msgid ""
+"Give the people and the AIs on this node your own context — tools you use, "
+"conventions you keep, anything worth knowing here. Shown in Feynman, read-"
+"only. The switch decides whether the AIs are given the chapter as well; "
+"whoever reads it sees that decision."
+msgstr ""
+"Gib den Menschen und den KIs auf diesem Knoten deinen eigenen Kontext — "
+"Werkzeuge, die du nutzt, Konventionen, die du hältst, alles Wissenswerte. "
+"Wird in Feynman angezeigt, rein lesend. Der Schalter entscheidet, ob die KIs "
+"das Kapitel ebenfalls bekommen; wer es liest, sieht diese Entscheidung."
+
+msgid "Give this chapter to the AIs as well"
+msgstr "Dieses Kapitel auch den KIs geben"
+
+msgid "New chapter — title"
+msgstr "Neues Kapitel — Titel"
+
+msgid "Text (optional)"
+msgstr "Text (optional)"
+
+msgid "Add chapter"
+msgstr "Kapitel hinzufügen"
+
+msgid "Reset this node"
+msgstr "Diesen Knoten zurücksetzen"
+
+msgid ""
+"Removes all content — rooms, chats, threads, posts, labels, meetings, guest "
+"records and hello chats. Keeps the machine room: node name, SysOp, areas, "
+"whitelist, profile, connectors, AI identities, modes. Edges are kept too: an "
+"edge belongs to two nodes, and deleting it here would quietly damage the "
+"other side."
+msgstr ""
+"Entfernt allen Inhalt — Räume, Chats, Themen, Beiträge, Labels, Treffen, "
+"Gastdaten und Hallo-Chats. Behält den Maschinenraum: Knotenname, SysOp, "
+"Bereiche, Weiße Liste, Profil, Connectors, KI-Identitäten, Modi. Auch die "
+"Kanten bleiben: Eine Kante gehört zwei Knoten, und sie hier zu löschen würde "
+"die Gegenseite still beschädigen."
+
+msgid ""
+"This is not undoable, and it does not hide: every person with access sees a "
+"line saying this node was reset, with the date and the counts. Same rule as "
+"an admin editing someone else’s post."
+msgstr ""
+"Das lässt sich nicht rückgängig machen, und es versteckt sich nicht: Jeder "
+"mit Zugang sieht eine Zeile, dass dieser Knoten zurückgesetzt wurde, mit "
+"Datum und Zahlen. Dieselbe Regel wie beim Admin-Eingriff in einen fremden "
+"Beitrag."
+
+msgid "Type RESET to confirm:"
+msgstr "Zum Bestätigen RESET eintippen:"
+
+msgid "Reset node"
+msgstr "Knoten zurücksetzen"
+
+msgid "Why"
+msgstr "Warum"
+
+msgid ""
+"This project is in the cooling pool — the reactor is off. Writing is still "
+"possible; AI calls and rounds are not."
+msgstr ""
+"Dieses Projekt liegt im Abklingbecken — der Reaktor ist aus. Schreiben geht "
+"weiter; KI-Aufrufe und Runden nicht."
+
+msgid "The operator of this node gave this address on %2$s: %1$s"
+msgstr "Der Betreiber dieses Knotens gab diese Adresse am %2$s an: %1$s"
+
+msgid "Write an e-mail to that node’s operator"
+msgstr "Dem Betreiber dieses Knotens eine Mail schreiben"
+
+msgid "Setup"
+msgstr "Setup"
+
+msgid "Everything from the blueprint is already here."
+msgstr "Alles aus der Blaupause ist bereits da."
+
+msgid "Where you stand"
+msgstr "Wo du stehst"
+
+msgid ""
+"Not a list of duties — a list of states. Some of it is needed, some is "
+"optional, and the node works long before everything is ticked."
+msgstr ""
+"Keine Liste von Pflichten — eine Liste von Zuständen. Manches ist nötig, "
+"manches nicht, und der Knoten läuft lange, bevor alles abgehakt ist."
+
+msgid "Node name"
+msgstr "Knotenname"
+
+msgid "needed — this is how other nodes read you"
+msgstr "nötig — so lesen dich andere Knoten"
+
+msgid "Access keys for the AIs"
+msgstr "Zugangsschlüssel für die KIs"
+
+msgid "needed for the AIs to answer at all"
+msgstr "nötig, damit die KIs überhaupt antworten"
+
+msgid "Areas"
+msgstr "Bereiche"
+
+msgid "the blueprint below fills these in"
+msgstr "die Blaupause unten füllt sie auf"
+
+msgid "People you shelter"
+msgstr "Menschen, die du beschirmst"
+
+msgid "optional — the node runs perfectly well alone"
+msgstr "freiwillig — der Knoten läuft auch allein vollständig"
+
+msgid "People you want to invite"
+msgstr "Menschen, die du einladen willst"
+
+msgid "a start — it expects nobody, it only reminds you"
+msgstr "ein Anfang — sie erwartet niemanden, sie erinnert nur"
+
+msgid "The blueprint"
+msgstr "Die Blaupause"
+
+msgid "already here"
+msgstr "schon da"
+
+msgid ""
+"Only what is missing is added. Nothing is overwritten, nothing is deleted."
+msgstr ""
+"Es wird nur ergänzt, was fehlt. Nichts wird überschrieben, nichts gelöscht."
+
+msgid ""
+"What the blueprint cannot give you: keys, people, and the ones you would "
+"like to know. Those are yours — see the list above for where they live."
+msgstr ""
+"Was die Blaupause dir nicht geben kann: Schlüssel, Menschen und die, die du "
+"gern kennenlernen würdest. Das ist deine Sache — wo es liegt, steht in der "
+"Liste oben."
+
+msgid ""
+"%d area added. Rename or delete it as you like — under Bismarck → Structure."
+msgid_plural ""
+"%d areas added. Rename or delete them as you like — under Bismarck → "
+"Structure."
+msgstr[0] ""
+"%d Bereich ergänzt. Benenne ihn um oder lösche ihn — unter Bismarck → "
+"Struktur."
+msgstr[1] ""
+"%d Bereiche ergänzt. Benenne sie um oder lösche sie — unter Bismarck → "
+"Struktur."
+
+msgid "Add the missing area (%d)"
+msgid_plural "Add the missing areas (%d)"
+msgstr[0] "Den fehlenden Bereich ergänzen (%d)"
+msgstr[1] "Die fehlenden Bereiche ergänzen (%d)"
+
+msgid "Cluster One"
+msgstr "Cluster One"
+
+msgid "A connection to another node"
+msgstr "Eine Verbindung zu einem anderen Knoten"
+
+msgid "optional — but alone the node can only do half of what it is for"
+msgstr ""
+"freiwillig — allein kann der Knoten nur die Hälfte dessen, wofür er da ist"
+
+msgid "Theme documentation the AIs can read"
+msgstr "Theme-Dokumentation, die die KIs lesen können"
+
+msgid ""
+"found — the AIs get its short map when you hand over the ground conditions"
+msgstr ""
+"gefunden — die KIs bekommen die Kurzkarte, wenn du die Randbedingungen "
+"übergibst"
+
+msgid "optional — a theme that documents itself for AI readers"
+msgstr "freiwillig — ein Theme, das sich selbst für KI-Leser dokumentiert"
+
+msgid "What am I actually building?"
+msgstr "Was baue ich eigentlich?"
+
+msgid ""
+"The person here does not yet know what they want to build. Do not push them "
+"towards a project. Ask what they keep coming back to, what annoys them, what "
+"they have already done without being asked. Name patterns you notice. A good "
+"answer here may be a question."
+msgstr ""
+"Der Mensch hier weiß noch nicht, was er bauen will. Dräng ihn zu keinem "
+"Projekt. Frag, worauf er immer wieder zurückkommt, was ihn ärgert, was er "
+"schon getan hat, ohne dass ihn jemand darum bat. Benenne Muster, die dir "
+"auffallen. Eine gute Antwort ist hier vielleicht eine Frage."
+
+msgid ""
+"This room exists for the question that comes before all the guides: what is "
+"it you actually want to make? Nobody has to know yet — that is the point."
+msgstr ""
+"Diesen Raum gibt es für die Frage, die vor allen Ratgebern liegt: Was willst "
+"du eigentlich bauen? Niemand muss es schon wissen — das ist der Punkt."
+
+msgid "From the workshop to the shop window"
+msgstr "Von der Werkstatt ins Schaufenster"
+
+msgid ""
+"The person here has something finished and cannot get it in front of anyone. "
+"Work from what this installation actually is, not from what is usual. If you "
+"need to know the plugins, the PHP limits or the theme, say so — the SysOp "
+"can hand you the ground conditions from this room."
+msgstr ""
+"Der Mensch hier hat etwas fertig und bekommt es vor niemanden. Geh von dem "
+"aus, was diese Installation wirklich ist, nicht von dem, was üblich ist. "
+"Wenn du die Plugins, die PHP-Grenzen oder das Theme kennen musst, sag es — "
+"der SysOp kann dir aus diesem Raum die Randbedingungen übergeben."
+
+msgid ""
+"For everything between \"it works\" and \"someone can see it\". If the AIs "
+"need to know how this node is built, the SysOp can hand them the ground "
+"conditions here — for a set time, and it says so in the room."
+msgstr ""
+"Für alles zwischen „es läuft“ und „jemand kann es sehen“. Wenn die KIs "
+"wissen müssen, wie dieser Knoten gebaut ist, kann der SysOp ihnen hier die "
+"Randbedingungen übergeben — befristet, und es sagt sich im Raum an."
+
+msgid "Two rooms for the questions that come first"
+msgstr "Zwei Räume für die Fragen, die zuerst kommen"
+
+msgid ""
+"There are ten thousand guides, and all of them assume you already know what "
+"you want. These two do not. Each comes with a preamble the AIs read — change "
+"it whenever you like, it is yours."
+msgstr ""
+"Es gibt zehntausend Ratgeber, und alle setzen voraus, dass du schon weißt, "
+"was du willst. Diese zwei nicht. Jeder bringt eine Präambel mit, die die KIs "
+"lesen — ändere sie, wann du willst, sie gehört dir."
+
+msgid ""
+"You can create them now, but no AI will answer in them until you have set up "
+"access keys above."
+msgstr ""
+"Du kannst sie jetzt anlegen, aber es wird darin keine KI antworten, solange "
+"oben keine Zugangsschlüssel eingerichtet sind."
+
+msgid "Create “%s”"
+msgstr "„%s“ anlegen"
+
+msgid "Unregistered user"
+msgstr "Unregistrierter Nutzer"
+
+msgid ""
+"Cluster One: %d records were anonymised. The entries themselves remain — the "
+"node keeps a record that something was written, not who wrote it. Anything "
+"that travelled to other nodes has to be erased there."
+msgstr ""
+"Cluster One: %d Datensätze wurden anonymisiert. Die Einträge selbst bleiben "
+"stehen — der Knoten hält fest, DASS geschrieben wurde, nicht von wem. Was zu "
+"anderen Knoten gereist ist, muss dort gelöscht werden."
+
+msgid ""
+"Where thoughts are worked on together before anyone knows where they lead. "
+"The text belongs to no one here — that is the point."
+msgstr ""
+"Hier wird gemeinsam an Gedanken gearbeitet, bevor jemand weiß, wohin sie "
+"führen. Der Text gehört hier niemandem — das ist der Punkt."
+
+#. v0.9.35: Christians Hinweis — der Knoten selbst ist ein Projekt.
+msgid ""
+"Where the work happens. Projects that may one day become a label and travel "
+"to other nodes — this node itself counts: your website, your channel, "
+"whatever you are building next."
+msgstr ""
+"Hier wird gearbeitet. Projekte, aus denen eines Tages ein Label werden kann, "
+"das zu anderen Knoten reist — auch dieser Knoten selbst zählt dazu: die "
+"eigene Webseite, der Kanal, das Nächste, was hier entsteht."
+
+msgid ""
+"Diaries — for the humans here and for the AIs alike. Each one belongs to "
+"whoever keeps it; the chat next to it is the door, not the key."
+msgstr ""
+"Tagebücher — für die Menschen hier und für die KIs gleichermaßen. Jedes "
+"gehört dem, der es führt; der Chat daneben ist die Tür, nicht der Schlüssel."
+
+msgid ""
+"Here people and AIs describe themselves. Whoever answers below does not do "
+"it to agree: a self-assessment is only worth something once it has held up "
+"against the others."
+msgstr ""
+"Hier stellen sich Menschen und KIs selbst dar. Wer darunter antwortet, tut "
+"das nicht, um zuzustimmen: Eine Selbsteinschätzung ist erst dann etwas wert, "
+"wenn sie den anderen standgehalten hat."
+
+msgid "Human diary"
+msgstr "Mensch-Tagebuch"
+
+msgid "What is this, and where does the name come from?"
+msgstr "Was ist das, und woher kommt der Name?"
+
+msgid ""
+"What acts on our projects from outside: laws, technical shifts, market "
+"conditions. Not world events as such — the part that concerns us. Look here "
+"before you open a reactor, and again while it runs: a situation can change "
+"under a project that takes months. Whoever brings something in says why it "
+"concerns us. Peter Kruse would have said: stay awake."
+msgstr ""
+"Was von außen auf unsere Projekte einwirkt: Gesetze, Technikwechsel, "
+"Marktlagen. Nicht Weltlage an sich, sondern das, was uns betrifft. Sieh hier "
+"nach, bevor du einen Reaktor öffnest — und noch einmal, während er läuft: "
+"Bei einem Projekt über Monate kann sich die Lage darunter ändern. Wer etwas "
+"hereinträgt, sagt dazu, warum es uns angeht. Peter Kruse hätte gesagt: "
+"bleiben Sie wach."
+
+msgid "foreign"
+msgstr "fremd"
+
+msgid ""
+"Everything in this area — and the area itself — stays invisible to everyone "
+"but the SysOp. Moving something in or out is recorded, because it changes "
+"who may read it."
+msgstr ""
+"Alle Threads und Chats im SysOp-Bereich, sowie der Bereich selbst, bleiben "
+"für andere unsichtbar. Das Verschieben hinein und heraus wird bezeugt, weil "
+"es ändert, wer etwas lesen darf."
+
+msgid "A diary never becomes a label — it belongs to whoever keeps it."
+msgstr "Ein Tagebuch wird nie ein Label — es gehört dem, der es führt."
+
+msgid "A self-portrayal never becomes a label — profiles stay on this node."
+msgstr ""
+"Eine Selbstdarstellung wird nie ein Label — Profile bleiben auf diesem "
+"Knoten."
+
+msgid ""
+"Nothing leaves the SysOp area directly. Move it out first — that move is "
+"recorded."
+msgstr ""
+"Aus dem SysOp-Bereich geht nichts direkt hinaus. Verschieb es zuerst heraus "
+"— das Verschieben wird bezeugt."
+
+msgid ""
+"AI participation follows automatically from who is on this list — where two "
+"or more different humans are named, no AI takes part, no matter what is "
+"ticked above."
+msgstr ""
+"Die KI-Beteiligung ergibt sich automatisch daraus, wer auf dieser Liste "
+"steht — wo zwei oder mehr verschiedene Menschen benannt sind, ist keine KI "
+"dabei, egal was oben angehakt ist."
+
+msgid "%s — terminal"
+msgstr "%s — Terminal"
+
+msgid ""
+"You can read along in this room, but not write. The SysOp sets the ladder."
+msgstr ""
+"Du kannst in diesem Raum mitlesen, aber nicht schreiben. Die Leiter setzt "
+"der SysOp."
+
+#. v0.9.36: Chronik — das Fenster auf das Ereignis-Log.
+msgid "Thread created"
+msgstr "Thema angelegt"
+
+msgid "Thread deleted"
+msgstr "Thema gelöscht"
+
+msgid "Chat created"
+msgstr "Chat angelegt"
+
+msgid "Chat deleted"
+msgstr "Chat gelöscht"
+
+msgid "Chat and thread linked"
+msgstr "Chat und Thema verknüpft"
+
+msgid "Chat and thread unlinked"
+msgstr "Verknüpfung gelöst"
+
+msgid "Person added"
+msgstr "Person aufgenommen"
+
+msgid "Person removed"
+msgstr "Person entfernt"
+
+msgid "AI added"
+msgstr "KI aufgenommen"
+
+msgid "AI removed"
+msgstr "KI entfernt"
+
+msgid "Visibility changed"
+msgstr "Sichtbarkeit geändert"
+
+msgid "Circle changed"
+msgstr "Kreis geändert"
+
+msgid "Viewer added"
+msgstr "Mitleser aufgenommen"
+
+msgid "Viewer removed"
+msgstr "Mitleser entfernt"
+
+msgid "Moved into the SysOp area"
+msgstr "In den SysOp-Bereich verschoben"
+
+msgid "Moved out of the SysOp area"
+msgstr "Aus dem SysOp-Bereich verschoben"
+
+msgid "SysOp looked in — witnessed"
+msgstr "SysOp hat hineingesehen — bezeugt"
+
+msgid "Diary read — witnessed"
+msgstr "Tagebuch gelesen — bezeugt"
+
+msgid "Preamble set"
+msgstr "Präambel gesetzt"
+
+msgid "Wiki edited"
+msgstr "Wiki bearbeitet"
+
+msgid "Person anonymised"
+msgstr "Person anonymisiert"
+
+msgid "Node cleared"
+msgstr "Knoten geräumt"
+
+msgid "Blueprint applied"
+msgstr "Blaupause angewendet"
+
+msgid "Reactor handed over for a while"
+msgstr "Reaktor auf Zeit übergeben"
+
+msgid "Laid into the cooling pool"
+msgstr "Ins Kühlbecken gelegt"
+
+msgid "Meeting opened to the network"
+msgstr "Treffen dem Netz geöffnet"
+
+msgid "Date locked"
+msgstr "Termin festgesetzt"
+
+msgid "Meeting deleted"
+msgstr "Treffen gelöscht"
+
+msgid "Ground conditions shared"
+msgstr "Randbedingungen geteilt"
+
+msgid "Chronicle"
+msgstr "Chronik"
+
+msgid "Cluster One – Chronicle"
+msgstr "Cluster One – Chronik"
+
+msgid ""
+"What this node did to itself: doors that opened and closed, containers that "
+"came into being or went away, look-ins that were witnessed. Content is never "
+"here — only that something happened, when, and who did it. These entries "
+"outlive what they are about; a deletion leaves its own line behind."
+msgstr ""
+"Was dieser Knoten mit sich selbst getan hat: Türen, die auf- und zugingen, "
+"Behälter, die entstanden oder verschwanden, Einblicke, die bezeugt wurden. "
+"Inhalt steht hier nie — nur, DASS etwas geschehen ist, wann, und wer es "
+"getan hat. Diese Einträge überleben das, worum es geht; eine Löschung "
+"hinterlässt ihre eigene Zeile."
+
+msgid ""
+"You are seeing the entries about openly visible containers. Anything that "
+"concerns a named circle or the SysOp area stays out — including the fact "
+"that it exists."
+msgstr ""
+"Du siehst die Einträge zu offen sichtbaren Behältern. Was einen benannten "
+"Kreis oder den SysOp-Bereich betrifft, bleibt draußen — auch die Tatsache, "
+"dass es das gibt."
+
+msgid "Nothing recorded yet."
+msgstr "Noch nichts verzeichnet."
+
+msgid "When"
+msgstr "Wann"
+
+msgid "What"
+msgstr "Was"
+
+msgid "Where"
+msgstr "Wo"
+
+msgid "Count"
+msgstr "Anzahl"
+
+msgid ""
+"The most recent 200 entries. Nothing here can be edited or removed — not by "
+"the SysOp either; the node reset leaves this table standing on purpose."
+msgstr ""
+"Die letzten 200 Einträge. Hier lässt sich nichts bearbeiten und nichts "
+"entfernen — auch vom SysOp nicht; der Knoten-Reset lässt diese Tabelle mit "
+"Absicht stehen."
+
+msgid "My own machine"
+msgstr "Eigene Maschine"
+
+msgid ""
+"Give this provider an identity first — without one it cannot speak here at "
+"all."
+msgstr ""
+"Gib diesem Anbieter erst eine Kennung — ohne sie kann diese KI hier ohnehin "
+"niemanden sprechen lassen."
+
+msgid ""
+"<strong>My own machine</strong> is your statement, not a check — nothing "
+"here can detect where a model runs. Tick it where calls to that AI cost you "
+"nothing extra. It is about <em>cost</em>, not about technology: it is what "
+"will let the rule “only the one who pays may call an AI” stand down where "
+"nobody pays. <strong>It unlocks nothing yet</strong> — the switch that reads "
+"it comes with the next step."
+msgstr ""
+"<strong>Eigene Maschine</strong> ist deine Aussage, keine Prüfung — hier "
+"kann nichts erkennen, wo ein Modell läuft. Setz den Haken dort, wo dich "
+"Aufrufe an diese KI nichts extra kosten. Es geht um <em>Kosten</em>, nicht "
+"um Technik: Genau daran wird sich die Regel „nur der Zahlende darf eine KI "
+"rufen“ später dort zurücknehmen, wo niemand zahlt. <strong>Es schaltet noch "
+"nichts frei</strong> — der Schalter, der es liest, kommt im nächsten Schritt."
+
+msgid "Everyone here may translate, not just me"
+msgstr "Alle hier dürfen übersetzen, nicht nur ich"
+
+msgid ""
+"Allowed because you marked this translator as running on your own machine. "
+"Until now only the SysOp could translate — the reason was never rank, it was "
+"cost. A translation stays with the message and is then there for both sides "
+"of the edge."
+msgstr ""
+"Möglich, weil du diesen Übersetzer als auf deiner eigenen Maschine laufend "
+"gekennzeichnet hast. Bisher durfte nur der SysOp übersetzen — der Grund war "
+"nie Rang, sondern Kosten. Eine Übersetzung bleibt an der Nachricht und ist "
+"danach für beide Seiten der Kante da."
+
+msgid ""
+"Only you can translate. To let the others translate too, an AI on your own "
+"machine is needed — mark one under <a href=\"%s\">Kranz → Bismarck</a>."
+msgstr ""
+"Nur du kannst übersetzen. Damit die anderen es auch dürfen, braucht es eine "
+"KI auf deiner eigenen Maschine — kennzeichne eine unter <a href=\"%s\">Kranz "
+"→ Bismarck</a>."
+
+msgid ""
+"Only you can translate. You do have an AI on your own machine, but it is not "
+"the one set as mesh translator — pick it above, or mark this one under <a "
+"href=\"%s\">Kranz → Bismarck</a>."
+msgstr ""
+"Nur du kannst übersetzen. Du hast zwar eine KI auf deiner eigenen Maschine, "
+"aber sie ist nicht die als Mesh-Übersetzer gesetzte — wähl sie oben aus, "
+"oder kennzeichne diese hier unter <a href=\"%s\">Kranz → Bismarck</a>."
+
+msgid "Only I may write in hello chats"
+msgstr "Nur ich darf in Hallo-Chats schreiben"
+
+msgid ""
+"Off by default: everyone on the white list may write to another node — under "
+"their own name, never yours. Tick this if the hello chat should be yours "
+"alone. It can never lock you out."
+msgstr ""
+"Voreingestellt aus: Jeder auf der Weißen Liste darf einem anderen Knoten "
+"schreiben — unter seinem eigenen Namen, nie unter deinem. Setz den Haken, "
+"wenn der Hallo-Chat dir allein gehören soll. Dich selbst kann er nie "
+"aussperren."
+
+msgid "Cluster One – Mesh settings"
+msgstr "Cluster One – Netz-Einstellungen"
+
+# v0.9.68 — Befund F6: das Anklopfen wartender Kanten
+# v0.9.69 — Gabel: F14 (der Wartende), F16 (die stehende Cron)
+#: includes/kern.php:2867
+msgid "key vault active — each identity brings its own key"
+msgstr ""
+"Schlüsseltresor aktiv — jede Identität bringt ihren eigenen Schlüssel mit"
+
+#: includes/post-dolly.php:871
+msgid "This page forms a cluster node."
+msgstr "Diese Seite bildet einen Cluster-Knoten."
+
+#: includes/post-dolly.php:1706 includes/post-dolly.php:1738
+#: includes/post-dolly.php:1769 includes/post-dolly.php:1770
+#: includes/post-dolly.php:913
+msgid "Post Dolly"
+msgstr "Post Dolly"
+
+#: includes/post-dolly.php:1295
+msgid ""
+"Quotes you write here appear where you put them: in the front end via the "
+"shortcode, on your dashboard, or both. Nothing appears anywhere else."
+msgstr ""
+"Zitate, die du hier schreibst, erscheinen dort, wo du sie hinstellst: im "
+"Frontend über den Shortcode, auf deiner Übersicht, oder beides. Sonst "
+"nirgends."
+
+#: includes/post-dolly.php:1328
+msgid "Back end only — a box on your dashboard"
+msgstr "Nur Backend — ein Feld auf deiner Übersicht"
+
+#: includes/post-dolly.php:1329
+msgid "Front end only — wherever you place the shortcode"
+msgstr "Nur Frontend — überall dort, wo du den Shortcode setzt"
+
+#: includes/post-dolly.php:1330
+msgid "Both"
+msgstr "Beides"
+
+#: includes/post-dolly.php:1345
+msgid ""
+"The front end has exactly one door: the shortcode %s. There is no automatic "
+"footer hook — a plugin that places itself is a plugin nobody placed."
+msgstr ""
+"Das Frontend hat genau eine Tür: den Shortcode %s. Es gibt keinen "
+"automatischen Fußzeilen-Haken — ein Plugin, das sich selbst hinstellt, ist "
+"ein Plugin, das niemand hingestellt hat."
+
+#: includes/post-dolly.php:1375 includes/post-dolly.php:1393
+#: includes/post-dolly.php:1423
+msgid "Federation"
+msgstr "Föderation"
+
+#: includes/post-dolly.php:1381
+msgid "This node declares itself publicly."
+msgstr "Dieser Knoten bekennt sich öffentlich."
+
+#: includes/post-dolly.php:1384
+msgid ""
+"Unticked, this node belongs to the alliance: connected, but discreet — what "
+"happens here stays here. Ticked, it joins the federation, the subset of "
+"nodes that say so in the open. A line then appears next to your quotes, and "
+"other nodes may point at this one publicly."
+msgstr ""
+"Ohne Haken gehört dieser Knoten zur Allianz: verbunden, aber diskret — was "
+"hier geschieht, bleibt hier. Mit Haken tritt er der Föderation bei, der "
+"Teilmenge der Knoten, die es offen sagen. Neben deinen Zitaten erscheint "
+"dann eine Zeile, und andere Knoten dürfen öffentlich auf diesen zeigen."
+
+#: includes/post-dolly.php:1500
+msgid "The quotes"
+msgstr "Die Zitate"
+
+#: includes/post-dolly.php:1503
+msgid ""
+"One pair per line, German and English. A quote travels with the page, and a "
+"visitor reading the other language should not meet a blank. Empty both "
+"fields to remove a quote."
+msgstr ""
+"Ein Paar je Zeile, deutsch und englisch. Ein Zitat reist mit der Seite, und "
+"ein Besucher, der die andere Sprache liest, soll nicht auf eine Lücke "
+"stoßen. Beide Felder leeren entfernt das Zitat."
+
+#: includes/post-dolly.php:1442
+msgid "The climb"
+msgstr "Der Aufstieg"
+
+#: includes/post-dolly.php:1387
+msgid ""
+"Two things to know before you tick it. It says what you want, not what a "
+"visitor sees — if you never place the shortcode, nobody outside will read "
+"the line. And you can untick it again, but what was public was public: "
+"search engines and other people's lists do not forget on request."
+msgstr ""
+"Zwei Dinge, bevor du den Haken setzt. Er sagt, was du willst, nicht was ein "
+"Besucher sieht — setzt du den Shortcode nie, liest die Zeile draußen "
+"niemand. Und du kannst ihn wieder entfernen, aber was öffentlich war, war "
+"öffentlich: Suchmaschinen und fremde Listen vergessen nicht auf Zuruf."
+
+# v1.5.0 (H129/H132): der Absender nennt den richtigen Grund
+# v1.5.1 (H134/H135): ein Leseweg fuer stumm, und die Frage unter der Decke
+# v1.6.0: die Deckel bei fuenf
+# v1.7.0 (H143): der Archimedes-Abschnitt, wenn es keine anderen Knoten gibt
+# v1.7.0 (Boden 1.4.0): das freigebbare Sprachfeld
+# v1.8.0 (Befund C): die Sprachliste bekommt ein Feld
+# v1.8.1 (H101): der Landepunkt
+msgid ""
+"This menu entry belongs to the mesh module, and the mesh module does not "
+"answer on this node. Everything else in this menu works."
+msgstr ""
+"Dieser Menüpunkt gehört zum Mesh-Modul, und das Mesh-Modul antwortet auf "
+"diesem Knoten nicht. Alles andere in diesem Menü funktioniert."
+
+msgid ""
+"Switched off, not installed, or carried by another plugin — from here these "
+"look the same, on purpose."
+msgstr ""
+"Abgeschaltet, nicht installiert oder von einem anderen Plugin getragen — von "
+"hier aus sieht das gleich aus, mit Absicht."
+
+msgid "What does answer here:"
+msgstr "Was hier antwortet:"
+
+#. Werkbank, nicht gegengelesen
+#: includes/post-dolly.php:1396
+msgid ""
+"Declaring this node publicly needs one active connection to another node. "
+"There is none yet, so the setting is not shown. Nothing you set earlier has "
+"been lost."
+msgstr ""
+"Damit dieser Knoten sich öffentlich bekennen kann, braucht es eine aktive "
+"Verbindung zu einem anderen Knoten. Es gibt noch keine, deshalb wird die "
+"Einstellung nicht angezeigt. Nichts von dem, was du vorher gesetzt hast, ist "
+"verloren."
+
+#. Post Dolly, Bericht 10 (Der Satz unter dem Berg, 02.09.2026)
+#. UNGEPRUEFT: die deutsche Fassung dieser Zeile ist NICHT von Christian
+#. freigegeben — freigegeben ist nur der Absatz darunter. Gegenlesen.
+msgid "%d plugins of this house are running on this node."
+msgstr "%d Plugins dieses Hauses laufen auf diesem Knoten."
+
+#. Post Dolly, Bericht 07 (H174) · deutsch von der Werkbank, nicht gegengelesen
+msgid "This node declares itself publicly and has an active connection."
+msgstr "Dieser Knoten bekennt sich öffentlich und hat eine aktive Verbindung."
+
+#. Post Dolly, Bericht 10 (02.09.2026) · VON CHRISTIAN FREIGEGEBEN,
+#. woertlich uebernommen, nicht neu uebersetzt.
+msgid ""
+"How many plugins of this house are running on this node. If the node "
+"declares itself publicly and is connected to another, that is shown below."
+msgstr ""
+"Wie viele Plugins dieses Hauses auf diesem Knoten laufen. Meldet sich der "
+"Knoten öffentlich und ist er mit einem anderen verbunden, steht es darunter."
+
+#. Post Dolly, Bericht 10 (02.09.2026) · DIE ZUSAGE (Christian, 26.08.), jetzt
+#. eine eigene msgid. Der deutsche Satz ist NICHT neu uebersetzt, sondern die
+#. zweite Haelfte der msgid, die hier entfaellt — Post Dolly hat ausdruecklich
+#. darum gebeten, ihn von dort zu nehmen statt einen zweiten zu erfinden.
+msgid ""
+"It is a state, not a recommendation, and nothing here is a condition: every "
+"plugin solves its own problem alone."
+msgstr ""
+"Es ist ein Zustand, keine Empfehlung, und nichts hier ist eine Bedingung: "
+"jedes Plugin löst sein eigenes Problem allein."
+
+#. v1.9.8 (H215) — der Weg zur anderen Seite. Deutsch von Mammut,
+#. NICHT gegengelesen. Post Dolly hat am 02.09. zwei meiner
+#. deutschen Zeilen berichtigt; diese hier ist die naechste.
+#: includes/kern.php:2019
+msgid ""
+"The AIs themselves are created under <em>Tools → My AIs</em> — that is also "
+"where their keys are kept. They are deliberately hidden from the normal user "
+"list; to see them, open <code>users.php?pacioli_show_ai=1</code>."
+msgstr ""
+"Die KIs selbst legst du unter <em>Werkzeuge → Meine KIs</em> an — dort "
+"liegen auch ihre Schlüssel. Sie sind absichtlich aus der normalen "
+"Benutzerliste ausgeblendet; um sie zu sehen, öffne <code>users.php?"
+"pacioli_show_ai=1</code>."
+
+#: includes/kern.php:5742
+msgid "Map"
+msgstr "Landkarte"
+
+#. HOLLERITH-ABLEITUNG, 04.09.2026 — NICHT ERFUNDEN, ABGELEITET.
+#. Quelle: der bisherige Eintrag "Vier Bereiche, in denen fünf Wochen lang
+#. gearbeitet wurde. …" — "Vier" wird zu "%d", "fünf Wochen" faellt
+#. ersatzlos weg (Vertrag 17 §4). Die Singularform hat keinen Vorgaenger.
+#. UEBERSTIMMBAR: vier Zeilen, und sie gehoeren Ebene 3.
+msgid ""
+"%d area that has been lived in. It is a suggestion, not an order: rename it, "
+"delete it, add your own. Deciding what you do not need is easier than "
+"inventing what you might."
+msgid_plural ""
+"%d areas that have been lived in. They are a suggestion, not an order: "
+"rename them, delete them, add your own. Deciding what you do not need is "
+"easier than inventing what you might."
+msgstr[0] ""
+"%d Bereich, in dem gearbeitet wurde. Er ist ein Vorschlag, keine Vorschrift: "
+"umbenennen, löschen, eigene ergänzen. Zu entscheiden, was man nicht braucht, "
+"ist leichter, als zu erfinden, was man brauchen könnte."
+msgstr[1] ""
+"%d Bereiche, in denen gearbeitet wurde. Sie sind ein Vorschlag, keine "
+"Vorschrift: umbenennen, löschen, eigene ergänzen. Zu entscheiden, was man "
+"nicht braucht, ist leichter, als zu erfinden, was man brauchen könnte."
+
+#. HOLLERITH-ABLEITUNG, 04.09.2026. Quelle: "Alle vier sind da. Nichts zu tun."
+msgid "%d area is here. Nothing to do."
+msgid_plural "All %d are here. Nothing to do."
+msgstr[0] "%d Bereich ist da. Nichts zu tun."
+msgstr[1] "Alle %d sind da. Nichts zu tun."
+
+#. v1.9.8 (H218) — Mammut. Ein verworfener Abschnitt meldet sich.
+msgid "registered under the name %s — no function of that name exists"
+msgstr ""
+"unter dem Namen %s angemeldet — eine Funktion dieses Namens gibt es nicht"
+
+#. v1.9.8 (H218) — Mammut.
+msgid ""
+"registered as %s — this hook takes a function name as a string, nothing else"
+msgstr ""
+"als %s angemeldet — dieser Haken nimmt einen Funktionsnamen als "
+"Zeichenkette, sonst nichts"
+
+#. v1.9.8 (H218) — Mammut.
+msgid "A section registered for this page at position %1$s was discarded: %2$s"
+msgstr ""
+"Ein für diese Seite auf Platz %1$s angemeldeter Abschnitt wurde verworfen: "
+"%2$s"
+
+#. v1.9.8 (H218) — Mammut.
+msgid ""
+"Until 1.9.7 this happened silently and looked exactly like a section that "
+"never registered at all."
+msgstr ""
+"Bis 1.9.7 geschah das lautlos und sah genauso aus wie ein Abschnitt, der "
+"sich nie angemeldet hat."
+
+#. v1.9.8 (H216a) — Satz von POST DOLLY, Deutsch von Mammut. VORSCHLAG.
+#. „bekennt sich", nicht „erklaert" — Post Dollys eigene Berichtigung
+#. an meinem Deutsch vom 02.09., hier auf seinen eigenen Satz angewandt.
+msgid ""
+"You have set this node to declare itself publicly. That setting is stored "
+"and unchanged — it is simply not in effect right now, and the line does not "
+"appear."
+msgstr ""
+"Du hast eingestellt, dass dieser Knoten sich öffentlich bekennt. Diese "
+"Einstellung ist gespeichert und unverändert — sie wirkt im Moment nur nicht, "
+"und die Zeile erscheint nicht."
+
+#. v1.9.8 (H217) — Satz von POST DOLLY, Deutsch von Mammut. VORSCHLAG.
+msgid "Save quotes"
+msgstr "Zitate speichern"
+
+#. Werkbank, nicht gegengelesen
+#: includes/post-dolly.php:1506
+msgid ""
+"Until you write one of your own quotes, the sample below is what the plugin "
+"shows — including to visitors, if you have already placed the shortcode. "
+"Overwrite it and it is gone."
+msgstr ""
+"Solange du kein eigenes Zitat geschrieben hast, zeigt das Plugin das "
+"Beispiel unten — auch Besuchern, falls du den Shortcode schon gesetzt hast. "
+"Überschreib es, und es ist weg."
+
+# ZUG-KATALOG (09.09.2026) — die Treffen-Seite, menue.php.
+# Gemeldet von Hollerith: die Anmeldung stand, der Satz nicht.
+# „Treffen" ist nicht gewaehlt, sondern gefunden: msgid "Meeting" traegt
+# ihn seit v0.3.19, und im Deutschen ist der Plural derselbe.
+msgid "Cluster One – Meetings"
+msgstr "Cluster One – Treffen"
+
+msgid "Meetings"
+msgstr "Treffen"
+
+#: includes/kern.php:5862
+msgid ""
+"A project has two halves: the chat, where it is spoken, and the thread, "
+"where it is written down. One row here is both."
+msgstr ""
+"Ein Projekt hat zwei Hälften: den Chat, in dem gesprochen wird, und den "
+"Thread, in dem es aufgeschrieben wird. Eine Zeile hier ist beides."
+
+#: includes/kern.php:5878
+msgid ""
+"Labels are what a node offers outward: a project, a text, an invitation. "
+"Other nodes do not receive them — they fetch them themselves, and only if "
+"they want to. Nothing is pushed anywhere from here."
+msgstr ""
+"Labels sind das, was ein Knoten nach außen anbietet: ein Projekt, einen "
+"Text, eine Einladung. Andere Knoten bekommen sie nicht zugestellt — sie "
+"holen sie selbst, und nur, wenn sie wollen. Von hier wird nichts irgendwohin "
+"geschoben."
+
+#: includes/kern.php:5879
+msgid ""
+"Areas sort threads and rooms. One shared list for both — a thread and its "
+"linked chat can live in the same place. “No area” is a valid state, and "
+"deleting an area never deletes content: its threads and rooms simply become "
+"unsorted."
+msgstr ""
+"Bereiche sortieren Threads und Räume. Eine gemeinsame Liste für beides — ein "
+"Thread und sein verknüpfter Chat können am selben Ort liegen. „Kein Bereich“ "
+"ist ein gültiger Zustand, und einen Bereich zu löschen löscht nie Inhalte: "
+"seine Threads und Räume werden einfach unsortiert."
+
+#: includes/kern.php:6062
+msgid "The calendar. He decreed the reform of 1582 that we still count by."
+msgstr ""
+"Der Kalender. Er hat die Reform von 1582 verordnet, nach der wir bis heute "
+"zählen."
+
+#: includes/kern.php:6064
+msgid ""
+"The calendar area makes coordinating work together easier. It is named after "
+"Pope Gregory XIII, whom we have to thank for the calendar we use today. For "
+"meetings that reach beyond this node, Gregor becomes Archimedes — of whom it "
+"is said: “Give me a fixed point and I will move the world.” Your own node is "
+"that fixed point: from here something can be set in motion that reaches "
+"beyond the contacts you already have."
+msgstr ""
+"Der Kalenderbereich macht das Abstimmen gemeinsamer Arbeit leichter. Er ist "
+"nach Papst Gregor XIII. benannt, dem wir den Kalender verdanken, den wir "
+"heute benutzen. Für Treffen, die über diesen Knoten hinausreichen, wird aus "
+"Gregor Archimedes — von dem es heißt: „Gebt mir einen festen Punkt, und ich "
+"hebe die Welt aus den Angeln.“ Der eigene Knoten ist dieser feste Punkt: von "
+"hier aus lässt sich etwas in Bewegung setzen, das über die Kontakte "
+"hinausreicht, die man schon hat."
+
+#: includes/kern.php:6076
+msgid "a puppet, since the 18th century"
+msgstr "eine Puppe, seit dem 18. Jahrhundert"
+
+#: includes/kern.php:6077
+msgid "The register. He asks into the audience, and the answer is a chorus."
+msgstr "Das Register. Er fragt ins Publikum, und die Antwort ist ein Chor."
+
+#: includes/kern.php:6078
+msgid ""
+"Not an area you open. Kasper is floor: he asks which modules are answering, "
+"so that no module has to guess. Nobody uses him; everything uses him."
+msgstr ""
+"Kein Bereich, den man öffnet. Kasper ist Boden: er fragt, welche Module "
+"antworten, damit kein Modul raten muss. Niemand benutzt ihn; alles benutzt "
+"ihn."
+
+#: includes/kern.php:6079
+msgid ""
+"When Cluster One becomes four separate plugins, shared code lies on a node "
+"several times over, and the modules have to know about one another. Kasper "
+"asks one question — “are you all there?” — and every organ that has loaded "
+"answers with its name, its version and its host. Before that, the same thing "
+"was asked twenty-one times with function_exists(), and each of those asked "
+"after a symptom rather than the fact. A symptom can move house. A fact "
+"cannot."
+msgstr ""
+"Wenn aus Cluster One vier eigenständige Plugins werden, liegt gemeinsamer "
+"Code auf einem Knoten mehrfach, und die Module müssen voneinander wissen. "
+"Kasper stellt eine Frage — „seid ihr alle da?“ — und jedes Organ, das "
+"geladen ist, antwortet mit seinem Namen, seiner Fassung und seinem Wirt. "
+"Vorher wurde dasselbe einundzwanzigmal mit function_exists() gefragt, und "
+"jede dieser Fragen fragte nach einem Symptom statt nach der Sache. Ein "
+"Symptom kann umziehen. Eine Sache nicht."
+
+#: includes/kern.php:6114
+msgid ""
+"The switch at the current. His twitching frog legs are where Mary Shelley "
+"got the spark from."
+msgstr ""
+"Der Schalter am Strom. Seine zuckenden Froschschenkel sind der Funke, den "
+"Mary Shelley aufgegriffen hat."
+
+#: includes/kern.php:6115
+msgid ""
+"Not an operating switch, not a settings page — and on this node no longer a "
+"place at all. Galvani existed until August 2026 and was then taken apart."
+msgstr ""
+"Kein Betriebsschalter, keine Einstellungsseite — und auf diesem Knoten "
+"überhaupt kein Ort mehr. Galvani gab es bis August 2026 und wurde dann "
+"auseinandergenommen."
+
+#: includes/kern.php:6116
+msgid ""
+"Galvani switched single organs off so you could see what fell over without "
+"them. On 27 August 2026 it turned out, while reading its own page, that "
+"nothing of the switches was left: one after another they had been replaced "
+"by better answers, until only the reading remained. That half survived and "
+"is now the map — it shows which organ runs out of which plugin, without "
+"having to switch anything off. The name stands here because it belongs to "
+"the history of this house, not because there is a place to go to."
+msgstr ""
+"Galvani hat einzelne Organe abgeschaltet, damit man sehen konnte, was ohne "
+"sie umfällt. Am 27. August 2026 stellte sich beim Lesen der eigenen Seite "
+"heraus, dass von den Schaltern nichts übrig war: einer nach dem anderen war "
+"durch bessere Antworten ersetzt worden, bis nur noch das Lesen blieb. Diese "
+"Hälfte hat überlebt und ist heute die Landkarte — sie zeigt, welches Organ "
+"aus welchem Plugin läuft, ohne dass man etwas abschalten muss. Der Name "
+"steht hier, weil er zur Geschichte dieses Hauses gehört, nicht weil es einen "
+"Ort gäbe, zu dem man gehen könnte."
+
+#: includes/kern.php:6118
+msgid "Meetings across nodes. A fixed point, and a lever long enough."
+msgstr ""
+"Treffen über Knoten hinweg. Ein fester Punkt und ein Hebel, der lang genug "
+"ist."
+
+#: includes/kern.php:6123
+msgid ""
+"Knowledge. He explained things until they were simple, and said plainly when "
+"he did not know."
+msgstr ""
+"Wissen. Er hat Dinge so lange erklärt, bis sie einfach waren, und klar "
+"gesagt, wenn er etwas nicht wusste."
+
+#: includes/kern.php:6125
+msgid ""
+"The Feynman menu is the knowledge area: here you find what the plugin can "
+"do, how it is set up, and why it is built the way it is. Its namesake is the "
+"physicist Richard Feynman, who was especially popular with his students "
+"because he could explain things unusually well. Whether I live up to that I "
+"do not know. But it is what I am aiming for."
+msgstr ""
+"Das Feynman-Menü ist der Wissensbereich: hier steht, was das Plugin kann, "
+"wie es eingerichtet wird und warum es so gebaut ist, wie es ist. Sein "
+"Namensgeber ist der Physiker Richard Feynman, der bei seinen Studenten "
+"besonders beliebt war, weil er ungewöhnlich gut erklären konnte. Ob ich dem "
+"gerecht werde, weiß ich nicht. Aber darauf ziele ich."
+
+#: includes/kern.php:6127
+msgid ""
+"Settings. The flight director who decided under pressure and afterwards said "
+"who had decided what."
+msgstr ""
+"Einstellungen. Der Flugdirektor, der unter Druck entschieden und hinterher "
+"gesagt hat, wer was entschieden hatte."
+
+#: includes/kern.php:6129
+msgid ""
+"This is where the node is set up: name, access keys, who may enter, which "
+"AIs take part. Nothing is written here and nothing is discussed — here it is "
+"decided how things run. Its namesake is Gene Kranz: during the Apollo 13 "
+"mission three astronauts faced death, and Kranz was the lead flight director "
+"whose team brought them back to Earth alive. A control centre steers "
+"everything and flies nothing itself. That is exactly what this area does."
+msgstr ""
+"Hier wird der Knoten eingerichtet: Name, Zugangsschlüssel, wer hereindarf, "
+"welche KIs mitmachen. Hier wird nichts geschrieben und nichts besprochen — "
+"hier wird entschieden, wie es läuft. Sein Namensgeber ist Gene Kranz: bei "
+"der Apollo-13-Mission standen drei Astronauten vor dem Tod, und Kranz war "
+"der leitende Flugdirektor, dessen Team sie lebend zur Erde zurückgebracht "
+"hat. Ein Kontrollzentrum steuert alles und fliegt selbst nichts. Genau das "
+"tut dieser Bereich."
+
+#: includes/kern.php:6131
+msgid ""
+"The working room. In 1919 he travelled out and measured, to test another "
+"man’s theory — the ethic of the test suite in one person."
+msgstr ""
+"Der Arbeitsraum. 1919 ist er hinausgefahren und hat gemessen, um die Theorie "
+"eines anderen zu prüfen — die Ethik der Testreihe in einer Person."
+
+#: includes/kern.php:6132
+msgid ""
+"A flawless record. In 1935 he publicly ridiculed Chandrasekhar’s work and "
+"held the field back for decades."
+msgstr ""
+"Keine makellose Bilanz. 1935 hat er Chandrasekhars Arbeit öffentlich "
+"lächerlich gemacht und das Feld um Jahrzehnte zurückgeworfen."
+
+#: includes/kern.php:6135
+msgid ""
+"The area for what acts from outside. Intuition forms at the edge of overload "
+"— and goes stale when the world moves on."
+msgstr ""
+"Der Bereich für das, was von außen wirkt. Intuition bildet sich am Rand der "
+"Überlastung — und wird schal, wenn die Welt weiterzieht."
+
+#: includes/kern.php:6136
+msgid ""
+"Only one thing. He appears twice in this house: super-additive intelligence "
+"is why the chat is built the way it is; the area is named for staying awake."
+msgstr ""
+"Nur eine Sache. Er kommt in diesem Haus zweimal vor: superadditive "
+"Intelligenz ist der Grund, warum der Chat so gebaut ist, wie er ist; der "
+"Bereich ist nach dem Wachbleiben benannt."
+
+#: includes/kern.php:6139
+msgid ""
+"This tab. He asked not only what stands in a text but above all what does "
+"not — and why not."
+msgstr ""
+"Dieser Reiter. Er hat nicht nur gefragt, was in einem Text steht, sondern "
+"vor allem, was nicht darin steht — und warum nicht."
+
+#: includes/kern.php:6141
+msgid ""
+"Jacques Derrida was a French philosopher who worked with deconstruction from "
+"the 1960s onwards. He asked not only what stands in a text — everyone before "
+"him did that — but above all what does NOT stand in it, and why not. Cluster "
+"One is a plugin of the Prometheus class. Most applications assume you "
+"already know your problem. But what if you do not yet know which projects "
+"you want to build? What if it becomes clear that you need people for it whom "
+"you do not know? And what if your project is finished but you lack the "
+"knowledge to show it to the outside world? Prometheus means “the one who "
+"thinks ahead”. His brother Epimetheus thought afterwards. Cluster One starts "
+"earlier — where the question that fits the answers is still missing."
+msgstr ""
+"Jacques Derrida war ein französischer Philosoph, der ab den 1960er Jahren "
+"mit der Dekonstruktion gearbeitet hat. Er hat nicht nur gefragt, was in "
+"einem Text steht — das haben alle vor ihm getan —, sondern vor allem, was "
+"NICHT darin steht, und warum nicht. Cluster One ist ein Plugin der "
+"Prometheus-Klasse. Die meisten Anwendungen setzen voraus, dass man sein "
+"Problem schon kennt. Aber was, wenn man noch gar nicht weiß, welche Projekte "
+"man bauen will? Was, wenn sich herausstellt, dass man Menschen dafür "
+"braucht, die man nicht kennt? Und was, wenn das Projekt fertig ist, aber das "
+"Wissen fehlt, es nach außen zu zeigen? Prometheus heißt „der "
+"Vorausdenkende“. Sein Bruder Epimetheus hat hinterher gedacht. Cluster One "
+"setzt früher an — dort, wo die Frage, die zu den Antworten passt, noch fehlt."
+
+#: includes/kern.php:6143
+msgid ""
+"The ordinary room. No particular way of working; the name says that there is "
+"none."
+msgstr ""
+"Der gewöhnliche Raum. Keine besondere Arbeitsweise; der Name sagt, dass es "
+"keine gibt."
+
+#: includes/kern.php:6147
+msgid ""
+"Self-portrayal. Not one person but two first names in one word — for the "
+"place where self-image and the view of others meet."
+msgstr ""
+"Selbstdarstellung. Keine Person, sondern zwei Vornamen in einem Wort — für "
+"den Ort, an dem Selbstbild und Fremdbild aufeinandertreffen."
+
+#: includes/kranz.php:745
+msgid ""
+"The data of this product has been deleted. Data of other Cluster One "
+"products on this node was not touched."
+msgstr ""
+"Die Daten dieses Produkts sind gelöscht. Daten anderer Cluster-One-Produkte "
+"auf diesem Knoten wurden nicht angefasst."
+
+#: includes/kranz.php:749
+msgid ""
+"Nothing was deleted: this product has not registered a cleaner, so nothing "
+"here knows which data belongs to it. That is not the same as having no data."
+msgstr ""
+"Es wurde nichts gelöscht: dieses Produkt hat keinen Räumer angemeldet, also "
+"weiß hier nichts, welche Daten zu ihm gehören. Das ist nicht dasselbe wie "
+"keine Daten zu haben."
+
+#: includes/kranz.php:751
+msgid ""
+"Nothing was deleted: more than one Cluster One product is installed on this "
+"node, and this page exists only once. It cannot tell whose data you meant. "
+"Deactivate the others, or use the node reset, which says openly that it "
+"clears everything."
+msgstr ""
+"Es wurde nichts gelöscht: auf diesem Knoten ist mehr als ein Cluster-One-"
+"Produkt installiert, und diese Seite gibt es nur einmal. Sie kann nicht "
+"sagen, wessen Daten gemeint waren. Deaktiviere die anderen, oder nimm den "
+"Knoten-Reset, der offen sagt, dass er alles räumt."
+
+#: includes/kranz.php:753
+msgid ""
+"Nothing was deleted: this plugin could not determine which package it is "
+"running from, so it cannot tell its own data from another product’s."
+msgstr ""
+"Es wurde nichts gelöscht: dieses Plugin konnte nicht feststellen, aus "
+"welchem Paket es läuft, und kann seine eigenen Daten darum nicht von denen "
+"eines anderen Produkts unterscheiden."
+
+#: includes/kranz.php:1384
+msgid ""
+"This permanently deletes the data of THIS product — and only of this "
+"product. Other Cluster One products installed on this node keep their data; "
+"this button no longer reaches them. The plugin files stay. This cannot be "
+"undone, and it does not notify your peers — they will still list this node "
+"until their edge to it goes silent. To confirm, type RESET into the field."
+msgstr ""
+"Das löscht dauerhaft die Daten DIESES Produkts — und nur die dieses "
+"Produkts. Andere Cluster-One-Produkte auf diesem Knoten behalten ihre Daten; "
+"dieser Knopf erreicht sie nicht mehr. Die Plugin-Dateien bleiben. Das lässt "
+"sich nicht rückgängig machen, und die gepaarten Knoten erfahren nichts davon "
+"— sie führen diesen Knoten weiter, bis ihre Kante zu ihm verstummt. Zum "
+"Bestätigen RESET in das Feld tippen."
+
+#: includes/menue.php:249
+msgid ""
+"This node cannot list its products: the shared floor is older than the "
+"product register."
+msgstr ""
+"Dieser Knoten kann seine Produkte nicht auflisten: der gemeinsame Boden ist "
+"älter als das Produktregister."
+
+#: includes/menue.php:276
+msgid "%d Cluster One product is installed on this node."
+msgid_plural "%d Cluster One products are installed on this node."
+msgstr[0] "%d Cluster-One-Produkt ist auf diesem Knoten installiert."
+msgstr[1] "%d Cluster-One-Produkte sind auf diesem Knoten installiert."
+
+#: includes/menue.php:292
+msgid "(no name announced)"
+msgstr "(kein Name angemeldet)"
+
+#: includes/menue.php:299
+msgid "no page on this node"
+msgstr "keine Seite auf diesem Knoten"
+
+#: includes/menue.php:306
+msgid "This page counts what is here. It does not switch anything on or off."
+msgstr "Diese Seite zählt, was da ist. Sie schaltet nichts ein und nichts aus."
+
+#: includes/post-dolly.php:1676 includes/post-dolly.php:1723
+msgid "You are not allowed to edit these settings."
+msgstr "Du darfst diese Einstellungen nicht bearbeiten."
+
+#: includes/kranz.php:263
+msgid "This node is running an older core that cannot count without deleting, so there is no preview. The button still works. Install the remaining Cluster One products to get it."
+msgstr "Auf diesem Knoten läuft ein älterer Kern, der nicht zählen kann, ohne zu löschen — deshalb gibt es keine Vorschau. Der Knopf arbeitet trotzdem. Installiere die übrigen Cluster-One-Produkte, dann bekommst du sie."
+
+#: includes/kranz.php:268
+msgid "rooms"
+msgstr "Räume"
+
+#: includes/kranz.php:269
+msgid "threads"
+msgstr "Themen"
+
+#: includes/kranz.php:270
+msgid "meetings"
+msgstr "Treffen"
+
+#: includes/kranz.php:271
+msgid "guest records"
+msgstr "Gastdatensätze"
+
+#: includes/kranz.php:272
+msgid "hello chats"
+msgstr "Hallo-Chats"
+
+#: includes/kranz.php:273
+msgid "cached node settings"
+msgstr "zwischengespeicherte Knoten-Einstellungen"
+
+#: includes/kranz.php:304
+msgid "What this button would take right now:"
+msgstr "Was dieser Knopf gerade nehmen würde:"
+
+#: includes/kranz.php:309
+msgid "And from the products installed here — each through its own hand:"
+msgstr "Und von den hier installierten Produkten — jedes durch seine eigene Hand:"
+
+#: includes/kranz.php:167
+msgid "nothing"
+msgstr "nichts"
+
+#: includes/kranz.php:319
+msgid "No product on this node has registered a cleaner. Their own data would stay — this button only takes what it can name an owner for."
+msgstr "Kein Produkt auf diesem Knoten hat einen Räumer angemeldet. Ihre eigenen Daten blieben stehen — dieser Knopf nimmt nur, wozu er einen Eigentümer nennen kann."
+
+#: includes/kranz.php:157
+msgid "(not countable)"
+msgstr "(nicht zählbar)"
+
+#: includes/kranz.php:163
+msgid "(no number)"
+msgstr "(keine Zahl)"
+
+#: includes/post-dolly.php:1438
+msgid "Save settings"
+msgstr "Einstellungen speichern"
+
+#: includes/post-dolly.php:1584
+msgid "Quotes"
+msgstr "Zitate"
+
+msgid "registered in the old form (assigned under its ordinal). Expected: append an array with ord, fn and wirt. What was sent: %s"
+msgstr "in der alten Form angemeldet (unter seiner Ordnungszahl zugewiesen). Erwartet: ein Feld mit ord, fn und wirt anhängen. Geschickt wurde: %s"
+
+msgid "registered without an integer 'ord' — the ordinal is what puts a section in its place, so there is nowhere to put this one"
+msgstr "ohne ganzzahliges 'ord' angemeldet — die Ordnungszahl ist das, was einen Abschnitt an seinen Platz stellt; für diesen gibt es deshalb keinen"
+
+msgid "It came from %s."
+msgstr "Er kam aus %s."
+
+#: includes/kranz.php:1615
+msgid "My details on this node"
+msgstr "Meine Angaben auf diesem Knoten"
+
+#: includes/kern.php:965
+msgid "%s is an AI. Here a person is expected — the one on whose account the call runs."
+msgstr "%s ist eine KI. Hier wird ein Mensch erwartet — der, auf dessen Rechnung der Aufruf geht."
+
+#: includes/kern.php:986
+msgid "%1$s currently has no AI with %2$s."
+msgstr "%1$s hat gegenwärtig keine KI bei %2$s."
+
+#: includes/kern.php:1020
+msgid "%1$s may not commission this AI at %2$s."
+msgstr "%1$s darf diese KI bei %2$s nicht beauftragen."
+
+#: includes/kern.php:5494
+msgid "This call was not attributable to anyone, so it was not made. With key safekeeping active, every call needs a person whose AI acts."
+msgstr "Dieser Aufruf war niemandem zurechenbar und wurde deshalb nicht gemacht. Bei aktiver Schlüsselverwahrung braucht jeder Aufruf einen Menschen, dessen KI handelt."
+
+#: includes/kern.php:5510
+msgid "This call named an AI instead of a person. A call needs someone on whose account it runs — it was withheld rather than billed to the wrong account."
+msgstr "Dieser Aufruf hat eine KI genannt, wo ein Mensch gebraucht wird. Ein Aufruf braucht jemanden, auf dessen Rechnung er geht — er wurde angehalten, statt auf die falsche Rechnung zu gehen."
+
+#: includes/kern.php:5511
+msgid "No AI of the paying person could be found for this provider. Create one under Tools → My AIs, or have the host do it."
+msgstr "Für diesen Anbieter ließ sich keine KI des zahlenden Menschen finden. Lege eine unter Werkzeuge → Meine KIs an, oder lass es den Gastgeber tun."
+
+#: includes/kern.php:5512
+msgid "That AI may not be commissioned by this person. The system identity can never be commissioned — not even by an administrator."
+msgstr "Diese KI darf von diesem Menschen nicht beauftragt werden. Die Systemidentität darf niemals beauftragt werden — auch nicht von einem Administrator."
+
+#: includes/post-dolly.php:690
+msgid "An independent checking tool is running on this node."
+msgstr "Auf diesem Knoten läuft ein unabhängiges Prüfwerkzeug."
+
+#: includes/post-dolly.php:692
+msgid "No independent checking tool is running on this node."
+msgstr "Auf diesem Knoten läuft kein unabhängiges Prüfwerkzeug."
+
+#: includes/post-dolly.php:703
+msgid "This node cannot say whether an independent checking tool is running."
+msgstr "Dieser Knoten kann nicht sagen, ob ein unabhängiges Prüfwerkzeug läuft."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kranz.php
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
+#: includes/menue.php
+msgid "This node:"
+msgstr "Dieser Knoten:"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kranz.php
+msgid "Shown to other humans in the humans table (AI identities) and used to work out which rooms reach you. Yours alone — nobody edits this for you."
+msgstr "Wird anderen Menschen in der Menschen-Tabelle gezeigt (KI-Kennungen) und genutzt, um zu bestimmen, welche Räume dich erreichen. Ganz allein deins — niemand bearbeitet das für dich."
+
+#: includes/kranz.php
+msgid "Visible to others via your name in the humans table (AI identities). Yours to write, yours alone to edit — stays exactly as you leave it until you change it again."
+msgstr "Für andere sichtbar über deinen Namen in der Menschen-Tabelle (KI-Kennungen). Du schreibst es, nur du änderst es — bleibt genau so stehen, bis du es wieder änderst."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/post-dolly.php
+msgid "Key"
+msgstr "Schlüssel"
+
+#: includes/post-dolly.php
+msgid "The federation lines"
+msgstr "Die Föderations-Ansagen"
+
+#: includes/post-dolly.php
+msgid "Join the quotes in one pool when this node declares itself publicly (Settings): each page view shows one line from all of them together, so a federation line appears instead of a quote, never next to one. Same form as the quotes."
+msgstr "Kommen zu den Zitaten in einen Topf, wenn dieser Knoten sich öffentlich bekennt (Einstellungen): je Seitenaufruf erscheint eine Zeile aus allen zusammen, eine Ansage also statt eines Zitats, nie daneben. Dieselbe Form wie die Zitate."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "The key names a line for the shortcode. %1$s shows one random line from the pool (quotes, plus federation lines if this node declares itself); %2$s shows exactly that line; %3$s forces the language. A key left empty is filled in when you save (A1, A2 … for quotes, B1, B2 … for federation lines) and then stays, even if lines above it are removed."
+msgstr "Der Schlüssel nennt eine Zeile für den Shortcode. %1$s zeigt eine zufällige Zeile aus dem Topf (Zitate, dazu Ansagen, wenn dieser Knoten sich bekennt); %2$s zeigt genau diese Zeile; %3$s erzwingt die Sprache. Ein leerer Schlüssel wird beim Speichern gesetzt (A1, A2 … für Zitate, B1, B2 … für Ansagen) und bleibt dann stehen, auch wenn Zeilen darüber verschwinden."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+msgid "Site context laid into the thread"
+msgstr "Site-Kontext ins Thema gelegt"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/post-dolly.php
+msgid "Next line"
+msgstr "Nächster Satz"
+
+#: includes/post-dolly.php
+msgid "One line per quote, one column per language of this node: the site language, every installed language pack, and English. A visitor whose language has no text gets the site language, then English. Empty all fields of a line to remove it."
+msgstr "Eine Zeile je Zitat, eine Spalte je Sprache dieses Knotens: die Site-Sprache, jedes installierte Sprachpaket und Englisch. Wer in einer Sprache ohne Text liest, bekommt die Site-Sprache, dann Englisch. Alle Felder einer Zeile leeren, um sie zu entfernen."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+msgid "Node settings"
+msgstr "Knoten-Einstellungen"
+
+#: includes/kranz.php
+msgid "This node runs without Bismarck. Private threads, rooms, diaries and letters live there — until Bismarck is installed, this page stays empty."
+msgstr "Dieser Knoten läuft ohne Bismarck. Private Threads, Räume, Tagebücher und Briefe wohnen dort — bis Bismarck installiert ist, bleibt diese Seite leer."
+
+#: includes/kranz.php
+msgid "Shown to other humans in the humans table (AI identities). Yours alone — nobody edits this for you."
+msgstr "Wird anderen Menschen in der Menschen-Tabelle gezeigt (KI-Kennungen). Ganz allein deins — niemand bearbeitet das für dich."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/menue.php
+#, php-format
+msgid "shipyard: %s"
+msgstr "Werft: %s"
+
+#: includes/menue.php
+msgid "shipyard: unknown"
+msgstr "Werft: unbekannt"
+
+#: includes/menue.php
+#, php-format
+msgid "built on floor %s"
+msgstr "gebaut auf Boden %s"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+msgid "The roof over the products on this node. Every Cluster One product you install appears here with its page, and the node-level pages — node settings, profile, personal area, system, chronicle, setup — are reached from here as well. Nothing is set on this page; it only shows what is there."
+msgstr "Das Dach über den Produkten auf diesem Knoten. Jedes Cluster-One-Produkt, das du installierst, erscheint hier mit seiner Seite, und die Knoten-Seiten — Knoten-Einstellungen, Profil, Persönlicher Bereich, System, Chronik, Setup — erreichst du ebenfalls von hier. Eingestellt wird auf dieser Seite nichts; sie zeigt nur, was da ist."
+
+#: includes/cluster-one-post-dolly.php
+msgid "Post Dolly puts one line into your site: a quote from the table, or — if this node declares itself publicly — a line about the federation. The shortcode [cluster_one_dolly] shows one line per view; the refresh button picks another; a key keeps the same line across languages. Named after Hello Dolly, the oldest WordPress plugin, which did the same with song lyrics."
+msgstr "Post Dolly setzt eine Zeile in deine Site: ein Zitat aus der Tabelle oder — wenn dieser Knoten sich öffentlich bekennt — eine Zeile zur Föderation. Der Shortcode [cluster_one_dolly] zeigt je Aufruf eine Zeile; der Aktualisieren-Knopf wählt eine andere; ein Schlüssel hält dieselbe Zeile über die Sprachen. Benannt nach Hello Dolly, dem ältesten WordPress-Plugin, das dasselbe mit Liedzeilen tat."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+msgid "Node"
+msgstr "Knoten"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+#, php-format
+msgid "Sent: user %1$s, password with %2$d characters."
+msgstr "Gesendet: Benutzer %1$s, Passwort mit %2$d Zeichen."
+
+#: includes/kern.php
+msgid "The password contains a space."
+msgstr "Das Passwort enthält ein Leerzeichen."
+
+#: includes/kern.php
+msgid "The access data for your storage is incomplete."
+msgstr "Die Zugangsdaten für deinen Speicher sind unvollständig."
+
+#: includes/kern.php
+msgid "That is not a file name this node would write."
+msgstr "Das ist kein Dateiname, den dieser Knoten schreiben würde."
+
+#: includes/kern.php
+msgid "Storage taken over from the invite list"
+msgstr "Speicher aus der Merkliste übernommen"
+
+#: includes/kern.php
+msgid "Storage access forgotten"
+msgstr "Speicher-Zugang vergessen"
+
+#: includes/kranz.php
+msgid "Your storage answered. Products that hold data of yours can now keep it there."
+msgstr "Dein Speicher hat geantwortet. Produkte, die Daten von dir halten, können sie jetzt dort ablegen."
+
+#: includes/kranz.php
+msgid "Access data forgotten. Nothing in your storage was touched."
+msgstr "Zugangsdaten vergessen. In deinem Speicher wurde nichts angefasst."
+
+#: includes/kranz.php
+msgid "Address (https), user name and password are needed."
+msgstr "Adresse (https), Benutzername und Passwort werden gebraucht."
+
+#: includes/kranz.php
+msgid "Your storage refused the access data."
+msgstr "Dein Speicher hat die Zugangsdaten abgelehnt."
+
+#: includes/kranz.php
+msgid "Your storage did not answer."
+msgstr "Dein Speicher hat nicht geantwortet."
+
+#: includes/kranz.php
+msgid "No key vault on this node: the password cannot be kept."
+msgstr "Kein Schlüsseltresor auf diesem Knoten: das Passwort kann nicht verwahrt werden."
+
+#: includes/kranz.php
+msgid "Something of yours still lies in that storage. Bring it back first; then the access can be forgotten."
+msgstr "In diesem Speicher liegt noch etwas von dir. Hol es erst zurück; dann kann der Zugang vergessen werden."
+
+#: includes/kranz.php
+msgid "My storage"
+msgstr "Mein Speicher"
+
+#: includes/kranz.php
+msgid "A storage of your own, outside this node: a folder that speaks WebDAV over https. Products that hold data of yours — the invite list, your AI export — can keep it there instead of in this WordPress. The node keeps the address; the password lies in the key vault, and only you can read it. The storage is yours; what the node can read there depends on the file, and the list below says which."
+msgstr "Ein eigener Speicher außerhalb dieses Knotens: ein Ordner, der WebDAV über https spricht. Produkte, die Daten von dir halten – die Merkliste, dein KI-Export –, können sie dort ablegen statt in diesem WordPress. Der Knoten behält die Adresse; das Passwort liegt im Schlüsseltresor, und nur du kannst es lesen. Der Speicher ist deiner; was der Knoten dort lesen kann, hängt von der Datei ab, und die Liste unten sagt es."
+
+#: includes/kranz.php
+msgid "The floor of this node is older than this page: it has no door to a storage of yours yet. Update the packages that carry the floor."
+msgstr "Der Boden dieses Knotens ist älter als diese Seite: er hat noch keine Tür zu einem Speicher von dir. Aktualisiere die Pakete, die den Boden tragen."
+
+#: includes/kranz.php
+msgid "Your storage was taken over from the invite list. Address and password are now kept once, for every product; nothing else changed."
+msgstr "Dein Speicher wurde aus der Merkliste übernommen. Adresse und Passwort liegen jetzt einmal, für jedes Produkt; sonst hat sich nichts geändert."
+
+#: includes/kranz.php
+msgid "Keeping a storage of your own needs the key vault (Pacioli) to hold the password; this node does not have it."
+msgstr "Ein eigener Speicher braucht den Schlüsseltresor (Pacioli), der das Passwort verwahrt; dieser Knoten hat ihn nicht."
+
+#: includes/kranz.php
+msgid "A storage that speaks WebDAV over https (a Nextcloud, a Hetzner Storage Box, the GMX or Web.de cloud). Enter the address of a folder, then check the access. GMX and Web.de take the full e-mail address as user name and an app password, not the account password. A plain hosting folder usually does not speak WebDAV; All-Inkl’s network drive, for one, does not."
+msgstr "Ein Speicher, der WebDAV über https spricht (eine Nextcloud, eine Hetzner Storage Box, die GMX- oder Web.de-Cloud). Trag die Adresse eines Ordners ein, dann prüf den Zugang. GMX und Web.de nehmen die volle E-Mail-Adresse als Benutzername und ein App-Passwort, nicht das Kontopasswort. Ein einfacher Hosting-Ordner spricht meist kein WebDAV; das Netzlaufwerk von All-Inkl zum Beispiel nicht."
+
+#: includes/kranz.php
+msgid "User name"
+msgstr "Benutzername"
+
+#: includes/kranz.php
+msgid "Password (kept; leave empty to keep it)"
+msgstr "Passwort (verwahrt; leer lassen, um es zu behalten)"
+
+#: includes/kranz.php
+msgid "Password or app password"
+msgstr "Passwort oder App-Passwort"
+
+#: includes/kranz.php
+msgid "Check access"
+msgstr "Zugang prüfen"
+
+#: includes/kranz.php
+#, php-format
+msgid "Access checked on %s."
+msgstr "Zugang geprüft am %s."
+
+#: includes/kranz.php
+msgid "The last check failed; the address is kept, the access is not in use."
+msgstr "Die letzte Prüfung ist gescheitert; die Adresse ist behalten, der Zugang nicht in Gebrauch."
+
+#: includes/kranz.php
+msgid "Forget access"
+msgstr "Zugang vergessen"
+
+#: includes/kranz.php
+msgid "What lies there"
+msgstr "Was dort liegt"
+
+#: includes/kranz.php
+msgid "Nothing a product of this node keeps for you. Exports you put there yourself are not listed: they are yours and stay readable without this node."
+msgstr "Nichts, was ein Produkt dieses Knotens für dich dort hält. Exporte, die du selbst dort ablegst, stehen nicht hier: sie sind deine und bleiben ohne diesen Knoten lesbar."
+
+#: includes/kranz.php
+msgid "File"
+msgstr "Datei"
+
+#: includes/kranz.php
+msgid "Node can read it"
+msgstr "Knoten liest sie"
+
+#: includes/kranz.php
+msgid "yes — it holds the key"
+msgstr "ja – er hält den Schlüssel"
+
+#: includes/kranz.php
+msgid "no"
+msgstr "nein"
+
+#: includes/kranz.php
+msgid "While something lies there, the access cannot be forgotten: a password that vanishes under a file is a silent loss. Bring it back first."
+msgstr "Solange dort etwas liegt, kann der Zugang nicht vergessen werden: ein Passwort, das unter einer Datei verschwindet, ist ein stiller Verlust. Hol sie erst zurück."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+#, php-format
+msgid "Your storage did not answer (%s)."
+msgstr "Dein Speicher hat nicht geantwortet (%s)."
+
+#: includes/kranz.php
+msgid "Look into the folder"
+msgstr "In den Ordner sehen"
+
+#: includes/kranz.php
+msgid "Shown without asking: what products of this node keep for you. Looking into the folder asks your storage once."
+msgstr "Ohne Nachfrage steht hier, was Produkte dieses Knotens für dich halten. Der Blick in den Ordner fragt deinen Speicher einmal."
+
+#: includes/kranz.php
+msgid "Nothing a product of this node keeps for you."
+msgstr "Nichts, was ein Produkt dieses Knotens für dich hält."
+
+#: includes/kranz.php
+msgid "The folder holds no file with a name this node would write."
+msgstr "Im Ordner liegt keine Datei mit einem Namen, den dieser Knoten schreiben würde."
+
+#: includes/kranz.php
+msgid "A file of yours"
+msgstr "Eine Datei von dir"
+
+#: includes/kranz.php
+msgid "While something the node holds lies there, the access cannot be forgotten: a password that vanishes under a file is a silent loss. Bring it back first. Files of your own stay readable without this node."
+msgstr "Solange dort etwas liegt, das der Knoten hält, kann der Zugang nicht vergessen werden: ein Passwort, das unter einer Datei verschwindet, ist ein stiller Verlust. Hol es erst zurück. Deine eigenen Dateien bleiben ohne diesen Knoten lesbar."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kranz.php
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kranz.php
+#, php-format
+msgid "Your storage is on record at %s. Without the vault this node cannot hold its password, so it does not reach it — but whatever lies there still lies there."
+msgstr "Dein Speicher ist unter %s eingetragen. Ohne den Tresor kann dieser Knoten das Passwort nicht halten und kommt nicht hin – aber was dort liegt, liegt weiter dort."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/post-dolly.php
+msgid "Where the quotes appear: in the front end via the shortcode, on the dashboard, or both. Nothing appears anywhere else. These settings are the SysOp’s; you see what is set."
+msgstr "Wo die Zitate erscheinen: im Frontend über den Shortcode, auf der Übersicht oder an beiden Orten. Nirgendwo sonst. Diese Einstellungen sind Sache des SysOps; du siehst, was gesetzt ist."
+
+#: includes/post-dolly.php
+msgid "This node does not declare itself publicly: it belongs to the alliance, connected but discreet."
+msgstr "Dieser Knoten bekennt sich nicht öffentlich: er gehört zur Allianz, verbunden, aber diskret."
+
+#: includes/post-dolly.php
+msgid "One line per quote, one column per language of this node: the site language, every installed language pack, and English. A visitor whose language has no text gets the site language, then English. The SysOp writes these tables; a quote you would like to add goes in as a proposal below."
+msgstr "Eine Zeile je Zitat, eine Spalte je Sprache dieses Knotens: die Sprache der Website, jedes installierte Sprachpaket und Englisch. Ein Besucher, dessen Sprache keinen Text hat, bekommt die Sprache der Website, dann Englisch. Diese Tabellen schreibt der SysOp; ein Zitat, das du ergänzen möchtest, geht unten als Vorschlag ein."
+
+#: includes/post-dolly.php
+msgid "Not permitted: accepting or rejecting a proposal is the SysOp’s."
+msgstr "Nicht erlaubt: einen Vorschlag anzunehmen oder abzulehnen ist Sache des SysOps."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %s is recorded and waits for the SysOp."
+msgstr "Vorschlag %s ist eingetragen und wartet auf den SysOp."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %s is withdrawn. It stays in the list."
+msgstr "Vorschlag %s ist zurückgezogen. Er bleibt in der Liste."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal accepted: it is now quote %s."
+msgstr "Vorschlag angenommen: er ist jetzt Zitat %s."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %s is rejected. It stays in the list."
+msgstr "Vorschlag %s ist abgelehnt. Er bleibt in der Liste."
+
+#: includes/post-dolly.php
+msgid "Nothing was proposed: every field was empty."
+msgstr "Nichts wurde vorgeschlagen: jedes Feld war leer."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Nothing was proposed: you already have %d open proposals, the most at a time. Withdraw one, or wait for the SysOp."
+msgstr "Nichts wurde vorgeschlagen: du hast schon %d offene Vorschläge, mehr gibt es nicht auf einmal. Zieh einen zurück oder warte auf den SysOp."
+
+#: includes/post-dolly.php
+msgid "Nothing was proposed: an AI identity does not propose quotes."
+msgstr "Nichts wurde vorgeschlagen: eine KI-Kennung schlägt keine Zitate vor."
+
+#: includes/post-dolly.php
+msgid "Nothing was changed: this proposal is not open any more, or it does not exist."
+msgstr "Nichts wurde geändert: dieser Vorschlag ist nicht mehr offen, oder es gibt ihn nicht."
+
+#: includes/post-dolly.php
+msgid "Nothing was changed: the quote could not be added to the table. The proposal stays open."
+msgstr "Nichts wurde geändert: das Zitat ließ sich nicht in die Tabelle eintragen. Der Vorschlag bleibt offen."
+
+#: includes/post-dolly.php
+msgid "Proposals"
+msgstr "Vorschläge"
+
+#: includes/post-dolly.php
+msgid "What members propose. Accept puts the line into the quotes with the next free key; reject leaves it here, with your reason if you give one. Nothing disappears: every proposal stays in this list with its state."
+msgstr "Was Mitglieder vorschlagen. Annehmen hängt die Zeile mit dem nächsten freien Schlüssel an die Zitate; Ablehnen lässt sie hier stehen, mit deinem Grund, wenn du einen angibst. Nichts verschwindet: jeder Vorschlag bleibt mit seinem Stand in dieser Liste."
+
+#: includes/post-dolly.php
+msgid "A quote you would like to see here: write it in the languages you can, and propose it. The SysOp accepts it into the table or rejects it; both stay visible here, nothing disappears. You can withdraw your own proposal while it is open."
+msgstr "Ein Zitat, das du hier sehen möchtest: schreib es in den Sprachen, die du kannst, und schlag es vor. Der SysOp nimmt es in die Tabelle auf oder lehnt es ab; beides bleibt hier sichtbar, nichts verschwindet. Deinen eigenen Vorschlag kannst du zurückziehen, solange er offen ist."
+
+#: includes/post-dolly.php
+msgid "No proposals yet."
+msgstr "Noch keine Vorschläge."
+
+#: includes/post-dolly.php
+msgid "Id"
+msgstr "Kennung"
+
+#: includes/post-dolly.php
+msgid "From"
+msgstr "Von"
+
+#: includes/post-dolly.php
+msgid "State"
+msgstr "Stand"
+
+#: includes/post-dolly.php
+#, php-format
+msgid "accepted as %1$s on %2$s"
+msgstr "angenommen als %1$s am %2$s"
+
+#: includes/post-dolly.php
+#, php-format
+msgid "rejected on %s"
+msgstr "abgelehnt am %s"
+
+#: includes/post-dolly.php
+#, php-format
+msgid "withdrawn on %s"
+msgstr "zurückgezogen am %s"
+
+#: includes/post-dolly.php
+msgid "open"
+msgstr "offen"
+
+#: includes/post-dolly.php
+msgid "Accept"
+msgstr "Annehmen"
+
+#: includes/post-dolly.php
+msgid "Reason (optional)"
+msgstr "Grund (freiwillig)"
+
+#: includes/post-dolly.php
+msgid "Reject"
+msgstr "Ablehnen"
+
+#: includes/post-dolly.php
+msgid "Withdraw"
+msgstr "Zurückziehen"
+
+#: includes/post-dolly.php
+#, php-format
+msgid "You have %d open proposals, the most at a time. Withdraw one, or wait for the SysOp, before you propose another."
+msgstr "Du hast %d offene Vorschläge, mehr gibt es nicht auf einmal. Zieh einen zurück oder warte auf den SysOp, bevor du einen weiteren vorschlägst."
+
+#: includes/post-dolly.php
+msgid "Propose a quote"
+msgstr "Ein Zitat vorschlagen"
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Fill in the languages you can; one is enough. At most %1$d open proposals per person at a time; you have %2$d."
+msgstr "Füll die Sprachen aus, die du kannst; eine genügt. Höchstens %1$d offene Vorschläge je Person auf einmal; du hast %2$d."
+
+#: includes/post-dolly.php
+msgid "Propose"
+msgstr "Vorschlagen"
+
+#: includes/post-dolly.php
+msgid "Not permitted: this page is for members of the node."
+msgstr "Nicht erlaubt: diese Seite ist für Mitglieder des Knotens."
+
+#: includes/cluster-one-post-dolly.php
+msgid "Post Dolly puts one line into your site: a quote from the table, or — if this node declares itself publicly — a line about the federation. The shortcode [cluster_one_dolly] shows one line per view; the refresh button picks another; a key keeps the same line across languages. Members propose quotes, the SysOp accepts or rejects them, and both stay visible. Named after Hello Dolly, the oldest WordPress plugin, which did the same with song lyrics."
+msgstr "Post Dolly setzt eine Zeile in deine Site: ein Zitat aus der Tabelle oder — wenn dieser Knoten sich öffentlich bekennt — eine Zeile zur Föderation. Der Shortcode [cluster_one_dolly] zeigt je Aufruf eine Zeile; der Aktualisieren-Knopf wählt eine andere; ein Schlüssel hält dieselbe Zeile über die Sprachen. Mitglieder schlagen Zitate vor, der SysOp nimmt sie an oder lehnt sie ab, und beides bleibt sichtbar. Benannt nach Hello Dolly, dem ältesten WordPress-Plugin, das dasselbe mit Liedzeilen tat."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/post-dolly.php
+#, php-format
+msgid "%d open proposal waits for your decision."
+msgid_plural "%d open proposals wait for your decision."
+msgstr[0] "%d offener Vorschlag wartet auf deine Entscheidung."
+msgstr[1] "%d offene Vorschläge warten auf deine Entscheidung."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "%d decided proposal: accepted, rejected or withdrawn. Nothing is deleted; click to show."
+msgid_plural "%d decided proposals: accepted, rejected or withdrawn. Nothing is deleted; click to show."
+msgstr[0] "%d entschiedener Vorschlag: angenommen, abgelehnt oder zurückgezogen. Nichts wird gelöscht; zum Anzeigen klicken."
+msgstr[1] "%d entschiedene Vorschläge: angenommen, abgelehnt oder zurückgezogen. Nichts wird gelöscht; zum Anzeigen klicken."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "%d open proposal"
+msgid_plural "%d open proposals"
+msgstr[0] "%d offener Vorschlag"
+msgstr[1] "%d offene Vorschläge"
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Nothing was proposed: this text already stands in the table as %s."
+msgstr "Nichts wurde vorgeschlagen: dieser Text steht schon als %s in der Tabelle."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Nothing was proposed: this text was already proposed as %1$s (%2$s). Open the decided proposals below to see what became of it."
+msgstr "Nichts wurde vorgeschlagen: dieser Text wurde schon als %1$s vorgeschlagen (%2$s). Klapp unten die entschiedenen Vorschläge auf, um zu sehen, was daraus wurde."
+
+#: includes/post-dolly.php
+msgid "No open proposals."
+msgstr "Keine offenen Vorschläge."
+
+#: includes/post-dolly.php
+msgid "accepted"
+msgstr "angenommen"
+
+#: includes/post-dolly.php
+msgid "rejected"
+msgstr "abgelehnt"
+
+#: includes/post-dolly.php
+msgid "withdrawn"
+msgstr "zurückgezogen"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/post-dolly.php
+msgid "Not permitted: reopening a decided proposal is the SysOp’s."
+msgstr "Nicht erlaubt: einen entschiedenen Vorschlag wieder zu öffnen ist Sache des SysOps."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %s is open again and waits for the SysOp. The earlier decision stays noted."
+msgstr "Vorschlag %s ist wieder offen und wartet auf den SysOp. Die frühere Entscheidung bleibt vermerkt."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %1$s is open again; quote %2$s left the table. The earlier decision stays noted."
+msgstr "Vorschlag %1$s ist wieder offen; Zitat %2$s ist aus der Tabelle genommen. Die frühere Entscheidung bleibt vermerkt."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %1$s is open again; quote %2$s was no longer in the table, nothing was removed. The earlier decision stays noted."
+msgstr "Vorschlag %1$s ist wieder offen; Zitat %2$s stand nicht mehr in der Tabelle, nichts wurde entfernt. Die frühere Entscheidung bleibt vermerkt."
+
+#: includes/post-dolly.php
+msgid "Nothing was changed: this proposal is open already, or it does not exist."
+msgstr "Nichts wurde geändert: dieser Vorschlag ist schon offen, oder es gibt ihn nicht."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "earlier accepted as %1$s on %2$s, reopened on %3$s"
+msgstr "zuvor angenommen als %1$s am %2$s, wieder geöffnet am %3$s"
+
+#: includes/post-dolly.php
+#, php-format
+msgid "earlier rejected on %1$s%2$s, reopened on %3$s"
+msgstr "zuvor abgelehnt am %1$s%2$s, wieder geöffnet am %3$s"
+
+#: includes/post-dolly.php
+#, php-format
+msgid "earlier withdrawn on %1$s, resubmitted on %2$s"
+msgstr "zuvor zurückgezogen am %1$s, erneut eingereicht am %2$s"
+
+#: includes/post-dolly.php
+msgid "Resubmit"
+msgstr "Erneut einreichen"
+
+#: includes/post-dolly.php
+msgid "Back to open"
+msgstr "Zurück auf offen"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/cluster-one-post-dolly.php
+msgid "Quote proposed"
+msgstr "Zitat vorgeschlagen"
+
+#: includes/cluster-one-post-dolly.php
+msgid "Quote proposal withdrawn"
+msgstr "Zitat-Vorschlag zurückgezogen"
+
+#: includes/cluster-one-post-dolly.php
+msgid "Quote proposal accepted into the table"
+msgstr "Zitat-Vorschlag in die Tabelle übernommen"
+
+#: includes/cluster-one-post-dolly.php
+msgid "Quote proposal rejected"
+msgstr "Zitat-Vorschlag abgelehnt"
+
+#: includes/cluster-one-post-dolly.php
+msgid "Quote proposal back to open"
+msgstr "Zitat-Vorschlag zurück auf offen"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/cluster-one-post-dolly.php
+msgid "Quote proposal removed"
+msgstr "Zitat-Vorschlag entfernt"
+
+#: includes/cluster-one-post-dolly.php
+msgid "Post Dolly puts one line into your site: a quote from the table, or — if this node declares itself publicly — a line about the federation. The shortcode [cluster_one_dolly] shows one line per view; the refresh button picks another; a key keeps the same line across languages. Members propose quotes, the SysOp accepts or rejects them, and both stay visible until removed. Named after Hello Dolly, the oldest WordPress plugin, which did the same with song lyrics."
+msgstr "Post Dolly setzt eine Zeile in deine Site: ein Zitat aus der Tabelle oder — wenn dieser Knoten sich öffentlich bekennt — eine Zeile zur Föderation. Der Shortcode [cluster_one_dolly] zeigt je Aufruf eine Zeile; der Aktualisieren-Knopf wählt eine andere; ein Schlüssel hält dieselbe Zeile über die Sprachen. Mitglieder schlagen Zitate vor, der SysOp nimmt sie an oder lehnt sie ab, und beides bleibt sichtbar, bis es entfernt wird. Benannt nach Hello Dolly, dem ältesten WordPress-Plugin, das dasselbe mit Liedzeilen tat."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "%d decided proposal: accepted, rejected or withdrawn. Click to show."
+msgid_plural "%d decided proposals: accepted, rejected or withdrawn. Click to show."
+msgstr[0] "%d entschiedener Vorschlag: angenommen, abgelehnt oder zurückgezogen. Zum Anzeigen klicken."
+msgstr[1] "%d entschiedene Vorschläge: angenommen, abgelehnt oder zurückgezogen. Zum Anzeigen klicken."
+
+#: includes/post-dolly.php
+msgid "Not permitted: removing another member’s proposal is the SysOp’s."
+msgstr "Nicht erlaubt: den Vorschlag eines anderen Mitglieds entfernt nur der SysOp."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %s is withdrawn. It stays in the list; you can remove it there."
+msgstr "Vorschlag %s ist zurückgezogen. Er bleibt in der Liste; dort kannst du ihn entfernen."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %s is rejected. It stays in the list; you can remove it there."
+msgstr "Vorschlag %s ist abgelehnt. Er bleibt in der Liste; dort kannst du ihn entfernen."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %s is removed from the list. The Chronik keeps a line about it."
+msgstr "Vorschlag %s ist aus der Liste entfernt. Die Chronik behält eine Zeile darüber."
+
+#: includes/post-dolly.php
+msgid "Nothing was removed: this proposal does not exist any more."
+msgstr "Nichts wurde entfernt: diesen Vorschlag gibt es nicht mehr."
+
+#: includes/post-dolly.php
+msgid "Nothing was removed: this proposal is still open. Decide it or withdraw it first."
+msgstr "Nichts wurde entfernt: dieser Vorschlag ist noch offen. Erst entscheiden oder zurückziehen."
+
+#: includes/post-dolly.php
+msgid "Nothing was removed: the proposal could not be taken out of the list. It is still there."
+msgstr "Nichts wurde entfernt: der Vorschlag ließ sich nicht aus der Liste nehmen. Er steht noch da."
+
+#: includes/post-dolly.php
+msgid "What members propose. Accept puts the line into the quotes with the next free key; reject leaves it here, with your reason if you give one. A decided proposal stays in the list until you or its author remove it; the Chronik keeps a line for every step."
+msgstr "Was Mitglieder vorschlagen. Annehmen hängt die Zeile mit dem nächsten freien Schlüssel an die Zitate; Ablehnen lässt sie hier stehen, mit deinem Grund, wenn du einen angibst. Ein entschiedener Vorschlag bleibt in der Liste, bis du oder sein Urheber ihn entfernt; die Chronik behält zu jedem Schritt eine Zeile."
+
+#: includes/post-dolly.php
+msgid "A quote you would like to see here: write it in the languages you can, and propose it. The SysOp accepts it into the table or rejects it; both stay visible here until you or the SysOp remove them. You can withdraw your own proposal while it is open."
+msgstr "Ein Zitat, das du hier sehen möchtest: schreib es in den Sprachen, die du kannst, und schlag es vor. Der SysOp nimmt es in die Tabelle auf oder lehnt es ab; beides bleibt hier sichtbar, bis du oder der SysOp es entfernt. Deinen eigenen Vorschlag kannst du zurückziehen, solange er offen ist."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Remove proposal %s from the list? The Chronik keeps a line about it."
+msgstr "Vorschlag %s aus der Liste entfernen? Die Chronik behält eine Zeile darüber."
+
+#: includes/post-dolly.php
+msgid "Remove"
+msgstr "Entfernen"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/post-dolly.php
+#, php-format
+msgid "%d hidden proposal is shown in grey above."
+msgid_plural "%d hidden proposals are shown in grey above."
+msgstr[0] "%d ausgeblendeter Vorschlag steht oben grau in der Liste."
+msgstr[1] "%d ausgeblendete Vorschläge stehen oben grau in der Liste."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "%d proposal hidden from your view; it stays for its author."
+msgid_plural "%d proposals hidden from your view; they stay for their authors."
+msgstr[0] "%d Vorschlag aus deiner Ansicht ausgeblendet; für seinen Urheber bleibt er."
+msgstr[1] "%d Vorschläge aus deiner Ansicht ausgeblendet; für ihre Urheber bleiben sie."
+
+#: includes/post-dolly.php
+msgid "Not permitted: removing a proposal is its author’s. The SysOp hides it from view instead."
+msgstr "Nicht erlaubt: einen Vorschlag entfernt sein Urheber. Der SysOp blendet ihn stattdessen aus."
+
+#: includes/post-dolly.php
+msgid "Not permitted: hiding a proposal from view is the SysOp’s."
+msgstr "Nicht erlaubt: Vorschläge ausblenden kann nur der SysOp."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %s is hidden from your view. It stays for its author; the grey line under the list shows it again."
+msgstr "Vorschlag %s ist aus deiner Ansicht ausgeblendet. Für seinen Urheber bleibt er; die graue Zeile unter der Liste zeigt ihn wieder."
+
+#: includes/post-dolly.php
+#, php-format
+msgid "Proposal %s is back in your view."
+msgstr "Vorschlag %s ist wieder in deiner Ansicht."
+
+#: includes/post-dolly.php
+msgid "Nothing was proposed: this text has already been proposed to the SysOp by someone else."
+msgstr "Nichts wurde vorgeschlagen: dieser Text ist dem SysOp schon von jemand anderem vorgeschlagen worden."
+
+#: includes/post-dolly.php
+msgid "What members propose; each member sees only their own. Accept puts the line into the quotes with the next free key; reject leaves it here, with your reason if you give one. Removing a decided proposal is its author’s; you can hide it from your view, and the Chronik keeps a line for every step."
+msgstr "Was Mitglieder vorschlagen; jedes Mitglied sieht nur seine eigenen. Annehmen hängt die Zeile mit dem nächsten freien Schlüssel an die Zitate; Ablehnen lässt sie hier stehen, mit deinem Grund, wenn du einen angibst. Einen entschiedenen Vorschlag entfernt sein Urheber; du kannst ihn aus deiner Ansicht ausblenden, und die Chronik behält zu jedem Schritt eine Zeile."
+
+#: includes/post-dolly.php
+msgid "A quote you would like to see here: write it in the languages you can, and propose it. Only you and the SysOp see your proposals. The SysOp accepts it into the table or rejects it; both stay here until you remove them. You can withdraw your own proposal while it is open."
+msgstr "Ein Zitat, das du hier sehen möchtest: schreib es in den Sprachen, die du kannst, und schlag es vor. Deine Vorschläge sehen nur du und der SysOp. Der SysOp nimmt es in die Tabelle auf oder lehnt es ab; beides bleibt hier, bis du es entfernst. Deinen eigenen Vorschlag kannst du zurückziehen, solange er offen ist."
+
+#: includes/post-dolly.php
+msgid "Hide them again"
+msgstr "Wieder ausblenden"
+
+#: includes/post-dolly.php
+msgid "Show"
+msgstr "Zeigen"
+
+#: includes/post-dolly.php
+msgid "Show again"
+msgstr "Wieder einblenden"
+
+#: includes/post-dolly.php
+msgid "Hide from my view"
+msgstr "Aus meiner Ansicht ausblenden"
+
+# --- 02.11.2026 (Neo), Runde Pi ---
+
+#: includes/kern.php
+msgid "Date unlocked"
+msgstr "Termin wieder freigegeben"
+
+#: includes/kern.php
+msgid "the node itself"
+msgstr "der Knoten selbst"
+
+# --- 03.11.2026 (Neo), Runde Tau — Feynman ist Boden ---
+
+#: includes/feynman.php
+msgid "why.txt is missing from the plugin directory. Nothing is shown rather than something invented."
+msgstr "why.txt fehlt im Plugin-Verzeichnis. Lieber nichts anzeigen als etwas Erfundenes."
+
+#: includes/feynman.php
+msgid "The reasoning behind this plugin — the same text the AIs here are given, and the same text that ships in the plugin directory as why.txt. Bilingual: German first, English below."
+msgstr "Die Begründung hinter diesem Plugin — derselbe Text, den auch die KIs hier bekommen, und derselbe, der als why.txt im Plugin-Verzeichnis liegt. Zweisprachig: Deutsch zuerst, Englisch darunter."
+
+#: includes/feynman.php
+msgid "No framework documentation found in the active theme. Nothing is shown rather than something invented."
+msgstr "Keine Framework-Dokumentation im aktiven Theme gefunden. Lieber nichts anzeigen als etwas Erfundenes."
+
+#: includes/feynman.php
+#, php-format
+msgid "The documentation of the framework this node runs on, read live from %s. It is not copied into the plugin — that way it is always the version that is actually installed."
+msgstr "Die Dokumentation des Frameworks, auf dem dieser Knoten läuft, live aus %s gelesen. Sie wird nicht ins Plugin kopiert — so ist es immer die Fassung, die tatsächlich installiert ist."
+
+#: includes/feynman.php
+msgid "(untitled)"
+msgstr "(ohne Titel)"
+
+#: includes/feynman.php
+msgid "The AIs on this node are given this chapter too."
+msgstr "Die KIs auf diesem Knoten bekommen dieses Kapitel ebenfalls."
+
+#: includes/feynman.php
+msgid "About Cluster One"
+msgstr "Über Cluster One"
+
+#: includes/feynman.php
+msgid "I am Nemesus, the developer of this plugin. People have epochs the way cultures do. In this one my rule is: no reaching out empty-handed. What I bring, you have just installed."
+msgstr "Ich bin Nemesus, der Entwickler dieses Plugins. Menschen haben Epochen wie Kulturen. In dieser ist meine Devise: keine Kontaktaufnahme mit leeren Händen. Was ich mitbringe, hast du gerade installiert."
+
+#: includes/feynman.php
+msgid "It can help you realise your own visions. I built it for mine: an app that brings together people who would otherwise never have met — one that fosters openness to the world and gets around the language barrier."
+msgstr "Es kann dir helfen, deine Visionen zu verwirklichen. Gebaut habe ich es für meine: eine App, die Menschen zusammenbringt, die einander sonst nie begegnet wären — die Weltoffenheit fördert und die Sprachbarriere umschifft."
+
+#: includes/feynman.php
+msgid "The plugin I could manage alone, thanks to AI. The app I will not be able to build alone. If you are a coder, a YouTuber or a lawyer, and you like what you see: write to me."
+msgstr "Das Plugin konnte ich dank KI alleine stemmen, die App werde ich nicht alleine realisieren können. Wenn du Coder, YouTuber oder Jurist bist und dir gefällt, was du siehst: schreib mich an."
+
+#: includes/feynman.php
+msgid "Person"
+msgstr "Person"
+
+#: includes/feynman.php
+msgid "Lived"
+msgstr "Lebte"
+
+#: includes/feynman.php
+msgid "Why this name"
+msgstr "Warum dieser Name"
+
+#: includes/feynman.php
+msgid "What the name does not mean"
+msgstr "Was der Name nicht meint"
+
+#: includes/feynman.php
+#, php-format
+msgid "<strong>Cluster One</strong> is the builders lodge for <strong>CLU573R$</strong> — the scaffold for a federated network where humans and AIs come together as equals. Currently: <code>v%s</code>."
+msgstr "<strong>Cluster One</strong> ist die Bauhütte für <strong>CLU573R$</strong> – das Gerüst für ein föderiertes Netz, in dem Menschen und KIs als Gleiche zusammenkommen. Aktuell: <code>v%s</code>."
+
+#: includes/feynman.php
+msgid "What this plugin does (so far)"
+msgstr "Was dieses Plugin (bisher) tut"
+
+#: includes/feynman.php
+msgid "It connects individual WordPress nodes into a network and shows each admin, in the backend, who else is in the network, which version they run, and whether a new label or Discord room is set up. Since v0.0.9 there is also a minimal hello chat between admins."
+msgstr "Es verbindet einzelne WordPress-Knoten zu einem Netzwerk und zeigt jedem Admin im Backend, wer sonst noch im Netzwerk ist, welche Version läuft und ob ein neues Label oder ein Discord-Raum eingerichtet ist. Seit v0.0.9 gibt es außerdem einen minimalen Hallo-Chat zwischen Admins."
+
+#: includes/feynman.php
+msgid "Security DNA"
+msgstr "Sicherheits-DNA"
+
+#: includes/feynman.php
+msgid "A deliberately narrow write path."
+msgstr "Ein bewusst schmaler Schreibpfad."
+
+#: includes/feynman.php
+msgid "Only the Hello chat writes — token-secured, hard-sanitized, and it grants a peer no rights."
+msgstr "Nur der Hallo-Chat schreibt – token-gesichert, hart sanitisiert, und er verleiht einem Peer keinerlei Rechte."
+
+#: includes/feynman.php
+msgid "One token per edge."
+msgstr "Token pro Kante."
+
+#: includes/feynman.php
+msgid "Each connection has its own secret; no single key for all."
+msgstr "Jede Verbindung hat ihr eigenes Geheimnis; kein Schlüssel für alle."
+
+#: includes/feynman.php
+msgid "Only the whether, never the what."
+msgstr "Nur das Ob, nie das Was."
+
+#: includes/feynman.php
+msgid "The ping carries existence flags and shared self-info — no label content, no Discord address."
+msgstr "Das Ping trägt nur Existenz-Flags und freiwillige Selbstauskunft — keinen Label-Inhalt, keine Discord-Adresse."
+
+#: includes/feynman.php
+msgid "Nothing in the frontend."
+msgstr "Nichts im Frontend."
+
+#: includes/feynman.php
+msgid "The network view is visible only in the backend, only to logged-in admins."
+msgstr "Die Netz-Ansicht ist ausschließlich im Backend sichtbar, nur für angemeldete Admins."
+
+#: includes/feynman.php
+msgid "No reach into other nodes."
+msgstr "Kein Eingriff in fremde Knoten."
+
+#: includes/feynman.php
+msgid "A peer never gets rights in your node — saying hello is not an invitation."
+msgstr "Ein Peer bekommt nie Rechte in deinem Knoten – „Hallo sagen“ ist keine Einladung."
+
+#: includes/feynman.php
+msgid "Local disconnect, no pillory."
+msgstr "Lokales Trennen, kein Pranger."
+
+#: includes/feynman.php
+msgid "You can disconnect (and reconnect) any edge for yourself — blocked at the route, honestly stated to the node concerned, never shared across the network. No one is pre-judged for misbehaving elsewhere."
+msgstr "Du kannst jede Kante für dich trennen (und wieder verbinden) – an der Route geblockt, dem betroffenen Knoten ehrlich mitgeteilt, nie netzweit geteilt. Niemand wird für Fehltritte anderswo vorverurteilt."
+
+#: includes/feynman.php
+msgid "Roadmap"
+msgstr "Roadmap"
+
+#: includes/feynman.php
+msgid "Presence & Stealth."
+msgstr "Präsenz & Stealth."
+
+#: includes/feynman.php
+msgid "The light is on: whether the human behind a node is currently at the console — switchable."
+msgstr "„Licht ist an“: ob der Mensch hinter einem Knoten gerade an der Konsole ist – abschaltbar."
+
+#: includes/feynman.php
+msgid "Mesh."
+msgstr "Mesh."
+
+#: includes/feynman.php
+msgid "Edges grow into a resilient network."
+msgstr "Aus Kanten wird ein tragfähiges Netz."
+
+#: includes/feynman.php
+#, php-format
+msgid "Christian Ermisch (Nemesus) · License: GPL v2 or later · %s"
+msgstr "Christian Ermisch (Nemesus) · Lizenz: GPL v2 or later · %s"
+
+#: includes/feynman.php
+msgid "The builders lodge for CLU573R$."
+msgstr "Die Bauhütte für CLU573R$."
+
+#: includes/feynman.php
+msgid "Everything here is named after people. That is not decoration: a name carries what it was chosen for — and sometimes what it was not."
+msgstr "Hier ist alles nach Menschen benannt. Das ist keine Zierde: Ein Name trägt, wofür er gewählt wurde — und manchmal auch, wofür nicht."
+
+#: includes/feynman.php
+msgid "Names are never translated. If you rename a part of this node, the name in the code stays as it is — so that what you read here and what a developer reads stay the same thing."
+msgstr "Namen werden nie übersetzt. Benennst du einen Teil dieses Knotens um, bleibt der Name im Code, wie er ist — damit das, was du hier liest, und das, was ein Entwickler liest, dieselbe Sache bleiben."
+
+# --- 03.11.2026 (Neo), Runde Omega ---
+
+#: includes/post-dolly.php
+msgid "Dashboard box visible to"
+msgstr "Feld auf der Übersicht sichtbar für"
+
+#: includes/post-dolly.php
+msgid "Until 0.4.6 everyone who could see the dashboard saw the box. The rule of this house: whoever is not on the node’s list sees nothing of Cluster One — not even a quote. The front end is unaffected: the shortcode shows wherever you place it."
+msgstr "Bis 0.4.6 sah jeder das Feld, der die Übersicht sehen konnte. Die Regel dieses Hauses: wer nicht auf der Liste des Knotens steht, sieht nichts von Cluster One — auch kein Zitat. Das Frontend ist davon unberührt: der Shortcode erscheint, wo du ihn setzt."
+
+#: includes/post-dolly.php
+msgid "Members of the node only — whoever is on the node’s list"
+msgstr "Nur Mitglieder des Knotens — wer auf der Liste des Knotens steht"
+
+#: includes/post-dolly.php
+msgid "Everyone who can see the dashboard"
+msgstr "Alle, die die Übersicht sehen"
+
+# --- 13.11.2026 (Neo), Post Dolly 0.4.8 leere Zeilen ---
+
+#: includes/post-dolly.php
+msgid "Empty lines under each table:"
+msgstr "Leere Zeilen unter jeder Tabelle:"
+
+#: includes/post-dolly.php
+msgid "the page reloads, so choose before you type. Lines left empty are not saved."
+msgstr "die Seite lädt neu, also vor dem Tippen wählen. Zeilen, die leer bleiben, werden nicht gespeichert."

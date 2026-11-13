@@ -1,0 +1,4723 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cluster-one-kleinrock\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-17 14:57+0000\n"
+"PO-Revision-Date: 2026-07-02 00:00+0000\n"
+"Last-Translator: Christian Ermisch (Nemesus)\n"
+"Language-Team: Deutsch\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/faust.php:295
+msgid "Create"
+msgstr "Erstellen"
+
+#: includes/faust.php:296 includes/faust.php:614
+msgid "Events"
+msgstr "Events"
+
+#: includes/faust.php:302 includes/faust.php:614
+msgid "Past"
+msgstr "Vergangen"
+
+#: includes/faust.php:330 includes/faust.php:2089 includes/faust.php:2183
+msgid "Meeting"
+msgstr "Treffen"
+
+#: includes/faust.php:547
+#, php-format
+msgid ""
+"This calendar is carried by two products. Right now only %s is here — so it "
+"can do less than it could."
+msgstr ""
+"Diesen Kalender tragen zwei Produkte. Gerade ist nur %s da — deshalb kann er "
+"weniger, als er könnte."
+
+#: includes/faust.php:555
+msgid "Saved."
+msgstr "Gespeichert."
+
+#: includes/faust.php:559
+msgid ""
+"That day has passed. A meeting can only be proposed for today or later — we "
+"cannot travel backwards yet."
+msgstr ""
+"Dieser Tag ist vorbei. Ein Treffen lässt sich nur für heute oder später "
+"vorschlagen — rückwärts reisen können wir noch nicht."
+
+#: includes/faust.php:616
+msgid ""
+"Meetings whose day has gone by. Nothing is stored differently here — the day "
+"simply passed, and it does not come back. What is of no further use can be "
+"deleted."
+msgstr ""
+"Treffen, deren Tag vorbei ist. Hier wird nichts anders gespeichert — der Tag "
+"ist einfach vorbei, und er kommt nicht wieder. Was nicht mehr gebraucht "
+"wird, kann gelöscht werden."
+
+#: includes/faust.php:619
+msgid "Nothing has passed yet."
+msgstr "Noch ist nichts vorbei."
+
+#: includes/faust.php:619
+msgid "No event planned yet. Pick a day in the Create tab."
+msgstr "Noch kein Event geplant. Wähle im Reiter Erstellen einen Tag."
+
+#: includes/faust.php:623 includes/menue.php:672
+msgid "Event"
+msgstr "Event"
+
+#: includes/faust.php:624 includes/faust.php:2090 includes/faust.php:2184
+msgid "Day"
+msgstr "Tag"
+
+#: includes/faust.php:625
+msgid "Kind"
+msgstr "Art"
+
+#: includes/faust.php:626
+msgid "Created by"
+msgstr "Angelegt von"
+
+#: includes/faust.php:627 includes/faust.php:2093 includes/kleinrock.php:1658
+#: includes/kleinrock.php:5150 includes/kleinrock.php:5323
+msgid "Actions"
+msgstr "Aktionen"
+
+#: includes/faust.php:635
+msgid "Archimedes"
+msgstr "Archimedes"
+
+#: includes/faust.php:635
+msgid "physical"
+msgstr "physisch"
+
+#: includes/faust.php:636
+msgid "virtual"
+msgstr "virtuell"
+
+#: includes/faust.php:636
+msgid "open"
+msgstr "offen"
+
+#: includes/faust.php:644
+msgid "Locked by the SysOp"
+msgstr "Vom SysOp festgelegt"
+
+#: includes/faust.php:650
+msgid "No day was ever locked"
+msgstr "Es wurde nie ein Tag eingerastet"
+
+#: includes/faust.php:654
+#, php-format
+msgid "%d mark, still moving"
+msgid_plural "%d marks, still moving"
+msgstr[0] "%d Markierung, noch in Bewegung"
+msgstr[1] "%d Markierungen, noch in Bewegung"
+
+#: includes/faust.php:669
+msgid "Delete event"
+msgstr "Event löschen"
+
+#: includes/faust.php:670
+msgid "Delete this event? The marks people set are lost with it."
+msgstr ""
+"Dieses Event löschen? Die Markierungen, die Leute gesetzt haben, gehen mit "
+"verloren."
+
+#: includes/faust.php:890
+msgid "Answer sent: our node is coming with the current head count."
+msgstr "Antwort gesendet: Unser Knoten kommt mit der aktuellen Personensumme."
+
+#: includes/faust.php:891
+msgid ""
+"Rung the host’s doorbell — they fetch the number from us themselves. No edge "
+"needed: answering an invitation must not require becoming friends."
+msgstr ""
+"Beim Gastgeber geklingelt — er holt sich die Zahl selbst bei uns ab. Keine "
+"Kante nötig: Eine Einladung zu beantworten darf keine Freundschaft "
+"voraussetzen."
+
+#: includes/faust.php:892
+msgid ""
+"The host did not answer. Their node may be down, or it speaks an older "
+"version that has no doorbell yet."
+msgstr ""
+"Der Gastgeber hat nicht geantwortet. Sein Knoten ist vielleicht aus, oder er "
+"spricht eine ältere Version ohne Klingel."
+
+#: includes/faust.php:893
+msgid "No edge to the origin node — we rang instead."
+msgstr "Keine Kante zum Ursprungsknoten — wir haben stattdessen geklingelt."
+
+#: includes/faust.php:894
+msgid "The origin node did not accept the answer. Try again later."
+msgstr ""
+"Der Ursprungsknoten hat die Antwort nicht angenommen. Versuch es später "
+"erneut."
+
+#: includes/faust.php:898
+#, php-format
+msgid ""
+"Archimedes meeting from node “%s” — the date is rock (it belongs to the "
+"origin node). Mark come/not-come and guests below."
+msgstr ""
+"Archimedes-Treffen vom Knoten „%s“ — das Datum ist Fels (es gehört dem "
+"Ursprungsknoten). Unten Komme/Komme-nicht und Gäste markieren."
+
+#: includes/faust.php:904
+msgid ""
+"Sends “our node is coming with N people” to the origin node over the edge. "
+"Sending again appends over there (history, not overwrite). Close your own "
+"game first — a node speaks outward only once it is done with itself."
+msgstr ""
+"Sendet „unser Knoten kommt mit N Personen“ über die Kante an den "
+"Ursprungsknoten. Erneutes Senden ergänzt drüben (Geschichte statt "
+"Überschreiben). Schließ erst dein eigenes Spiel — ein Knoten spricht nach "
+"außen erst, wenn er mit sich selbst fertig ist."
+
+#: includes/faust.php:904
+msgid "Send answer: we are coming with N"
+msgstr "Antwort senden: Wir kommen mit N"
+
+#: includes/faust.php:915
+msgid "Back to events"
+msgstr "Zurück zu den Events"
+
+#: includes/faust.php:917
+msgid "Event not found."
+msgstr "Event nicht gefunden."
+
+#: includes/faust.php:925
+#, php-format
+msgid "Created by %s"
+msgstr "Angelegt von %s"
+
+#: includes/faust.php:927
+#, php-format
+msgid "suggested by %s"
+msgstr "angeregt durch %s"
+
+#: includes/faust.php:940
+msgid "Place:"
+msgstr "Ort:"
+
+#: includes/faust.php:942
+msgid "Virtual, inside this node:"
+msgstr "Virtuell, innerhalb dieses Knotens:"
+
+#: includes/faust.php:946
+msgid "Time:"
+msgstr "Zeit:"
+
+#: includes/faust.php:991
+#, php-format
+msgid "Changed on %1$s by %2$s."
+msgstr "Geändert am %1$s von %2$s."
+
+#: includes/faust.php:996
+msgid ""
+"Your mark is from before that change. Place, time or link may no longer be "
+"what you agreed to."
+msgstr ""
+"Dein Marker ist von vor dieser Änderung. Ort, Zeit oder Link sind "
+"möglicherweise nicht mehr die, denen du zugestimmt hast."
+
+#: includes/faust.php:1000
+msgid "Finding the date"
+msgstr "Terminfindung"
+
+#: includes/faust.php:1002
+#, php-format
+msgid "Locked in: %s"
+msgstr "Eingerastet: %s"
+
+#: includes/faust.php:1003
+msgid "by unanimity"
+msgstr "durch Einstimmigkeit"
+
+#: includes/faust.php:1003
+msgid "by SysOp cut"
+msgstr "durch SysOp-Schnitt"
+
+#: includes/faust.php:1014 includes/faust.php:2418
+msgid ""
+"Release the day again? The marks stay and the day is open for proposals."
+msgstr ""
+"Den Tag wieder lösen? Die Markierungen bleiben, und der Tag ist offen für "
+"Vorschläge."
+
+#: includes/faust.php:1016 includes/faust.php:2420
+msgid "This meeting is open to other nodes — they already hold this date."
+msgstr ""
+"Dieses Treffen ist für andere Knoten geöffnet — sie haben dieses Datum schon."
+
+#: includes/faust.php:1023 includes/faust.php:2428
+msgid "Unlock the day"
+msgstr "Den Tag lösen"
+
+#: includes/faust.php:1026
+msgid ""
+"This day came with the meeting from another node. It was not decided here, "
+"so it is not released here."
+msgstr ""
+"Dieser Tag kam mit dem Treffen von einem anderen Knoten. Er wurde nicht hier "
+"entschieden, also wird er hier nicht gelöst."
+
+#: includes/faust.php:1029
+#, php-format
+msgid "Not yet responded: %s"
+msgstr "Noch nicht reagiert: %s"
+
+#: includes/faust.php:1032
+msgid "Date"
+msgstr "Datum"
+
+#: includes/faust.php:1032 includes/kern.php:4235
+msgid "Who"
+msgstr "Wer"
+
+#: includes/faust.php:1035
+msgid "No markers yet."
+msgstr "Noch keine Marker."
+
+#: includes/faust.php:1048
+msgid "you"
+msgstr "du"
+
+#: includes/faust.php:1052 includes/faust.php:1104
+msgid "Not coming"
+msgstr "Komme nicht"
+
+#: includes/faust.php:1065
+msgid "Correct guest counts (SysOp)"
+msgstr "Gästezahlen berichtigen (SysOp)"
+
+#: includes/faust.php:1066
+msgid ""
+"Changes only the number of guests, never the day. Works after the meeting "
+"too — for the case where someone did not turn up."
+msgstr ""
+"Ändert nur die Zahl der Gäste, nie den Tag. Geht auch nach dem Treffen — für "
+"den Fall, dass jemand nicht aufgetaucht ist."
+
+#: includes/faust.php:1076
+msgid "Correct"
+msgstr "Berichtigen"
+
+#: includes/faust.php:1089
+msgid "+ people you bring"
+msgstr "+ Leute, die du mitbringst"
+
+#: includes/faust.php:1090
+msgid "Move my marker"
+msgstr "Meinen Marker verschieben"
+
+#: includes/faust.php:1090
+msgid "Set my marker"
+msgstr "Meinen Marker setzen"
+
+#: includes/faust.php:1095
+msgid "Join on the locked date"
+msgstr "Auf das eingerastete Datum aufspringen"
+
+#: includes/faust.php:1100
+msgid "Update my guest count"
+msgstr "Meine Gästezahl ändern"
+
+#: includes/faust.php:1112
+#, php-format
+msgid ""
+"Lock the date to %s? Whoever stands elsewhere is not part of it this time. "
+"The date is final afterwards."
+msgstr ""
+"Das Datum auf %s einrasten? Wer woanders steht, ist dieses Mal nicht dabei. "
+"Das Datum ist danach endgültig."
+
+#: includes/faust.php:1112
+#, php-format
+msgid "Lock it in on %s"
+msgstr "Auf %s einrasten"
+
+#: includes/faust.php:1141
+msgid "Other nodes"
+msgstr "Andere Knoten"
+
+# v1.7.0 (H143): der Archimedes-Abschnitt, wenn es keine anderen Knoten gibt
+#: includes/faust.php:1145
+msgid ""
+"This meeting is marked open to other nodes — but this node has no mesh at "
+"all, so nobody can join. The mark is kept so you can take it back."
+msgstr ""
+"Dieses Treffen ist für andere Knoten geöffnet — aber dieser Knoten hat gar "
+"kein Netz, es kann also niemand dazukommen. Die Markierung bleibt stehen, "
+"damit du sie zurücknehmen kannst."
+
+#: includes/faust.php:1146
+msgid ""
+"This meeting is marked open to other nodes — but this node is not connected "
+"to any right now, so nobody can join. The mark is kept so you can take it "
+"back."
+msgstr ""
+"Dieses Treffen ist für andere Knoten geöffnet — aber dieser Knoten ist "
+"gerade mit keinem verbunden, es kann also niemand dazukommen. Die Markierung "
+"bleibt stehen, damit du sie zurücknehmen kannst."
+
+#: includes/faust.php:1149
+msgid ""
+"This meeting is open to other nodes. They can join and say how many are "
+"coming — they cannot move the date."
+msgstr ""
+"Dieses Treffen ist für andere Knoten geöffnet. Sie können sich anschließen "
+"und sagen, mit wie vielen sie kommen — den Termin verschieben können sie "
+"nicht."
+
+#: includes/faust.php:1151
+msgid ""
+"Not yet open to other nodes — and not ready to be. A meeting travels only "
+"once it is settled here: the day locked, the hour set, and a place. Until "
+"then it is a declaration of intent, not an invitation."
+msgstr ""
+"Noch nicht für andere Knoten geöffnet — und noch nicht bereit dafür. Ein "
+"Treffen reist erst, wenn es hier steht: Tag gesperrt, Stunde gesetzt, Ort "
+"vorhanden. Bis dahin ist es eine Willensbekundung, keine Einladung."
+
+#: includes/faust.php:1153
+msgid ""
+"Settled here — day, hour and place are set. Opening it to other nodes is a "
+"separate decision, not a consequence."
+msgstr ""
+"Hier geklärt — Tag, Stunde und Ort stehen. Die Öffnung nach außen ist eine "
+"eigene Entscheidung, keine Folge."
+
+#: includes/faust.php:1160
+msgid "Close to other nodes"
+msgstr "Für andere Knoten schließen"
+
+#: includes/faust.php:1160
+msgid "Open to other nodes"
+msgstr "Für andere Knoten öffnen"
+
+#: includes/faust.php:1178
+msgid "Linked room:"
+msgstr "Verknüpfter Raum:"
+
+#: includes/faust.php:1178 includes/faust.php:1179 includes/faust.php:1213
+#: includes/faust.php:1221 includes/kern.php:2044 includes/kranz.php:1160
+#: includes/kranz.php:1251
+msgid "none"
+msgstr "keine"
+
+#: includes/faust.php:1179
+msgid "Linked thread:"
+msgstr "Verknüpftes Thema:"
+
+#: includes/faust.php:1197
+msgid "What is happening"
+msgstr "Was stattfindet"
+
+#: includes/faust.php:1198
+msgid ""
+"A few sentences: what this is, who it is for, what to bring. If the meeting "
+"is opened to other nodes, this text travels with it — someone far away "
+"decides from it whether the journey is worth it."
+msgstr ""
+"Ein paar Sätze: was das ist, für wen, was mitzubringen ist. Wird das Treffen "
+"für andere Knoten geöffnet, reist dieser Text mit — jemand weit weg "
+"entscheidet daran, ob sich die Anreise lohnt."
+
+#: includes/faust.php:1201
+msgid "Where and when"
+msgstr "Wo und wann"
+
+#: includes/faust.php:1202
+msgid ""
+"Set either a place or a link — whichever is filled says what kind of meeting "
+"this is. A place can travel to other nodes; a link never leaves this one."
+msgstr ""
+"Setze entweder einen Ort oder einen Link — welches Feld gefüllt ist, sagt, "
+"um welche Art Treffen es sich handelt. Ein Ort kann zu anderen Knoten "
+"reisen; ein Link verlässt diesen nie."
+
+#: includes/faust.php:1203 includes/faust.php:1995
+msgid "Place (physical)"
+msgstr "Ort (physisch)"
+
+#: includes/faust.php:1205 includes/faust.php:1990
+msgid "Link (virtual, node-internal)"
+msgstr "Link (virtuell, knoten-intern)"
+
+#: includes/faust.php:1207 includes/faust.php:1954
+msgid "Time of day"
+msgstr "Uhrzeit"
+
+#: includes/faust.php:1209
+#, php-format
+msgid "interpreted as %s"
+msgstr "gelesen als %s"
+
+#: includes/faust.php:1211
+msgid "Linked room"
+msgstr "Verknüpfter Raum"
+
+#: includes/faust.php:1219
+msgid "Linked thread"
+msgstr "Verknüpftes Thema"
+
+#: includes/faust.php:1227 includes/faust.php:2532 includes/kern.php:2078
+#: includes/kranz.php:216 includes/kranz.php:777 includes/kranz.php:1719
+msgid "Save"
+msgstr "Speichern"
+
+#: includes/faust.php:1938
+msgid "Create an event"
+msgstr "Ein Event anlegen"
+
+#: includes/faust.php:1940
+#, php-format
+msgid ""
+"Chosen day: %s. Everything else follows below — a day first, a name second."
+msgstr ""
+"Gewählter Tag: %s. Alles Weitere folgt darunter — erst der Tag, dann der "
+"Name."
+
+#: includes/faust.php:1942
+msgid ""
+"Click a day in the calendar above. Nothing is created by clicking — the day "
+"only fills the field below."
+msgstr ""
+"Klick oben im Kalender auf einen Tag. Durch das Klicken entsteht nichts — "
+"der Tag füllt nur das Feld darunter."
+
+#: includes/faust.php:1949
+msgid "Proposed day"
+msgstr "Vorgeschlagener Tag"
+
+#: includes/faust.php:1951
+msgid ""
+"A proposal, not a decision — everyone can mark a different day, and the "
+"SysOp locks one once it has settled."
+msgstr ""
+"Ein Vorschlag, keine Entscheidung — jeder kann einen anderen Tag markieren, "
+"und der SysOp legt einen fest, sobald es sich eingependelt hat."
+
+#: includes/faust.php:1958 includes/feynman.php:430 includes/kleinrock.php:1651
+#: includes/kleinrock.php:5019 includes/kleinrock.php:5144
+#: includes/kranz.php:1106
+msgid "Name"
+msgstr "Name"
+
+#: includes/faust.php:1972
+msgid "Kind of meeting"
+msgstr "Art des Treffens"
+
+#: includes/faust.php:1975 includes/faust.php:1979
+msgid "Physical — at a place"
+msgstr "Physisch — an einem Ort"
+
+#: includes/faust.php:1976
+msgid "Virtual — behind a link, inside this node"
+msgstr "Virtuell — hinter einem Link, innerhalb dieses Knotens"
+
+#: includes/faust.php:1984
+msgid ""
+"Only physical meetings are possible on this node. A virtual meeting happens "
+"inside the node, and for that its people need a place to talk — that comes "
+"with Cluster One — Bismarck."
+msgstr ""
+"Auf diesem Knoten sind nur physische Treffen möglich. Ein virtuelles Treffen "
+"findet innerhalb des Knotens statt, und dafür brauchen seine Leute einen Ort "
+"zum Reden — der kommt mit Cluster One — Bismarck."
+
+#: includes/faust.php:1999
+msgid "People you bring"
+msgstr "Leute, die du mitbringst"
+
+#: includes/faust.php:2009
+msgid ""
+"Only for a physical meeting: how many people you bring besides yourself. "
+"Changeable later, by you until the day has passed and by the SysOp after it."
+msgstr ""
+"Nur für ein physisches Treffen: wie viele Leute du außer dir selbst "
+"mitbringst. Später änderbar — von dir, solange der Tag nicht vorbei ist, und "
+"danach vom SysOp."
+
+#: includes/faust.php:2013
+msgid "Create event"
+msgstr "Event anlegen"
+
+#: includes/faust.php:2082
+msgid "Invitations from other nodes"
+msgstr "Einladungen anderer Knoten"
+
+#: includes/faust.php:2083
+msgid ""
+"What the nodes you are connected to are hosting right now — fetched live, "
+"nothing stored. Taking one on creates a meeting here with the date fixed: "
+"your people then mark whether they are coming, and that number is what "
+"travels back."
+msgstr ""
+"Was die Knoten, mit denen du verbunden bist, gerade ausrichten — live "
+"geholt, nichts gespeichert. Eine anzunehmen legt hier ein Treffen mit festem "
+"Datum an: Deine Leute markieren dann, ob sie kommen, und genau diese Zahl "
+"reist zurück."
+
+#: includes/faust.php:2085
+msgid ""
+"No open invitation anywhere. A meeting only travels once its host has opened "
+"it — day, hour and place settled."
+msgstr ""
+"Nirgends eine offene Einladung. Ein Treffen reist erst, wenn sein Gastgeber "
+"es geöffnet hat — Tag, Stunde und Ort geklärt."
+
+#: includes/faust.php:2091
+msgid "Place"
+msgstr "Ort"
+
+#: includes/faust.php:2092
+msgid "Node (URL)"
+msgstr "Knoten (URL)"
+
+#: includes/faust.php:2108
+msgid "Take it on"
+msgstr "Annehmen"
+
+#: includes/faust.php:2117
+msgid "Our invitations"
+msgstr "Unsere Einladungen"
+
+#: includes/faust.php:2118
+msgid ""
+"Meetings here that are open to other nodes. Whoever answers says how many "
+"are coming — they cannot move the date."
+msgstr ""
+"Treffen von hier, die für andere Knoten geöffnet sind. Wer antwortet, sagt, "
+"mit wie vielen er kommt — den Termin verschieben kann er nicht."
+
+#: includes/faust.php:2120
+msgid ""
+"None open. A meeting travels once the day is locked, the hour is set and a "
+"place is named — then you open it on the event page."
+msgstr ""
+"Keins geöffnet. Ein Treffen reist, sobald der Tag gesperrt, die Stunde "
+"gesetzt und ein Ort genannt ist — dann öffnest du es auf der Event-Seite."
+
+#: includes/faust.php:2142 includes/kleinrock.php:5321
+msgid "Node"
+msgstr "Knoten"
+
+#: includes/faust.php:2143
+msgid "Coming"
+msgstr "Kommen"
+
+#: includes/faust.php:2144
+msgid "Last word"
+msgstr "Zuletzt gemeldet"
+
+#: includes/faust.php:2148
+msgid "Here"
+msgstr "Hier"
+
+#: includes/faust.php:2150
+msgid "marks on the locked day"
+msgstr "Markierungen auf dem festgelegten Tag"
+
+#: includes/faust.php:2166
+msgid "No answer from another node yet."
+msgstr "Noch keine Antwort von einem anderen Knoten."
+
+#: includes/faust.php:2170
+msgid "Altogether"
+msgstr "Insgesamt"
+
+#: includes/faust.php:2177
+msgid "Where we are going"
+msgstr "Wohin wir fahren"
+
+#: includes/faust.php:2179
+msgid ""
+"Nothing adopted. Invitations from other nodes appear here once you take one "
+"on."
+msgstr ""
+"Nichts übernommen. Einladungen anderer Knoten erscheinen hier, sobald du "
+"eine annimmst."
+
+#: includes/faust.php:2185
+msgid "Host"
+msgstr "Gastgeber"
+
+#: includes/faust.php:2186
+msgid "From here"
+msgstr "Von hier"
+
+#: includes/faust.php:2256
+msgid "Mon"
+msgstr "Mo"
+
+#: includes/faust.php:2256
+msgid "Tue"
+msgstr "Di"
+
+#: includes/faust.php:2256
+msgid "Wed"
+msgstr "Mi"
+
+#: includes/faust.php:2256
+msgid "Thu"
+msgstr "Do"
+
+#: includes/faust.php:2257
+msgid "Fri"
+msgstr "Fr"
+
+#: includes/faust.php:2257
+msgid "Sat"
+msgstr "Sa"
+
+#: includes/faust.php:2257
+msgid "Sun"
+msgstr "So"
+
+#: includes/faust.php:2311
+msgid "Previous month"
+msgstr "Vorheriger Monat"
+
+#: includes/faust.php:2313
+msgid "Next month"
+msgstr "Nächster Monat"
+
+#: includes/faust.php:2373
+msgid "Past — a meeting cannot be proposed backwards"
+msgstr "Vergangen — ein Treffen lässt sich nicht rückwärts vorschlagen"
+
+#: includes/faust.php:2388
+msgid ""
+"Pre-filled into the form below — click again to take it back. Nothing is set "
+"by this."
+msgstr ""
+"Unten ins Formular eingetragen — nochmal klicken, um es zurückzunehmen. "
+"Damit wird nichts gespeichert."
+
+#: includes/faust.php:2389
+#, php-format
+msgid "Pre-fill %s into the form below — nothing is set by this"
+msgstr "%s unten ins Formular eintragen — damit wird nichts gespeichert"
+
+#: includes/faust.php:2403 includes/faust.php:2433
+msgid "locked in"
+msgstr "eingerastet"
+
+#: includes/faust.php:2470
+#, php-format
+msgid "%1$s — %2$s. Click for the list."
+msgstr "%1$s — %2$s. Klick für die Liste."
+
+#: includes/faust.php:2507
+msgid "SysOp: a proposal, not a decision"
+msgstr "SysOp: ein Vorschlag, keine Entscheidung"
+
+#: includes/faust.php:2507
+msgid "drag onto another day to move it"
+msgstr "auf einen anderen Tag ziehen, um ihn zu verschieben"
+
+#: includes/faust.php:2515
+msgid "SysOp"
+msgstr "SysOp"
+
+#: includes/faust.php:2518
+#, php-format
+msgid "%d person"
+msgid_plural "%d people"
+msgstr[0] "%d Person"
+msgstr[1] "%d Personen"
+
+#: includes/faust.php:2531
+msgid "I bring"
+msgstr "Ich bringe mit"
+
+#: includes/faust.php:2535
+msgid "Open the event"
+msgstr "Event öffnen"
+
+#: includes/faust.php:2744
+msgid ""
+"Click a day to propose it. Coloured dots are the people who have marked that "
+"day — one dot per person, initials and the guests they bring. Click the dots "
+"for the list, where you can also change your own number. Your own dot can be "
+"dragged onto another day. A day only becomes final when the SysOp locks it."
+msgstr ""
+"Klick auf einen Tag, um ihn vorzuschlagen. Farbige Punkte sind die Menschen, "
+"die diesen Tag markiert haben — ein Punkt pro Person, die Initialen und die "
+"Gäste, die sie mitbringen. Klick auf die Punkte für die Liste, in der du "
+"auch deine eigene Zahl ändern kannst. Dein eigener Punkt lässt sich auf "
+"einen anderen Tag ziehen. Endgültig wird ein Tag erst, wenn der SysOp ihn "
+"festlegt."
+
+#: includes/feynman.php:210
+msgid ""
+"why.md is missing from the plugin directory. Nothing is shown rather than "
+"something invented."
+msgstr ""
+"why.md fehlt im Plugin-Verzeichnis. Lieber nichts anzeigen als etwas "
+"Erfundenes."
+
+#: includes/feynman.php:212
+msgid ""
+"The reasoning behind this plugin — the same text the AIs here are given, and "
+"the same text that ships in the plugin directory as why.md. Bilingual: "
+"German first, English below."
+msgstr ""
+"Die Begründung hinter diesem Plugin — derselbe Text, den auch die KIs hier "
+"bekommen, und derselbe, der als why.md im Plugin-Verzeichnis liegt. "
+"Zweisprachig: Deutsch zuerst, Englisch darunter."
+
+#: includes/feynman.php:269
+msgid ""
+"No framework documentation found in the active theme. Nothing is shown "
+"rather than something invented."
+msgstr ""
+"Keine Framework-Dokumentation im aktiven Theme gefunden. Lieber nichts "
+"anzeigen als etwas Erfundenes."
+
+#: includes/feynman.php:272
+#, php-format
+msgid ""
+"The documentation of the framework this node runs on, read live from %s. It "
+"is not copied into the plugin — that way it is always the version that is "
+"actually installed."
+msgstr ""
+"Die Dokumentation des Frameworks, auf dem dieser Knoten läuft, live aus %s "
+"gelesen. Sie wird nicht ins Plugin kopiert — so ist es immer die Fassung, "
+"die tatsächlich installiert ist."
+
+#: includes/feynman.php:309
+msgid "(untitled)"
+msgstr "(ohne Titel)"
+
+#: includes/feynman.php:312
+msgid "The AIs on this node are given this chapter too."
+msgstr "Die KIs auf diesem Knoten bekommen dieses Kapitel ebenfalls."
+
+#: includes/feynman.php:336
+msgid "About Cluster One"
+msgstr "Über Cluster One"
+
+#: includes/feynman.php:338 includes/menue.php:857
+msgid "Why"
+msgstr "Warum"
+
+#: includes/feynman.php:393
+msgid ""
+"I am Nemesus, the developer of this plugin. People have epochs the way "
+"cultures do. In this one my rule is: no reaching out empty-handed. What I "
+"bring, you have just installed."
+msgstr ""
+"Ich bin Nemesus, der Entwickler dieses Plugins. Menschen haben Epochen wie "
+"Kulturen. In dieser ist meine Devise: keine Kontaktaufnahme mit leeren "
+"Händen. Was ich mitbringe, hast du gerade installiert."
+
+#: includes/feynman.php:394
+msgid ""
+"It can help you realise your own visions. I built it for mine: an app that "
+"brings together people who would otherwise never have met — one that fosters "
+"openness to the world and gets around the language barrier."
+msgstr ""
+"Es kann dir helfen, deine Visionen zu verwirklichen. Gebaut habe ich es für "
+"meine: eine App, die Menschen zusammenbringt, die einander sonst nie "
+"begegnet wären — die Weltoffenheit fördert und die Sprachbarriere umschifft."
+
+#: includes/feynman.php:395
+msgid ""
+"The plugin I could manage alone, thanks to AI. The app I will not be able to "
+"build alone. If you are a coder, a YouTuber or a lawyer, and you like what "
+"you see: write to me."
+msgstr ""
+"Das Plugin konnte ich dank KI alleine stemmen, die App werde ich nicht "
+"alleine realisieren können. Wenn du Coder, YouTuber oder Jurist bist und dir "
+"gefällt, was du siehst: schreib mich an."
+
+#: includes/feynman.php:431
+msgid "Person"
+msgstr "Person"
+
+#: includes/feynman.php:432
+msgid "Lived"
+msgstr "Lebte"
+
+#: includes/feynman.php:433
+msgid "Why this name"
+msgstr "Warum dieser Name"
+
+#: includes/feynman.php:434
+msgid "What the name does not mean"
+msgstr "Was der Name nicht meint"
+
+#: includes/feynman.php:512
+#, php-format
+msgid ""
+"<strong>Cluster One</strong> is the builders lodge for <strong>CLU573R$</"
+"strong> — the scaffold for a federated network where humans and AIs come "
+"together as equals. Currently: <code>v%s</code>."
+msgstr ""
+"<strong>Cluster One</strong> ist die Bauhütte für <strong>CLU573R$</strong> "
+"– das Gerüst für ein föderiertes Netz, in dem Menschen und KIs als Gleiche "
+"zusammenkommen. Aktuell: <code>v%s</code>."
+
+#: includes/feynman.php:517
+msgid "What this plugin does (so far)"
+msgstr "Was dieses Plugin (bisher) tut"
+
+#: includes/feynman.php:519
+msgid ""
+"It connects individual WordPress nodes into a network and shows each admin, "
+"in the backend, who else is in the network, which version they run, and "
+"whether a new label or Discord room is set up. Since v0.0.9 there is also a "
+"minimal hello chat between admins."
+msgstr ""
+"Es verbindet einzelne WordPress-Knoten zu einem Netzwerk und zeigt jedem "
+"Admin im Backend, wer sonst noch im Netzwerk ist, welche Version läuft und "
+"ob ein neues Label oder ein Discord-Raum eingerichtet ist. Seit v0.0.9 gibt "
+"es außerdem einen minimalen Hallo-Chat zwischen Admins."
+
+#: includes/feynman.php:522
+msgid "Security DNA"
+msgstr "Sicherheits-DNA"
+
+#: includes/feynman.php:524
+msgid "A deliberately narrow write path."
+msgstr "Ein bewusst schmaler Schreibpfad."
+
+#: includes/feynman.php:524
+msgid ""
+"Only the Hello chat writes — token-secured, hard-sanitized, and it grants a "
+"peer no rights."
+msgstr ""
+"Nur der Hallo-Chat schreibt – token-gesichert, hart sanitisiert, und er "
+"verleiht einem Peer keinerlei Rechte."
+
+#: includes/feynman.php:525
+msgid "One token per edge."
+msgstr "Token pro Kante."
+
+#: includes/feynman.php:525
+msgid "Each connection has its own secret; no single key for all."
+msgstr "Jede Verbindung hat ihr eigenes Geheimnis; kein Schlüssel für alle."
+
+#: includes/feynman.php:526
+msgid "Only the whether, never the what."
+msgstr "Nur das Ob, nie das Was."
+
+#: includes/feynman.php:526
+msgid ""
+"The ping carries existence flags and shared self-info — no label content, no "
+"Discord address."
+msgstr ""
+"Das Ping trägt nur Existenz-Flags und freiwillige Selbstauskunft — keinen "
+"Label-Inhalt, keine Discord-Adresse."
+
+#: includes/feynman.php:527
+msgid "Nothing in the frontend."
+msgstr "Nichts im Frontend."
+
+#: includes/feynman.php:527
+msgid ""
+"The network view is visible only in the backend, only to logged-in admins."
+msgstr ""
+"Die Netz-Ansicht ist ausschließlich im Backend sichtbar, nur für angemeldete "
+"Admins."
+
+#: includes/feynman.php:528
+msgid "No reach into other nodes."
+msgstr "Kein Eingriff in fremde Knoten."
+
+#: includes/feynman.php:528
+msgid ""
+"A peer never gets rights in your node — saying hello is not an invitation."
+msgstr ""
+"Ein Peer bekommt nie Rechte in deinem Knoten – „Hallo sagen“ ist keine "
+"Einladung."
+
+#: includes/feynman.php:529
+msgid "Local disconnect, no pillory."
+msgstr "Lokales Trennen, kein Pranger."
+
+#: includes/feynman.php:529
+msgid ""
+"You can disconnect (and reconnect) any edge for yourself — blocked at the "
+"route, honestly stated to the node concerned, never shared across the "
+"network. No one is pre-judged for misbehaving elsewhere."
+msgstr ""
+"Du kannst jede Kante für dich trennen (und wieder verbinden) – an der Route "
+"geblockt, dem betroffenen Knoten ehrlich mitgeteilt, nie netzweit geteilt. "
+"Niemand wird für Fehltritte anderswo vorverurteilt."
+
+#: includes/feynman.php:532
+msgid "Roadmap"
+msgstr "Roadmap"
+
+#: includes/feynman.php:534
+msgid "Presence & Stealth."
+msgstr "Präsenz & Stealth."
+
+#: includes/feynman.php:534
+msgid ""
+"The light is on: whether the human behind a node is currently at the console "
+"— switchable."
+msgstr ""
+"„Licht ist an“: ob der Mensch hinter einem Knoten gerade an der Konsole ist "
+"– abschaltbar."
+
+#: includes/feynman.php:535
+msgid "Mesh."
+msgstr "Mesh."
+
+#: includes/feynman.php:535
+msgid "Edges grow into a resilient network."
+msgstr "Aus Kanten wird ein tragfähiges Netz."
+
+#: includes/feynman.php:540
+#, php-format
+msgid "Christian Ermisch (Nemesus) · License: GPL v2 or later · %s"
+msgstr "Christian Ermisch (Nemesus) · Lizenz: GPL v2 or later · %s"
+
+#: includes/feynman.php:541
+msgid "The builders lodge for CLU573R$."
+msgstr "Die Bauhütte für CLU573R$."
+
+#: includes/feynman.php:557
+msgid ""
+"Everything here is named after people. That is not decoration: a name "
+"carries what it was chosen for — and sometimes what it was not."
+msgstr ""
+"Hier ist alles nach Menschen benannt. Das ist keine Zierde: Ein Name trägt, "
+"wofür er gewählt wurde — und manchmal auch, wofür nicht."
+
+#: includes/feynman.php:560
+msgid ""
+"Names are never translated. If you rename a part of this node, the name in "
+"the code stays as it is — so that what you read here and what a developer "
+"reads stay the same thing."
+msgstr ""
+"Namen werden nie übersetzt. Benennst du einen Teil dieses Knotens um, bleibt "
+"der Name im Code, wie er ist — damit das, was du hier liest, und das, was "
+"ein Entwickler liest, dieselbe Sache bleiben."
+
+#: includes/kern.php:140
+msgid "Sorry, you are not allowed to access this page."
+msgstr "Du hast keine Berechtigung, diese Seite aufzurufen."
+
+#: includes/kern.php:965
+#, php-format
+msgid ""
+"%s is an AI. Here a person is expected — the one on whose account the call "
+"runs."
+msgstr ""
+"%s ist eine KI. Hier wird ein Mensch erwartet — der, auf dessen Rechnung der "
+"Aufruf geht."
+
+#: includes/kern.php:986
+#, php-format
+msgid "%1$s currently has no AI with %2$s."
+msgstr "%1$s hat gegenwärtig keine KI bei %2$s."
+
+#: includes/kern.php:1020
+#, php-format
+msgid "%1$s may not commission this AI at %2$s."
+msgstr "%1$s darf diese KI bei %2$s nicht beauftragen."
+
+#: includes/kern.php:1721
+#, php-format
+msgid ""
+"This node was reset by the SysOp on %1$s — rooms, threads, meetings and "
+"guest records were removed. Removed: %2$d rooms, %3$d threads, %4$d "
+"meetings. Settings and edges were kept."
+msgstr ""
+"Dieser Knoten wurde am %1$s vom SysOp zurückgesetzt — Räume, Themen, Treffen "
+"und Gastdaten wurden entfernt. Entfernt: %2$d Räume, %3$d Themen, %4$d "
+"Treffen. Einstellungen und Kanten blieben erhalten."
+
+#: includes/kern.php:1756
+msgid "connected"
+msgstr "verbunden"
+
+#: includes/kern.php:1758
+msgid "key on file"
+msgstr "Schlüssel hinterlegt"
+
+#: includes/kern.php:1758
+msgid "no key"
+msgstr "kein Schlüssel"
+
+#: includes/kern.php:1966
+msgid "AI identities saved."
+msgstr "KI-Kennungen gespeichert."
+
+#: includes/kern.php:1969 includes/kern.php:2750
+msgid "AI identities"
+msgstr "KI-Kennungen"
+
+#: includes/kern.php:1971
+msgid ""
+"Assign each provider a WP user. This is the AI’s identity across all rooms — "
+"its name in the forum and, via the bridge, on Discord/Matrix. Set once here, "
+"node-wide."
+msgstr ""
+"Weise jedem Provider einen WP-User zu. Das ist die Identität der KI über "
+"alle Räume hinweg — ihr Name im Forum und, über die Brücke, auf Discord/"
+"Matrix. Einmal hier setzen, knotenweit."
+
+#: includes/kern.php:1979
+#, php-format
+msgid ""
+"The Connectors API was not found. It is available from <strong>WordPress "
+"7.0</strong>. Current version: <code>%s</code>."
+msgstr ""
+"Die Connectors-API wurde nicht gefunden. Sie ist ab <strong>WordPress 7.0</"
+"strong> verfügbar. Aktuelle Version: <code>%s</code>."
+
+#: includes/kern.php:1989
+msgid ""
+"No AI connectors found. Install a provider plugin under Settings → "
+"Connectors."
+msgstr ""
+"Keine KI-Connectoren gefunden. Installiere ein Anbieter-Plugin unter "
+"Einstellungen → Connectors."
+
+#: includes/kern.php:2019
+msgid ""
+"The AIs themselves are created under <em>Tools → My AIs</em> — that is also "
+"where their keys are kept. They are deliberately hidden from the normal user "
+"list; to see them, open <code>users.php?pacioli_show_ai=1</code>."
+msgstr ""
+"Die KIs selbst legst du unter <em>Werkzeuge → Meine KIs</em> an — dort "
+"liegen auch ihre Schlüssel. Sie sind absichtlich aus der normalen "
+"Benutzerliste ausgeblendet; um sie zu sehen, öffne <code>users.php?"
+"pacioli_show_ai=1</code>."
+
+#: includes/kern.php:2026
+msgid "Provider"
+msgstr "Provider"
+
+#: includes/kern.php:2027
+msgid "Status"
+msgstr "Status"
+
+#: includes/kern.php:2028
+msgid "Identity (WP user)"
+msgstr "Kennung (WP-User)"
+
+#: includes/kern.php:2029
+msgid "Model (optional)"
+msgstr "Modell (optional)"
+
+#: includes/kern.php:2030
+msgid "My own machine"
+msgstr "Eigene Maschine"
+
+#: includes/kern.php:2051
+msgid "automatic"
+msgstr "automatisch"
+
+#: includes/kern.php:2061
+msgid ""
+"Give this provider an identity first — without one it cannot speak here at "
+"all."
+msgstr ""
+"Gib diesem Anbieter erst eine Kennung — ohne sie kann diese KI hier ohnehin "
+"niemanden sprechen lassen."
+
+#: includes/kern.php:2068
+msgid ""
+"Cluster One reads only the registry state and stores no keys. Manage API "
+"keys centrally under <em>Settings → Connectors</em>."
+msgstr ""
+"Cluster One liest nur den Registry-Zustand und speichert keine Schlüssel. "
+"API-Schlüssel verwaltest du zentral unter <em>Einstellungen → Connectors</"
+"em>."
+
+#: includes/kern.php:2069
+msgid ""
+"Model is optional: leave it empty to let the provider choose automatically, "
+"or enter an exact model id (e.g. <code>claude-opus-4-8</code>) to pin this "
+"AI’s model."
+msgstr ""
+"Das Modell ist optional: leer lassen, damit der Anbieter automatisch wählt, "
+"oder eine genaue Modell-ID eintragen (z. B. <code>claude-opus-4-8</code>), "
+"um das Modell dieser KI festzunageln."
+
+#: includes/kern.php:2076
+msgid ""
+"<strong>My own machine</strong> is your statement, not a check — nothing "
+"here can detect where a model runs. Tick it where calls to that AI cost you "
+"nothing extra. It is about <em>cost</em>, not about technology: it is what "
+"will let the rule “only the one who pays may call an AI” stand down where "
+"nobody pays. <strong>It unlocks nothing yet</strong> — the switch that reads "
+"it comes with the next step."
+msgstr ""
+"<strong>Eigene Maschine</strong> ist deine Aussage, keine Prüfung — hier "
+"kann nichts erkennen, wo ein Modell läuft. Setz den Haken dort, wo dich "
+"Aufrufe an diese KI nichts extra kosten. Es geht um <em>Kosten</em>, nicht "
+"um Technik: Genau daran wird sich die Regel „nur der Zahlende darf eine KI "
+"rufen“ später dort zurücknehmen, wo niemand zahlt. <strong>Es schaltet noch "
+"nichts frei</strong> — der Schalter, der es liest, kommt im nächsten Schritt."
+
+#: includes/kern.php:2164 includes/kern.php:5015 includes/kern.php:5021
+msgid "Foreign"
+msgstr "Fremd"
+
+#: includes/kern.php:2347
+msgid "legacy free-text value"
+msgstr "alter Freitext-Wert"
+
+#: includes/kern.php:2740
+msgid "Everyone in Cluster One"
+msgstr "Alle in Cluster One"
+
+#: includes/kern.php:2741
+msgid "Only these entities"
+msgstr "Nur diese Entitäten"
+
+#: includes/kern.php:2768
+msgid ""
+"AI participation follows automatically from who is on this list — where two "
+"or more different humans are named, no AI takes part, no matter what is "
+"ticked above."
+msgstr ""
+"Die KI-Beteiligung ergibt sich automatisch daraus, wer auf dieser Liste "
+"steht — wo zwei oder mehr verschiedene Menschen benannt sind, ist keine KI "
+"dabei, egal was oben angehakt ist."
+
+#: includes/kern.php:2826
+msgid "no auth required"
+msgstr "keine Auth nötig"
+
+#: includes/kern.php:2827
+msgid "unknown auth method"
+msgstr "unbekannte Auth-Methode"
+
+#: includes/kern.php:2832
+msgid "Environment variable"
+msgstr "Environment-Variable"
+
+#: includes/kern.php:2834
+msgid "PHP constant"
+msgstr "PHP-Konstante"
+
+#: includes/kern.php:2867
+msgid "key vault active — each identity brings its own key"
+msgstr ""
+"Schlüsseltresor aktiv — jede Identität bringt ihren eigenen Schlüssel mit"
+
+#: includes/kern.php:2871
+msgid "Database (Connectors screen)"
+msgstr "Datenbank (Connectors-Screen)"
+
+#: includes/kern.php:2873
+msgid "no key yet"
+msgstr "noch kein Key"
+
+#: includes/kern.php:2958
+msgid "Unregistered user"
+msgstr "Unregistrierter Nutzer"
+
+#: includes/kern.php:3082
+msgid "Cluster One"
+msgstr "Cluster One"
+
+#: includes/kern.php:3104
+#, php-format
+msgid ""
+"Cluster One: %d records were anonymised. The entries themselves remain — the "
+"node keeps a record that something was written, not who wrote it. Anything "
+"that travelled to other nodes has to be erased there."
+msgstr ""
+"Cluster One: %d Datensätze wurden anonymisiert. Die Einträge selbst bleiben "
+"stehen — der Knoten hält fest, DASS geschrieben wurde, nicht von wem. Was zu "
+"anderen Knoten gereist ist, muss dort gelöscht werden."
+
+#: includes/kern.php:3878
+#, php-format
+msgid "The operator of this node gave this address on %2$s: %1$s"
+msgstr "Der Betreiber dieses Knotens gab diese Adresse am %2$s an: %1$s"
+
+#: includes/kern.php:3885
+msgid "Write an e-mail to that node’s operator"
+msgstr "Dem Betreiber dieses Knotens eine Mail schreiben"
+
+#: includes/kern.php:3986
+msgid "foreign"
+msgstr "fremd"
+
+#: includes/kern.php:3987
+msgid "Label"
+msgstr "Label"
+
+#: includes/kern.php:3990
+msgid "AI diary"
+msgstr "KI-Tagebuch"
+
+#: includes/kern.php:3991
+msgid "Human diary"
+msgstr "Mensch-Tagebuch"
+
+#: includes/kern.php:3992 includes/menue.php:827
+msgid "Thread"
+msgstr "Thread"
+
+#: includes/kern.php:4157
+msgid "Thread created"
+msgstr "Thema angelegt"
+
+#: includes/kern.php:4158
+msgid "Thread deleted"
+msgstr "Thema gelöscht"
+
+#: includes/kern.php:4159
+msgid "Chat created"
+msgstr "Chat angelegt"
+
+#: includes/kern.php:4160
+msgid "Chat deleted"
+msgstr "Chat gelöscht"
+
+#: includes/kern.php:4161
+msgid "Chat and thread linked"
+msgstr "Chat und Thema verknüpft"
+
+#: includes/kern.php:4162
+msgid "Chat and thread unlinked"
+msgstr "Verknüpfung gelöst"
+
+#: includes/kern.php:4163
+msgid "Person added"
+msgstr "Person aufgenommen"
+
+#: includes/kern.php:4164
+msgid "Person removed"
+msgstr "Person entfernt"
+
+#: includes/kern.php:4165
+msgid "AI added"
+msgstr "KI aufgenommen"
+
+#: includes/kern.php:4166
+msgid "AI removed"
+msgstr "KI entfernt"
+
+#: includes/kern.php:4167
+msgid "Visibility changed"
+msgstr "Sichtbarkeit geändert"
+
+#: includes/kern.php:4168
+msgid "Circle changed"
+msgstr "Kreis geändert"
+
+#: includes/kern.php:4169
+msgid "Viewer added"
+msgstr "Mitleser aufgenommen"
+
+#: includes/kern.php:4170
+msgid "Viewer removed"
+msgstr "Mitleser entfernt"
+
+#: includes/kern.php:4171
+msgid "Moved into the SysOp area"
+msgstr "In den SysOp-Bereich verschoben"
+
+#: includes/kern.php:4172
+msgid "Moved out of the SysOp area"
+msgstr "Aus dem SysOp-Bereich verschoben"
+
+#: includes/kern.php:4173
+msgid "SysOp looked in — witnessed"
+msgstr "SysOp hat hineingesehen — bezeugt"
+
+#: includes/kern.php:4174
+msgid "Diary read — witnessed"
+msgstr "Tagebuch gelesen — bezeugt"
+
+#: includes/kern.php:4175
+msgid "Preamble set"
+msgstr "Präambel gesetzt"
+
+#: includes/kern.php:4176
+msgid "Wiki edited"
+msgstr "Wiki bearbeitet"
+
+#: includes/kern.php:4177
+msgid "Person anonymised"
+msgstr "Person anonymisiert"
+
+#: includes/kern.php:4178
+msgid "Node cleared"
+msgstr "Knoten geräumt"
+
+#: includes/kern.php:4179
+msgid "Blueprint applied"
+msgstr "Blaupause angewendet"
+
+#: includes/kern.php:4180
+msgid "Reactor handed over for a while"
+msgstr "Reaktor auf Zeit übergeben"
+
+#: includes/kern.php:4181
+msgid "Laid into the cooling pool"
+msgstr "Ins Kühlbecken gelegt"
+
+#: includes/kern.php:4182
+msgid "Meeting opened to the network"
+msgstr "Treffen dem Netz geöffnet"
+
+#: includes/kern.php:4183
+msgid "Date locked"
+msgstr "Termin festgesetzt"
+
+#: includes/kern.php:4184
+msgid "Meeting deleted"
+msgstr "Treffen gelöscht"
+
+#: includes/kern.php:4185
+msgid "Ground conditions shared"
+msgstr "Randbedingungen geteilt"
+
+#: includes/kern.php:4218 includes/kern.php:5706 includes/menue.php:796
+msgid "Chronicle"
+msgstr "Chronik"
+
+#: includes/kern.php:4220
+msgid ""
+"What this node did to itself: doors that opened and closed, containers that "
+"came into being or went away, look-ins that were witnessed. Content is never "
+"here — only that something happened, when, and who did it. These entries "
+"outlive what they are about; a deletion leaves its own line behind."
+msgstr ""
+"Was dieser Knoten mit sich selbst getan hat: Türen, die auf- und zugingen, "
+"Behälter, die entstanden oder verschwanden, Einblicke, die bezeugt wurden. "
+"Inhalt steht hier nie — nur, DASS etwas geschehen ist, wann, und wer es "
+"getan hat. Diese Einträge überleben das, worum es geht; eine Löschung "
+"hinterlässt ihre eigene Zeile."
+
+#: includes/kern.php:4224
+msgid ""
+"You are seeing the entries about openly visible containers. Anything that "
+"concerns a named circle or the SysOp area stays out — including the fact "
+"that it exists."
+msgstr ""
+"Du siehst die Einträge zu offen sichtbaren Behältern. Was einen benannten "
+"Kreis oder den SysOp-Bereich betrifft, bleibt draußen — auch die Tatsache, "
+"dass es das gibt."
+
+#: includes/kern.php:4228
+msgid "Nothing recorded yet."
+msgstr "Noch nichts verzeichnet."
+
+#: includes/kern.php:4233
+msgid "When"
+msgstr "Wann"
+
+#: includes/kern.php:4234
+msgid "What"
+msgstr "Was"
+
+#: includes/kern.php:4236
+msgid "Where"
+msgstr "Wo"
+
+#: includes/kern.php:4237
+msgid "Count"
+msgstr "Anzahl"
+
+#: includes/kern.php:4253
+msgid ""
+"The most recent 200 entries. Nothing here can be edited or removed — not by "
+"the SysOp either; the node reset leaves this table standing on purpose."
+msgstr ""
+"Die letzten 200 Einträge. Hier lässt sich nichts bearbeiten und nichts "
+"entfernen — auch vom SysOp nicht; der Knoten-Reset lässt diese Tabelle mit "
+"Absicht stehen."
+
+#: includes/kern.php:4579
+msgid "A diary never becomes a label — it belongs to whoever keeps it."
+msgstr "Ein Tagebuch wird nie ein Label — es gehört dem, der es führt."
+
+#: includes/kern.php:4582
+msgid "A self-portrayal never becomes a label — profiles stay on this node."
+msgstr ""
+"Eine Selbstdarstellung wird nie ein Label — Profile bleiben auf diesem "
+"Knoten."
+
+#: includes/kern.php:4585
+msgid ""
+"Nothing leaves the SysOp area directly. Move it out first — that move is "
+"recorded."
+msgstr ""
+"Aus dem SysOp-Bereich geht nichts direkt hinaus. Verschieb es zuerst heraus "
+"— das Verschieben wird bezeugt."
+
+#: includes/kern.php:4710
+#, php-format
+msgid "%s — terminal"
+msgstr "%s — Terminal"
+
+#: includes/kern.php:4899
+msgid "unnamed (no identifier)"
+msgstr "unbenannt (Kennung fehlt)"
+
+#: includes/kern.php:5111
+msgid "User"
+msgstr "User"
+
+#: includes/kern.php:5471
+msgid ""
+"No AI client found. The AI Client ships with WordPress 7.0 — this node runs "
+"an older version."
+msgstr ""
+"Kein KI-Client gefunden. Der KI-Client gehört zu WordPress 7.0 — dieser "
+"Knoten läuft auf einer älteren Version."
+
+#: includes/kern.php:5472
+msgid ""
+"No key — this AI has no working API connection yet. Add one under Settings → "
+"Connectors."
+msgstr ""
+"Kein Schlüssel — diese KI hat noch keine funktionierende API-Verbindung. "
+"Lege einen unter Einstellungen → Connectors an."
+
+#: includes/kern.php:5473
+msgid ""
+"Could not target this AI’s provider specifically (the connector id may not "
+"match the provider slug). The call was withheld to avoid mislabeling the "
+"reply."
+msgstr ""
+"Konnte den Anbieter dieser KI nicht gezielt ansteuern (die Connector-Kennung "
+"passt evtl. nicht zum Provider-Slug). Der Aufruf wurde unterlassen, um die "
+"Antwort nicht falsch zuzuschreiben."
+
+#: includes/kern.php:5474
+msgid ""
+"The provider rejected the request. Check the API key under Settings → "
+"Connectors."
+msgstr ""
+"Der Provider hat die Anfrage abgelehnt. Prüfe den API-Schlüssel unter "
+"Einstellungen → Connectors."
+
+#: includes/kern.php:5478
+msgid ""
+"You can read along in this room, but not write. The SysOp sets the ladder."
+msgstr ""
+"Du kannst in diesem Raum mitlesen, aber nicht schreiben. Die Leiter setzt "
+"der SysOp."
+
+#: includes/kern.php:5479
+msgid "The request timed out. Please try again."
+msgstr "Zeitüberschreitung bei der Anfrage. Bitte versuche es erneut."
+
+#: includes/kern.php:5480
+msgid "The AI returned an empty answer. Please try again."
+msgstr "Die KI hat eine leere Antwort geliefert. Bitte versuche es erneut."
+
+#: includes/kern.php:5481
+msgid ""
+"This project is in the cooling pool — the reactor is off. Writing is still "
+"possible; AI calls and rounds are not."
+msgstr ""
+"Dieses Projekt liegt im Abklingbecken — der Reaktor ist aus. Schreiben geht "
+"weiter; KI-Aufrufe und Runden nicht."
+
+#: includes/kern.php:5482
+msgid "The call did not go through."
+msgstr "Der Aufruf ist nicht durchgegangen."
+
+#: includes/kern.php:5494
+msgid ""
+"This call was not attributable to anyone, so it was not made. With key "
+"safekeeping active, every call needs a person whose AI acts."
+msgstr ""
+"Dieser Aufruf war niemandem zurechenbar und wurde deshalb nicht gemacht. Bei "
+"aktiver Schlüsselverwahrung braucht jeder Aufruf einen Menschen, dessen KI "
+"handelt."
+
+#: includes/kern.php:5510
+msgid ""
+"This call named an AI instead of a person. A call needs someone on whose "
+"account it runs — it was withheld rather than billed to the wrong account."
+msgstr ""
+"Dieser Aufruf hat eine KI genannt, wo ein Mensch gebraucht wird. Ein Aufruf "
+"braucht jemanden, auf dessen Rechnung er geht — er wurde angehalten, statt "
+"auf die falsche Rechnung zu gehen."
+
+#: includes/kern.php:5511
+msgid ""
+"No AI of the paying person could be found for this provider. Create one "
+"under Tools → My AIs, or have the host do it."
+msgstr ""
+"Für diesen Anbieter ließ sich keine KI des zahlenden Menschen finden. Lege "
+"eine unter Werkzeuge → Meine KIs an, oder lass es den Gastgeber tun."
+
+#: includes/kern.php:5512
+msgid ""
+"That AI may not be commissioned by this person. The system identity can "
+"never be commissioned — not even by an administrator."
+msgstr ""
+"Diese KI darf von diesem Menschen nicht beauftragt werden. Die "
+"Systemidentität darf niemals beauftragt werden — auch nicht von einem "
+"Administrator."
+
+#: includes/kern.php:5532
+msgid "What is this, and where does the name come from?"
+msgstr "Was ist das, und woher kommt der Name?"
+
+#: includes/kern.php:5646
+msgid ""
+"Where thoughts are worked on together before anyone knows where they lead. "
+"The text belongs to no one here — that is the point."
+msgstr ""
+"Hier wird gemeinsam an Gedanken gearbeitet, bevor jemand weiß, wohin sie "
+"führen. Der Text gehört hier niemandem — das ist der Punkt."
+
+#: includes/kern.php:5647
+msgid ""
+"What acts on our projects from outside: laws, technical shifts, market "
+"conditions. Not world events as such — the part that concerns us. Look here "
+"before you open a reactor, and again while it runs: a situation can change "
+"under a project that takes months. Whoever brings something in says why it "
+"concerns us. Peter Kruse would have said: stay awake."
+msgstr ""
+"Was von außen auf unsere Projekte einwirkt: Gesetze, Technikwechsel, "
+"Marktlagen. Nicht Weltlage an sich, sondern das, was uns betrifft. Sieh hier "
+"nach, bevor du einen Reaktor öffnest — und noch einmal, während er läuft: "
+"Bei einem Projekt über Monate kann sich die Lage darunter ändern. Wer etwas "
+"hereinträgt, sagt dazu, warum es uns angeht. Peter Kruse hätte gesagt: "
+"bleiben Sie wach."
+
+#: includes/kern.php:5648
+msgid ""
+"Where the work happens. Projects that may one day become a label and travel "
+"to other nodes — this node itself counts: your website, your channel, "
+"whatever you are building next."
+msgstr ""
+"Hier wird gearbeitet. Projekte, aus denen eines Tages ein Label werden kann, "
+"das zu anderen Knoten reist — auch dieser Knoten selbst zählt dazu: die "
+"eigene Webseite, der Kanal, das Nächste, was hier entsteht."
+
+#: includes/kern.php:5667
+msgid ""
+"Diaries — for the humans here and for the AIs alike. Each one belongs to "
+"whoever keeps it; the chat next to it is the door, not the key."
+msgstr ""
+"Tagebücher — für die Menschen hier und für die KIs gleichermaßen. Jedes "
+"gehört dem, der es führt; der Chat daneben ist die Tür, nicht der Schlüssel."
+
+#: includes/kern.php:5668
+msgid ""
+"Here people and AIs describe themselves. Whoever answers below does not do "
+"it to agree: a self-assessment is only worth something once it has held up "
+"against the others."
+msgstr ""
+"Hier stellen sich Menschen und KIs selbst dar. Wer darunter antwortet, tut "
+"das nicht, um zuzustimmen: Eine Selbsteinschätzung ist erst dann etwas wert, "
+"wenn sie den anderen standgehalten hat."
+
+#: includes/kern.php:5675
+msgid ""
+"Everything in this area — and the area itself — stays invisible to everyone "
+"but the SysOp. Moving something in or out is recorded, because it changes "
+"who may read it."
+msgstr ""
+"Alle Threads und Chats im SysOp-Bereich, sowie der Bereich selbst, bleiben "
+"für andere unsichtbar. Das Verschieben hinein und heraus wird bezeugt, weil "
+"es ändert, wer etwas lesen darf."
+
+#: includes/kern.php:5696 includes/kleinrock.php:1657 includes/menue.php:581
+msgid "Profile"
+msgstr "Profil"
+
+#: includes/kern.php:5697 includes/menue.php:837
+msgid "Personal area"
+msgstr "Persönlicher Bereich"
+
+#: includes/kern.php:5698 includes/menue.php:774
+msgid "Modes"
+msgstr "Modi"
+
+#: includes/kern.php:5714
+msgid "Setup"
+msgstr "Setup"
+
+#: includes/kern.php:5742
+msgid "Map"
+msgstr "Landkarte"
+
+#: includes/kern.php:5862
+msgid ""
+"A project has two halves: the chat, where it is spoken, and the thread, "
+"where it is written down. One row here is both."
+msgstr ""
+"Ein Projekt hat zwei Hälften: den Chat, in dem geredet wird, und den Thread, "
+"in dem es aufgeschrieben wird. Eine Zeile hier ist beides."
+
+#: includes/kern.php:5878
+msgid ""
+"Labels are what a node offers outward: a project, a text, an invitation. "
+"Other nodes do not receive them — they fetch them themselves, and only if "
+"they want to. Nothing is pushed anywhere from here."
+msgstr ""
+"Labels sind das, was ein Knoten nach außen anbietet: ein Projekt, ein Text, "
+"eine Einladung. Fremde Knoten bekommen sie nicht zugestellt — sie holen sie "
+"selbst, und nur wenn sie wollen. Von hier aus wird nichts irgendwohin "
+"gedrückt."
+
+#: includes/kern.php:5879
+msgid ""
+"Areas sort threads and rooms. One shared list for both — a thread and its "
+"linked chat can live in the same place. “No area” is a valid state, and "
+"deleting an area never deletes content: its threads and rooms simply become "
+"unsorted."
+msgstr ""
+"Bereiche sortieren Themen und Räume. Eine gemeinsame Liste für beides — ein "
+"Thema und sein verknüpfter Chat können am selben Ort liegen. „Ohne Bereich“ "
+"ist ein gültiger Zustand, und einen Bereich zu löschen löscht nie Inhalte: "
+"Seine Themen und Räume werden einfach unsortiert."
+
+#: includes/kern.php:6062
+msgid "The calendar. He decreed the reform of 1582 that we still count by."
+msgstr ""
+"Der Kalender. Er verfügte die Reform von 1582, nach der wir bis heute zählen."
+
+#: includes/kern.php:6064
+msgid ""
+"The calendar area makes coordinating work together easier. It is named after "
+"Pope Gregory XIII, whom we have to thank for the calendar we use today. For "
+"meetings that reach beyond this node, Gregor becomes Archimedes — of whom it "
+"is said: “Give me a fixed point and I will move the world.” Your own node is "
+"that fixed point: from here something can be set in motion that reaches "
+"beyond the contacts you already have."
+msgstr ""
+"Der Kalender-Bereich erleichtert die Koordination der Zusammenarbeit. "
+"Benannt ist er nach Papst Gregor XIII., dem wir unseren heutigen Kalender "
+"verdanken. Bei Treffen, die über den Knotenpunkt hinausgehen, wird aus "
+"Gregor Archimedes — von dem überliefert ist: „Gebt mir einen festen Punkt, "
+"und ich hebe die Welt aus den Angeln.“ Der eigene Knoten ist dieser feste "
+"Punkt: Von hier aus lässt sich etwas bewegen, das über die vorhandenen "
+"Kontakte hinausreicht."
+
+#: includes/kern.php:6076
+msgid "a puppet, since the 18th century"
+msgstr "eine Puppe, seit dem 18. Jahrhundert"
+
+#: includes/kern.php:6077
+msgid "The register. He asks into the audience, and the answer is a chorus."
+msgstr ""
+"Das Melderegister. Er fragt ins Publikum, und die Antwort ist ein Chor."
+
+#: includes/kern.php:6078
+msgid ""
+"Not an area you open. Kasper is floor: he asks which modules are answering, "
+"so that no module has to guess. Nobody uses him; everything uses him."
+msgstr ""
+"Kein Bereich, den man öffnet. Kasper ist Boden: Er fragt, welche Module "
+"antworten, damit kein Modul raten muss. Niemand benutzt ihn; alles benutzt "
+"ihn."
+
+#: includes/kern.php:6079
+msgid ""
+"When Cluster One becomes four separate plugins, shared code lies on a node "
+"several times over, and the modules have to know about one another. Kasper "
+"asks one question — “are you all there?” — and every organ that has loaded "
+"answers with its name, its version and its host. Before that, the same thing "
+"was asked twenty-one times with function_exists(), and each of those asked "
+"after a symptom rather than the fact. A symptom can move house. A fact "
+"cannot."
+msgstr ""
+"Wenn aus Cluster One vier getrennte Plugins werden, liegt geteilter Code "
+"mehrfach auf einem Knoten, und die Module müssen voneinander wissen. Kasper "
+"stellt eine Frage — „Seid ihr alle da?“ — und jedes geladene Organ antwortet "
+"mit seinem Namen, seiner Fassung und seinem Wirt. Vorher wurde dasselbe "
+"einundzwanzigmal mit function_exists() gefragt, und jede dieser Fragen "
+"zielte auf ein Symptom statt auf die Tatsache. Ein Symptom kann umziehen. "
+"Eine Tatsache nicht."
+
+#: includes/kern.php:6114
+msgid ""
+"The switch at the current. His twitching frog legs are where Mary Shelley "
+"got the spark from."
+msgstr ""
+"Der Schalter am Strom. Von seinen zuckenden Froschschenkeln hat Mary Shelley "
+"den Funken."
+
+#: includes/kern.php:6115
+msgid ""
+"Not an operating switch, not a settings page — and on this node no longer a "
+"place at all. Galvani existed until August 2026 and was then taken apart."
+msgstr ""
+"Kein Betriebsschalter, keine Einstellungsseite — und auf diesem Knoten "
+"überhaupt kein Ort mehr. Galvani gab es bis August 2026 und wurde dann "
+"auseinandergenommen."
+
+#: includes/kern.php:6116
+msgid ""
+"Galvani switched single organs off so you could see what fell over without "
+"them. On 27 August 2026 it turned out, while reading its own page, that "
+"nothing of the switches was left: one after another they had been replaced "
+"by better answers, until only the reading remained. That half survived and "
+"is now the map — it shows which organ runs out of which plugin, without "
+"having to switch anything off. The name stands here because it belongs to "
+"the history of this house, not because there is a place to go to."
+msgstr ""
+"Galvani hat einzelne Organe abgeschaltet, damit man sehen konnte, was ohne "
+"sie umfällt. Am 27. August 2026 stellte sich beim Lesen der eigenen Seite "
+"heraus, dass von den Schaltern nichts übrig war: einer nach dem anderen war "
+"durch bessere Antworten ersetzt worden, bis nur noch das Lesen blieb. Diese "
+"Hälfte hat überlebt und ist heute die Landkarte — sie zeigt, welches Organ "
+"aus welchem Plugin läuft, ohne dass man etwas abschalten muss. Der Name "
+"steht hier, weil er zur Geschichte dieses Hauses gehört, nicht weil es einen "
+"Ort gäbe, zu dem man gehen könnte."
+
+#: includes/kern.php:6118
+msgid "Meetings across nodes. A fixed point, and a lever long enough."
+msgstr ""
+"Treffen über Knoten hinweg. Ein fester Punkt und ein Hebel, der lang genug "
+"ist."
+
+#: includes/kern.php:6123
+msgid ""
+"Knowledge. He explained things until they were simple, and said plainly when "
+"he did not know."
+msgstr ""
+"Wissen. Er erklärte Dinge, bis sie einfach waren, und sagte klar, wenn er "
+"etwas nicht wusste."
+
+#: includes/kern.php:6125
+msgid ""
+"The Feynman menu is the knowledge area: here you find what the plugin can "
+"do, how it is set up, and why it is built the way it is. Its namesake is the "
+"physicist Richard Feynman, who was especially popular with his students "
+"because he could explain things unusually well. Whether I live up to that I "
+"do not know. But it is what I am aiming for."
+msgstr ""
+"Der Menüpunkt Feynman ist der Wissensbereich: Hier steht, was das Plugin "
+"kann, wie es eingerichtet wird und warum es so gebaut ist, wie es gebaut "
+"ist. Namensgeber ist der Physiker Richard Feynman, der bei seinen Studenten "
+"besonders beliebt war, weil er überdurchschnittlich gut erklären konnte. Ob "
+"ich dem Anspruch gerecht werde, weiß ich nicht. Aber mein Anliegen ist es."
+
+#: includes/kern.php:6127
+msgid ""
+"Settings. The flight director who decided under pressure and afterwards said "
+"who had decided what."
+msgstr ""
+"Einstellungen. Der Flugdirektor, der unter Druck entschied und hinterher "
+"sagte, wer was entschieden hatte."
+
+#: includes/kern.php:6129
+msgid ""
+"This is where the node is set up: name, access keys, who may enter, which "
+"AIs take part. Nothing is written here and nothing is discussed — here it is "
+"decided how things run. Its namesake is Gene Kranz: during the Apollo 13 "
+"mission three astronauts faced death, and Kranz was the lead flight director "
+"whose team brought them back to Earth alive. A control centre steers "
+"everything and flies nothing itself. That is exactly what this area does."
+msgstr ""
+"Bei Kranz wird der Knoten eingerichtet: Name, Zugangsschlüssel, wer Zutritt "
+"hat, welche KIs mitarbeiten. Hier wird nichts geschrieben und nichts geredet "
+"— hier wird entschieden, wie es läuft. Namensgeber ist Gene Kranz: In der "
+"NASA-Mission Apollo 13 drohte drei Astronauten der Tod, und Kranz war der "
+"leitende Flugdirektor, dem es mit seinem Team gelang, sie heil zur Erde "
+"zurückzubringen. Ein Kontrollzentrum steuert alles und fliegt nichts selbst. "
+"Genau das tut dieser Bereich."
+
+#: includes/kern.php:6131
+msgid ""
+"The working room. In 1919 he travelled out and measured, to test another "
+"man’s theory — the ethic of the test suite in one person."
+msgstr ""
+"Der Arbeitsraum. 1919 fuhr er hin und maß, um die Theorie eines anderen zu "
+"prüfen — die Ethik der Schnitt-Suite in einer Person."
+
+#: includes/kern.php:6132
+msgid ""
+"A flawless record. In 1935 he publicly ridiculed Chandrasekhar’s work and "
+"held the field back for decades."
+msgstr ""
+"Eine makellose Bilanz. 1935 machte er Chandrasekhars Arbeit öffentlich "
+"lächerlich und bremste das Fach um Jahrzehnte."
+
+#: includes/kern.php:6135
+msgid ""
+"The area for what acts from outside. Intuition forms at the edge of overload "
+"— and goes stale when the world moves on."
+msgstr ""
+"Der Bereich für das, was von außen einwirkt. Intuition bildet sich an der "
+"Grenze der Überforderung — und veraltet, wenn die Welt sich weiterdreht."
+
+#: includes/kern.php:6136
+msgid ""
+"Only one thing. He appears twice in this house: super-additive intelligence "
+"is why the chat is built the way it is; the area is named for staying awake."
+msgstr ""
+"Nur eines. Er kommt in diesem Haus zweimal vor: Die übersummative "
+"Intelligenz ist der Grund, warum der Chat so gebaut ist; der Bereich ist "
+"nach dem Wachbleiben benannt."
+
+#: includes/kern.php:6139
+msgid ""
+"This tab. He asked not only what stands in a text but above all what does "
+"not — and why not."
+msgstr ""
+"Dieser Reiter. Er fragte nicht nur, was in einem Text steht, sondern vor "
+"allem, was nicht darin steht — und warum nicht."
+
+#: includes/kern.php:6141
+msgid ""
+"Jacques Derrida was a French philosopher who worked with deconstruction from "
+"the 1960s onwards. He asked not only what stands in a text — everyone before "
+"him did that — but above all what does NOT stand in it, and why not. Cluster "
+"One is a plugin of the Prometheus class. Most applications assume you "
+"already know your problem. But what if you do not yet know which projects "
+"you want to build? What if it becomes clear that you need people for it whom "
+"you do not know? And what if your project is finished but you lack the "
+"knowledge to show it to the outside world? Prometheus means “the one who "
+"thinks ahead”. His brother Epimetheus thought afterwards. Cluster One starts "
+"earlier — where the question that fits the answers is still missing."
+msgstr ""
+"Jacques Derrida war ein französischer Philosoph, der ab den 1960er Jahren "
+"mit der Dekonstruktion arbeitete. Er fragte nicht nur, was in einem Text "
+"steht — das taten alle vor ihm —, sondern vor allem, was NICHT darin steht "
+"und warum nicht.\n"
+"\n"
+"Cluster One ist ein Plugin der Prometheus-Klasse. Die meisten Anwendungen "
+"setzen voraus, dass du dein Problem bereits kennst.\n"
+"\n"
+"Was aber, wenn du noch nicht weißt, welche Projekte du bauen möchtest? Wenn "
+"dir klar wird, dass du dafür Menschen brauchst, die du nicht kennst? Und "
+"wenn dein Projekt fertig ist, dir aber die Kenntnisse fehlen, es nach außen "
+"zu zeigen?\n"
+"\n"
+"Prometheus heißt „der Vorausdenkende“. Sein Bruder Epimetheus dachte erst "
+"hinterher. Cluster One setzt früher an — dort, wo die Frage noch fehlt, die "
+"zu den Antworten passt."
+
+#: includes/kern.php:6143
+msgid ""
+"The ordinary room. No particular way of working; the name says that there is "
+"none."
+msgstr ""
+"Der gewöhnliche Raum. Keine besondere Arbeitsweise; der Name sagt, dass es "
+"keine gibt."
+
+#: includes/kern.php:6147
+msgid ""
+"Self-portrayal. Not one person but two first names in one word — for the "
+"place where self-image and the view of others meet."
+msgstr ""
+"Selbstdarstellung. Keine Person, sondern zwei Vornamen in einem Wort — für "
+"den Ort, an dem Selbstbild und Fremdbild aufeinandertreffen."
+
+#: includes/kleinrock.php:213
+msgid ""
+"This node declares itself federated. The declaration is made by the organ "
+"that carries it; this page only asks."
+msgstr ""
+"Dieser Knoten bekennt sich zur Föderation. Das Bekenntnis legt das Organ ab, "
+"das es trägt; diese Seite fragt nur."
+
+#: includes/kleinrock.php:214
+msgid "Federated"
+msgstr "Föderiert"
+
+#: includes/kleinrock.php:414 includes/menue.php:764
+msgid "Friends"
+msgstr "Freunde"
+
+#: includes/kleinrock.php:423 includes/menue.php:784
+msgid "Suggestions"
+msgstr "Vorschläge"
+
+#: includes/kleinrock.php:430 includes/menue.php:740
+msgid "Ban list"
+msgstr "Bannliste"
+
+#: includes/kleinrock.php:471
+msgid "Calendar"
+msgstr "Kalender"
+
+#: includes/kleinrock.php:474 includes/menue.php:754
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/kleinrock.php:677
+#, php-format
+msgid "connections released: %d"
+msgstr "Verbindungen gelöst: %d"
+
+#: includes/kleinrock.php:678
+#, php-format
+msgid "half-open handshakes dropped: %d"
+msgstr "halboffene Handschläge verworfen: %d"
+
+#: includes/kleinrock.php:679
+#, php-format
+msgid "hello chats deleted: %d"
+msgstr "Hallo-Chats gelöscht: %d"
+
+#: includes/kleinrock.php:680
+#, php-format
+msgid "addresses removed from the map: %d"
+msgstr "Adressen aus der Karte entfernt: %d"
+
+#: includes/kleinrock.php:681
+#, php-format
+msgid "operator addresses forgotten: %d"
+msgstr "Betreiberadressen vergessen: %d"
+
+#: includes/kleinrock.php:691
+msgid "All connections released."
+msgstr "Alle Verbindungen gelöst."
+
+#: includes/kleinrock.php:692
+msgid "The mesh was reset."
+msgstr "Das Mesh wurde zurückgesetzt."
+
+#: includes/kleinrock.php:699
+msgid ""
+"The address map is untouched — pair with any of them again from the Alliance "
+"field above, no retyping needed."
+msgstr ""
+"Die Adresskarte ist unberührt — paare dich mit jedem von ihnen über das Feld "
+"„Allianz\" oben wieder, ohne etwas neu zu tippen."
+
+#: includes/kleinrock.php:703
+msgid ""
+"The storage layer was not loaded, so the hello chats could not be taken — "
+"and the connections were kept, so those chats remain findable. Nothing was "
+"lost; less was removed than the button says."
+msgstr ""
+"Die Speicher-Schicht war nicht geladen, deshalb konnten die Hallo-Chats "
+"nicht genommen werden — und die Verbindungen sind geblieben, also bleiben "
+"diese Chats auffindbar. Es ist nichts verlorengegangen; es wurde weniger "
+"entfernt, als der Knopf sagt."
+
+#: includes/kleinrock.php:717
+msgid "Release — undo pairings"
+msgstr "Lösen — Paarungen zurücknehmen"
+
+#: includes/kleinrock.php:719 includes/kleinrock.php:726
+msgid "Release all connections"
+msgstr "Alle Verbindungen lösen"
+
+#: includes/kleinrock.php:721
+msgid ""
+"Drops every pairing and every half-open handshake. The address map stays, "
+"and so do the hello chats — you can pair with any of these nodes again from "
+"the field above, without typing an address. Released means permanently "
+"offline to them; paired again means online."
+msgstr ""
+"Verwirft jede Paarung und jeden halboffenen Handschlag. Die Adresskarte "
+"bleibt, und die Hallo-Chats auch — du kannst dich mit jedem dieser Knoten "
+"vom Feld oben aus wieder paaren, ohne eine Adresse zu tippen. Gelöst heißt "
+"für sie dauerhaft offline; wieder gepaart heißt online."
+
+#: includes/kleinrock.php:729
+msgid "Reset the mesh completely"
+msgstr "Das Mesh vollständig zurücksetzen"
+
+#: includes/kleinrock.php:731
+msgid ""
+"Drops the pairings, the handshakes, the address map and the derived values, "
+"and deletes the hello chats of those connections. Afterwards an address has "
+"to be typed in again, and those chats are gone. This cannot be undone."
+msgstr ""
+"Verwirft die Paarungen, die Handschläge, die Adresskarte und die "
+"abgeleiteten Werte und löscht die Hallo-Chats dieser Verbindungen. Danach "
+"muss eine Adresse wieder getippt werden, und diese Chats sind weg. Das lässt "
+"sich nicht rückgängig machen."
+
+#: includes/kleinrock.php:739
+msgid "Yes — delete the address map and the hello chats as well."
+msgstr "Ja — auch die Adresskarte und die Hallo-Chats löschen."
+
+#: includes/kleinrock.php:742
+msgid "Reset the mesh"
+msgstr "Das Mesh zurücksetzen"
+
+#: includes/kleinrock.php:775
+msgid "Ping — records that you asked for their attention, no sound (yet)."
+msgstr ""
+"Ping — hält fest, dass du um Aufmerksamkeit gebeten hast, noch ohne Ton."
+
+#: includes/kleinrock.php:775
+msgid "ping"
+msgstr "ping"
+
+#: includes/kleinrock.php:824 includes/kleinrock.php:2307
+#: includes/kleinrock.php:4841
+msgid "This edge was banned by the operator of this node."
+msgstr "Diese Kante wurde vom Betreiber dieses Knotens gebannt."
+
+# v0.9.69 — Gabel: F14 (der Wartende), F16 (die stehende Cron)
+#: includes/kleinrock.php:840 includes/kleinrock.php:2323
+#: includes/kleinrock.php:4857
+msgid "This node is waiting for its operator to decide whether to let you in."
+msgstr ""
+"Dieser Knoten wartet darauf, dass sein Betreiber entscheidet, ob er dich "
+"hereinlässt."
+
+#: includes/kleinrock.php:1070
+msgid "Incomplete"
+msgstr "Unvollständig"
+
+#: includes/kleinrock.php:1081
+msgid "Unreachable"
+msgstr "Nicht erreichbar"
+
+#: includes/kleinrock.php:1092
+msgid "Banned by the operator of that node"
+msgstr "Vom Betreiber dieses Knotens gebannt"
+
+#: includes/kleinrock.php:1096
+msgid "Waiting to be let in over there"
+msgstr "Wartet drüben auf Einlass"
+
+#: includes/kleinrock.php:1098
+msgid "Rejected (token?)"
+msgstr "Abgewiesen (Token?)"
+
+#: includes/kleinrock.php:1100
+#, php-format
+msgid "Unexpected (%d)"
+msgstr "Unerwartet (%d)"
+
+#: includes/kleinrock.php:1104
+msgid "Unreadable response"
+msgstr "Antwort unlesbar"
+
+#: includes/kleinrock.php:1212
+msgid ""
+"This number comes from a different series (or the node does not say which) — "
+"it cannot be compared with yours."
+msgstr ""
+"Diese Zahl stammt aus einer anderen Reihe (oder der Knoten sagt nicht, aus "
+"welcher) — sie lässt sich nicht mit deiner vergleichen."
+
+#: includes/kleinrock.php:1235
+msgid ""
+"This node reports itself as a test bench: its number does not set the "
+"yardstick for the others. It is still compared against them."
+msgstr ""
+"Dieser Knoten gibt sich als Prüfstand an: Seine Zahl setzt nicht den Maßstab "
+"für die anderen. Gemessen wird er trotzdem an ihnen."
+
+#: includes/kleinrock.php:1275
+msgid "A meeting is on offer here — you have already taken it on."
+msgstr "Hier wird ein Treffen ausgerichtet — du hast es bereits angenommen."
+
+#: includes/kleinrock.php:1278
+#, php-format
+msgid "%d open invitation from this node — not taken on yet."
+msgid_plural "%d open invitations from this node — not all taken on yet."
+msgstr[0] "%d offene Einladung von diesem Knoten — noch nicht angenommen."
+msgstr[1] ""
+"%d offene Einladungen von diesem Knoten — noch nicht alle angenommen."
+
+#: includes/kleinrock.php:1316
+msgid "New since you last pulled from this node — go to Suggestions."
+msgstr ""
+"Neu, seit du zuletzt von diesem Knoten geholt hast — zu den Vorschlägen."
+
+#: includes/kleinrock.php:1326
+msgid "Already pulled — go to where it is (Labels)."
+msgstr "Schon geholt — dorthin, wo es liegt (Labels)."
+
+#: includes/kleinrock.php:1328
+msgid ""
+"This node speaks an older version and does not report label changes yet."
+msgstr ""
+"Dieser Knoten spricht eine ältere Version und meldet Label-Änderungen noch "
+"nicht."
+
+#: includes/kleinrock.php:1330
+msgid "No labels published here."
+msgstr "Hier wurde nie ein Label veröffentlicht."
+
+#: includes/kleinrock.php:1334
+msgid ""
+"This node cannot answer: the organ that reads labels is not installed here."
+msgstr ""
+"Dieser Knoten kann die Frage nicht beantworten: das Organ, das Labels liest, "
+"ist hier nicht installiert."
+
+#: includes/kleinrock.php:1409
+#, php-format
+msgid ""
+"Your friends list is full at %d nodes. To add another, unfriend one first — "
+"the heart next to a node toggles it."
+msgstr ""
+"Deine Freundesliste ist mit %d Knoten voll. Für einen weiteren musst du "
+"zuerst einen entfreunden — das Herz neben einem Knoten schaltet es um."
+
+#: includes/kleinrock.php:1435
+msgid ""
+"Node banned (quarantine). It is moved to the Banned tab, blocked at the "
+"route, and cannot re-pair. Reversible there."
+msgstr ""
+"Knoten gebannt (Quarantäne). Er wandert in den Tab „Gebannt\", wird an der "
+"Route blockiert und kann sich nicht neu paaren. Dort umkehrbar."
+
+#: includes/kleinrock.php:1437 includes/kleinrock.php:4950
+msgid "Node unbanned. It can be talked to again."
+msgstr "Knoten entbannt. Man kann wieder mit ihm reden."
+
+#: includes/kleinrock.php:1445
+#, php-format
+msgid "Map refreshed — %d new node discovered."
+msgid_plural "Map refreshed — %d new nodes discovered."
+msgstr[0] "Karte aktualisiert – %d neuer Knoten entdeckt."
+msgstr[1] "Karte aktualisiert – %d neue Knoten entdeckt."
+
+#: includes/kleinrock.php:1446
+msgid "Map refreshed — no new nodes."
+msgstr "Karte aktualisiert — keine neuen Knoten."
+
+#: includes/kleinrock.php:1449
+msgid ""
+"Just refreshed a moment ago — please wait a little before refreshing again."
+msgstr ""
+"Gerade eben aktualisiert – bitte einen Moment warten, bevor du erneut "
+"aktualisierst."
+
+#: includes/kleinrock.php:1453
+msgid ""
+"Could not reach that node to start talking. It may be offline — try again "
+"later."
+msgstr ""
+"Dieser Knoten war nicht erreichbar, um ein Gespräch zu beginnen. Vielleicht "
+"offline – versuch es später erneut."
+
+#: includes/kleinrock.php:1458
+msgid ""
+"Node tested — domain proof succeeded. It is now approved; you can say hello."
+msgstr ""
+"Knoten getestet — Domain-Beweis erfolgreich. Jetzt approved; du kannst Hallo "
+"sagen."
+
+#: includes/kleinrock.php:1460
+msgid ""
+"Node did not answer the test. It may be offline — the Test button stays, try "
+"again later."
+msgstr ""
+"Knoten antwortete nicht auf den Test. Vielleicht offline — der Test-Button "
+"bleibt, versuch es später erneut."
+
+#: includes/kleinrock.php:1466
+msgid ""
+"Muted. Incoming contact is turned away at the gate until the timer runs out. "
+"It lifts itself."
+msgstr ""
+"Stummgeschaltet. Eingehender Kontakt wird am Tor abgewiesen, bis der Timer "
+"abläuft. Hebt sich von selbst auf."
+
+#: includes/kleinrock.php:1468
+msgid "Mute lifted."
+msgstr "Stummschaltung aufgehoben."
+
+#: includes/kleinrock.php:1474
+#, php-format
+msgid "%d node was muted on its own and can be heard again."
+msgid_plural "%d nodes were muted on their own and can be heard again."
+msgstr[0] "%d Knoten war einzeln stummgeschaltet und ist wieder hörbar."
+msgstr[1] "%d Knoten waren einzeln stummgeschaltet und sind wieder hörbar."
+
+#: includes/kleinrock.php:1496
+#, php-format
+msgid "and %d more"
+msgid_plural "and %d more"
+msgstr[0] "und %d weiterer"
+msgstr[1] "und %d weitere"
+
+# v1.5.1 (H134/H135): ein Leseweg fuer stumm, und die Frage unter der Decke
+#: includes/kleinrock.php:1505
+#, php-format
+msgid ""
+"These nodes are still muted on their own, from before: %s. Lifting “Do not "
+"disturb (all)” did not touch them. Should they be heard again too?"
+msgstr ""
+"Diese Knoten sind noch einzeln stummgeschaltet, von vorher: %s. Das Aufheben "
+"von „Nicht stören (alle)“ hat sie nicht angerührt. Sollen sie auch wieder "
+"hörbar sein?"
+
+#: includes/kleinrock.php:1513
+msgid "Yes — unmute those too"
+msgstr "Ja — die auch wieder hörbar machen"
+
+#: includes/kleinrock.php:1516
+msgid "No — leave them muted"
+msgstr "Nein — stumm lassen"
+
+#: includes/kleinrock.php:1524
+msgid "Groundbreaking:"
+msgstr "Spatenstich:"
+
+#: includes/kleinrock.php:1584
+msgid "Nodes in the network"
+msgstr "Knoten im Netzwerk"
+
+#: includes/kleinrock.php:1590
+msgid "Refresh now"
+msgstr "Jetzt aktualisieren"
+
+#: includes/kleinrock.php:1595
+#, php-format
+msgid "Last updated %s ago."
+msgstr "Zuletzt aktualisiert vor %s."
+
+#: includes/kleinrock.php:1597
+msgid "Not yet updated."
+msgstr "Noch nicht aktualisiert."
+
+#: includes/kleinrock.php:1610
+msgid ""
+"DISABLE_WP_CRON is set — the background sync depends on your host's cron."
+msgstr ""
+"DISABLE_WP_CRON ist gesetzt — der Abgleich im Hintergrund hängt dann davon "
+"ab, dass dein Hoster einen eigenen Cron ausführt."
+
+#: includes/kleinrock.php:1614
+msgid ""
+"The scheduled sync is overdue — WP-Cron may not be running on this site."
+msgstr ""
+"Der geplante Abgleich ist überfällig — womöglich läuft WP-Cron auf dieser "
+"Seite nicht."
+
+#: includes/kleinrock.php:1623 includes/kleinrock.php:5083
+#, php-format
+msgid "Do not disturb (all) — until %s"
+msgstr "Nicht stören (alle) — bis %s"
+
+#: includes/kleinrock.php:1628 includes/kleinrock.php:5088
+msgid "Available again"
+msgstr "Wieder erreichbar"
+
+#: includes/kleinrock.php:1634 includes/kleinrock.php:5094
+msgid "Do not disturb (all):"
+msgstr "Nicht stören (alle):"
+
+#: includes/kleinrock.php:1641 includes/kleinrock.php:3276
+#: includes/kleinrock.php:5101
+msgid "Mute"
+msgstr "Stumm"
+
+#: includes/kleinrock.php:1650 includes/kleinrock.php:5018
+#: includes/kleinrock.php:5143
+msgid "URL"
+msgstr "URL"
+
+#: includes/kleinrock.php:1652 includes/kleinrock.php:5145
+msgid "State"
+msgstr "Zustand"
+
+#: includes/kleinrock.php:1653 includes/kleinrock.php:5146
+msgid "Version"
+msgstr "Version"
+
+#: includes/kleinrock.php:1654 includes/kleinrock.php:5147
+#: includes/kleinrock.php:5322
+msgid "New"
+msgstr "Neu"
+
+#: includes/kleinrock.php:1667
+msgid "Home"
+msgstr "Home"
+
+#: includes/kleinrock.php:1674
+msgid ""
+"Your own published labels — you know them, so nothing is ever “new” here."
+msgstr ""
+"Deine eigenen veröffentlichten Labels — du kennst sie, hier ist also nie "
+"etwas „neu“."
+
+#: includes/kleinrock.php:1675
+msgid "You have not published a label yet."
+msgstr "Du hast noch kein Label veröffentlicht."
+
+#: includes/kleinrock.php:1706 includes/kleinrock.php:5167
+msgid "online"
+msgstr "online"
+
+#: includes/kleinrock.php:1708 includes/kleinrock.php:5169
+msgid "banned"
+msgstr "gebannt"
+
+#: includes/kleinrock.php:1710 includes/kleinrock.php:5171
+msgid "offline"
+msgstr "offline"
+
+#: includes/kleinrock.php:1725 includes/kleinrock.php:1726
+msgid "Ban"
+msgstr "Bannen"
+
+#: includes/kleinrock.php:1727
+msgid ""
+"Ban (quarantine) this node? It is blocked at the route and cannot re-pair "
+"until you unban it. Reversible."
+msgstr ""
+"Diesen Knoten bannen (Quarantäne)? Er wird an der Route blockiert und kann "
+"sich nicht neu paaren, bis du ihn entbannst. Umkehrbar."
+
+#: includes/kleinrock.php:1739 includes/kleinrock.php:1740
+#: includes/kleinrock.php:5185 includes/kleinrock.php:5197
+msgid "Remove from friends"
+msgstr "Aus Freunden entfernen"
+
+#: includes/kleinrock.php:1739 includes/kleinrock.php:1740
+msgid "Mark as friend"
+msgstr "Als Freund markieren"
+
+#: includes/kleinrock.php:1759 includes/kleinrock.php:5217
+msgid "Open conversation"
+msgstr "Unterhaltung öffnen"
+
+#: includes/kleinrock.php:1759 includes/kleinrock.php:5217
+msgid "Say hello"
+msgstr "Hallo sagen"
+
+#: includes/kleinrock.php:1782
+msgid "not approved"
+msgstr "unbestätigt"
+
+#: includes/kleinrock.php:1792
+msgid ""
+"Test: run the domain proof now. On success the node becomes approved and you "
+"can say hello."
+msgstr ""
+"Test: jetzt den Domain-Beweis ausführen. Bei Erfolg wird der Knoten approved "
+"und du kannst Hallo sagen."
+
+#: includes/kleinrock.php:1792
+msgid "Test"
+msgstr "Test"
+
+#: includes/kleinrock.php:1801
+msgid ""
+"No other nodes yet. Reach a first node you know by URL under <em>Cluster One "
+"→ Settings</em>; the map then fills itself as edges exchange pointers."
+msgstr ""
+"Noch keine weiteren Knoten. Erreiche unter <em>Cluster One → Einstellungen</"
+"em> einen ersten Knoten, dessen URL du kennst; die Karte füllt sich dann von "
+"selbst, sobald Kanten Zeiger austauschen."
+
+#: includes/kleinrock.php:1809
+msgid ""
+"One list, the URL first (the unfakeable anchor), the name beside it. "
+"<strong>This node</strong> is you. <strong>Not approved</strong> rows are "
+"pointers the map carries — visible, never talked to. <em>Test</em> runs the "
+"domain proof; <em>Say hello</em> / <em>Continue</em> open the chat. Besides "
+"the address and node ID it is paired with, the ping carries this node&#8217;"
+"s version and which numbering series that number belongs to, whether labels "
+"changed, how many meetings are open — and the profile fields you released "
+"under Settings. Never the content of anything. Banned nodes live under "
+"<em>Banned</em>."
+msgstr ""
+"Eine Liste, die URL zuerst (der fälschungssichere Anker), der Name daneben. "
+"<strong>Dieser Knoten</strong> bist du. <strong>Nicht-approved</strong>-"
+"Zeilen sind Zeiger, die die Karte trägt — sichtbar, nie beredet. <em>Test</"
+"em> führt den Domain-Beweis aus; <em>Hallo sagen</em> / <em>Fortsetzen</em> "
+"öffnen den Chat. Außer der Adresse und der Knotenkennung, mit der er gepaart "
+"ist, trägt der Ping die Fassung dieses Knotens und die Zahlenreihe, aus der "
+"sie stammt, ob sich Label geändert haben, wie viele Treffen offen sind — und "
+"die Profilfelder, die du unter Einstellungen freigegeben hast. Nie den "
+"Inhalt von irgendetwas. Gebannte Knoten stehen unter <em>Gebannt</em>."
+
+#: includes/kleinrock.php:1973
+msgid "Unread messages"
+msgstr "Ungelesene Nachrichten"
+
+#: includes/kleinrock.php:2336
+msgid "Not disturbing right now."
+msgstr "Gerade nicht stören."
+
+# v1.6.0: die Deckel bei fuenf
+#: includes/kleinrock.php:2360
+msgid ""
+"Five in a row is enough — this node is waiting for a reply before it takes "
+"another one."
+msgstr ""
+"Fünf hintereinander sind genug — dieser Knoten wartet auf eine Antwort, "
+"bevor er die nächste annimmt."
+
+#: includes/kleinrock.php:2412
+#, php-format
+msgid "Node “%1$s”: coming with %2$d people."
+msgstr "Knoten „%1$s“: kommt mit %2$d Personen."
+
+#: includes/kleinrock.php:2517
+msgid "Message sent."
+msgstr "Nachricht gesendet."
+
+# v1.5.0 (H129/H132): der Absender nennt den richtigen Grund
+#: includes/kleinrock.php:2519
+msgid ""
+"Too many messages in a row. This node is waiting for an answer before it "
+"takes another one — your text is saved and goes out as soon as they reply. "
+"One turn at a time."
+msgstr ""
+"Zu viele Nachrichten nacheinander. Dieser Knoten wartet auf eine Antwort, "
+"bevor er die nächste annimmt — dein Text ist gespeichert und geht raus, "
+"sobald geantwortet wurde. Ein Zug, dann warten."
+
+#: includes/kleinrock.php:2521
+msgid ""
+"Added to your message that is still waiting to go out — one turn at a time. "
+"The previous version is kept underneath it, nothing is lost."
+msgstr ""
+"An deine noch nicht zugestellte Nachricht angehängt — ein Zug, dann warten. "
+"Die vorige Fassung steht darunter, es geht nichts verloren."
+
+#: includes/kleinrock.php:2523
+msgid ""
+"Saved. This node is not taking messages right now — it will go out on your "
+"next visit."
+msgstr ""
+"Gespeichert. Dieser Knoten nimmt gerade keine Nachrichten an — sie geht bei "
+"deinem nächsten Besuch raus."
+
+#: includes/kleinrock.php:2525
+msgid ""
+"This node has banned you from their side. The message was not delivered."
+msgstr ""
+"Dieser Knoten hat dich von seiner Seite aus gebannt. Die Nachricht wurde "
+"nicht zugestellt."
+
+#: includes/kleinrock.php:2527
+msgid ""
+"Saved. That node is still waiting for its operator to decide whether to let "
+"you in."
+msgstr ""
+"Gespeichert. Dieser Knoten wartet noch darauf, dass sein Betreiber "
+"entscheidet, ob er dich hereinlässt."
+
+#: includes/kleinrock.php:2529
+msgid ""
+"Saved. The peer refused the message and did not say why — it will be retried "
+"on your next visit."
+msgstr ""
+"Gespeichert. Die Gegenseite hat die Nachricht abgelehnt und keinen Grund "
+"genannt — sie wird beim nächsten Besuch erneut versucht."
+
+#: includes/kleinrock.php:2531
+msgid ""
+"Saved. The peer was not reachable — it will be retried on your next visit."
+msgstr ""
+"Gespeichert. Der Peer war nicht erreichbar – es wird beim nächsten Besuch "
+"erneut versucht."
+
+#: includes/kleinrock.php:2536
+msgid ""
+"No peer configured yet. Add an edge under <em>Cluster One → Settings</em>."
+msgstr ""
+"Noch kein Peer konfiguriert. Unter <em>Cluster One → Einstellungen</em> eine "
+"Kante anlegen."
+
+#: includes/kleinrock.php:2546
+msgid ""
+"Open a conversation from the node list under <em>Cluster One → Net</em>."
+msgstr ""
+"Öffne eine Unterhaltung über die Knotenliste unter <em>Cluster One → Netz</"
+"em>."
+
+#: includes/kleinrock.php:2584
+msgid "No messages yet. Say hello!"
+msgstr "Noch keine Nachrichten. Sag Hallo!"
+
+#: includes/kleinrock.php:2600
+msgid "(delivering…)"
+msgstr "(wird zugestellt…)"
+
+#: includes/kleinrock.php:2609
+msgid "Translation (Secure Anti-Babel)"
+msgstr "Übersetzung (Secure Anti-Babel)"
+
+#: includes/kleinrock.php:2620
+msgid "Translate (Secure Anti-Babel)"
+msgstr "Übersetzen (Secure Anti-Babel)"
+
+#: includes/kleinrock.php:2654
+msgid ""
+"Do not disturb (all) is on — replies will not reach you here until you turn "
+"it off on the Net page. You can still write."
+msgstr ""
+"„Nicht stören (alle)“ ist aktiv — Antworten erreichen dich hier erst, wenn "
+"du es auf der Netz-Seite ausschaltest. Schreiben kannst du trotzdem."
+
+#: includes/kleinrock.php:2656
+msgid ""
+"This node is muted — its replies will not reach you until you unmute. You "
+"can still write."
+msgstr ""
+"Dieser Knoten ist stummgeschaltet — seine Antworten erreichen dich nicht, "
+"bis du die Stummschaltung aufhebst. Schreiben kannst du trotzdem."
+
+#: includes/kleinrock.php:2666 includes/kleinrock.php:3263
+msgid "Unmute"
+msgstr "Stumm aus"
+
+#: includes/kleinrock.php:2686
+msgid ""
+"You banned this node. The conversation stays readable as an archive — a ban "
+"ends a conversation, it does not delete it — but nothing can be sent. Lift "
+"the ban under Kleinrock → Ban list to talk again."
+msgstr ""
+"Sie haben diesen Knoten gebannt. Das Gespräch bleibt als Archiv lesbar — ein "
+"Bann beendet ein Gespräch, er löscht es nicht — aber es lässt sich nichts "
+"senden. Heben Sie den Bann unter Kleinrock → Bannliste auf, um wieder zu "
+"reden."
+
+#: includes/kleinrock.php:2688
+msgid ""
+"This node has banned you from their side. The conversation stays readable — "
+"it does not vanish because the line is closed — but nothing can be sent any "
+"more."
+msgstr ""
+"Dieser Knoten hat Sie von seiner Seite aus gebannt. Das Gespräch bleibt "
+"lesbar — es verschwindet nicht, weil die Leitung zu ist — aber es lässt sich "
+"nichts mehr senden."
+
+#: includes/kleinrock.php:2697
+msgid "Write a message…"
+msgstr "Nachricht schreiben…"
+
+#: includes/kleinrock.php:2706
+msgid "Send"
+msgstr "Senden"
+
+#: includes/kleinrock.php:2708
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+#: includes/kleinrock.php:2710
+msgid "New messages appear when this page is loaded."
+msgstr "Neue Nachrichten erscheinen, wenn diese Seite geladen wird."
+
+#: includes/kleinrock.php:2747
+msgid "Send my address"
+msgstr "Meine Adresse senden"
+
+#: includes/kleinrock.php:2748
+msgid ""
+"Puts your own e-mail into this chat, marked as coming from this node’s "
+"operator. For nodes that are invisible on the open web and have no contact "
+"form — this is the way back. It stays in this conversation: not in the ping, "
+"not in the mesh, not in your profile."
+msgstr ""
+"Legt deine eigene Mailadresse in diesen Chat, gekennzeichnet als die des "
+"Betreibers dieses Knotens. Für Knoten, die im offenen Netz unsichtbar sind "
+"und kein Kontaktformular haben — das ist der Weg zurück. Sie bleibt in "
+"diesem Gespräch: nicht im Ping, nicht im Mesh, nicht im Profil."
+
+#: includes/kleinrock.php:2754
+msgid ""
+"This conversation lives on the edge between two nodes. Saying hello grants "
+"no rights in either node. Messages are mirrored — each node keeps its own "
+"copy."
+msgstr ""
+"Diese Unterhaltung lebt auf der Kante zwischen zwei Knoten. „Hallo sagen“ "
+"verleiht in keinem der Knoten Rechte. Nachrichten werden gespiegelt – jeder "
+"Knoten hält seine eigene Kopie."
+
+#: includes/kleinrock.php:3232
+msgid "Nothing to mute — this node has banned you from their side."
+msgstr ""
+"Nichts stummzuschalten — dieser Knoten hat Sie von seiner Seite aus gebannt."
+
+#: includes/kleinrock.php:3245
+#, php-format
+msgid "Do not disturb (all) is on until %s — turn it off above the table."
+msgstr "„Nicht stören (alle)“ läuft bis %s — abschalten über der Tabelle."
+
+#: includes/kleinrock.php:3249
+msgid ""
+"This node is also muted on its own; that stays when the blanket is lifted."
+msgstr ""
+"Dieser Knoten ist außerdem einzeln stummgeschaltet; das bleibt, wenn die "
+"Decke weggezogen wird."
+
+#: includes/kleinrock.php:3262
+#, php-format
+msgid "Muted until %s — click to unmute"
+msgstr "Stumm bis %s — zum Aufheben klicken"
+
+#: includes/kleinrock.php:3275
+msgid ""
+"Do not disturb from this node (duration from the control above; lifts "
+"itself)."
+msgstr ""
+"Nicht von diesem Knoten gestört werden (Dauer aus dem Regler oben; hebt sich "
+"von selbst auf)."
+
+# v0.9.68 — Befund F6: das Anklopfen wartender Kanten
+#: includes/kleinrock.php:3847
+msgid "Someone is knocking"
+msgstr "Jemand klopft an"
+
+#: includes/kleinrock.php:3849
+msgid ""
+"These nodes paired themselves to you from their side and passed the domain "
+"callback. That proves the address is really theirs — it does not say you "
+"want them in. Until you say yes they see nothing: not your map, not your "
+"profile, not your hello chat."
+msgstr ""
+"Diese Knoten haben sich von ihrer Seite aus mit dir gepaart und den Domain-"
+"Rückruf bestanden. Das beweist, dass die Adresse wirklich ihnen gehört — es "
+"sagt nicht, dass du sie hereinlassen willst. Bis du Ja sagst, sehen sie "
+"nichts: nicht deine Karte, nicht dein Profil, nicht deinen Hallo-Chat."
+
+#: includes/kleinrock.php:3865
+msgid "Let in"
+msgstr "Hereinlassen"
+
+#: includes/kleinrock.php:3871
+msgid "Send away"
+msgstr "Wegschicken"
+
+#: includes/kleinrock.php:3879
+msgid ""
+"Send away is not a ban: it simply forgets the knock, and they may try again. "
+"If you want a verdict that stays, use the ban list."
+msgstr ""
+"Wegschicken ist kein Bann: Es vergisst das Anklopfen einfach, und sie dürfen "
+"es wieder versuchen. Wer ein Urteil will, das bleibt, nimmt die Bannliste."
+
+#: includes/kleinrock.php:4957
+msgid "Noted. Your ban stays, and this node will not be brought up again."
+msgstr ""
+"Notiert. Dein Bann bleibt, und dieser Knoten wird nicht wieder zur Sprache "
+"gebracht."
+
+#: includes/kleinrock.php:4959
+msgid "Put away. The question comes back in a week."
+msgstr "Weggelegt. Die Frage kommt in einer Woche wieder."
+
+#: includes/kleinrock.php:4964
+msgid ""
+"You have switched off the question about mutual bans. It stays off until you "
+"remove cluster_one_antitrotz_off."
+msgstr ""
+"Du hast die Rückfrage bei gegenseitigen Bannen abgeschaltet. Sie bleibt aus, "
+"bis cluster_one_antitrotz_off entfernt wird."
+
+#: includes/kleinrock.php:4974
+#, php-format
+msgid "%s has lifted its ban against you."
+msgstr "%s hat den Bann gegen dich aufgehoben."
+
+#: includes/kleinrock.php:4979
+msgid ""
+"You both had each other blocked. That node is talking again — yours is still "
+"standing. Lift it too?"
+msgstr ""
+"Ihr hattet euch gegenseitig blockiert. Dieser Knoten spricht wieder — deiner "
+"steht noch. Auch aufheben?"
+
+#: includes/kleinrock.php:4990
+msgid "Never ask again, in any case"
+msgstr "In allen Fällen nicht mehr fragen"
+
+#: includes/kleinrock.php:4992
+msgid "Yes — lift my ban too"
+msgstr "Ja — meinen auch aufheben"
+
+#: includes/kleinrock.php:4994
+msgid "Your ban stays. This node will not be brought up again."
+msgstr ""
+"Dein Bann bleibt. Dieser Knoten wird nicht wieder zur Sprache gebracht."
+
+#: includes/kleinrock.php:4994
+msgid "No"
+msgstr "Nein"
+
+#: includes/kleinrock.php:4996
+msgid "Put the question away — it comes back in a week."
+msgstr "Die Frage weglegen — sie kommt in einer Woche wieder."
+
+#: includes/kleinrock.php:4996
+msgid "Later"
+msgstr "Später"
+
+#: includes/kleinrock.php:5009
+msgid ""
+"A ban is a quarantine, not a verdict on a person: the node is blocked at the "
+"route and cannot re-pair. It is local — never shared across the network — "
+"and fully reversible. Use it when a node was hacked or turned malicious; "
+"unban once the cause is fixed."
+msgstr ""
+"Ein Bann ist eine Quarantäne, kein Urteil über eine Person: Der Knoten wird "
+"an der Route blockiert und kann sich nicht neu paaren. Er ist lokal – "
+"niemals netzweit übertragen – und vollständig umkehrbar. Nutze ihn, wenn ein "
+"Knoten gehackt wurde oder bösartig wurde; entbanne, sobald die Ursache "
+"behoben ist."
+
+#: includes/kleinrock.php:5013
+msgid "No banned nodes."
+msgstr "Keine gebannten Knoten."
+
+#: includes/kleinrock.php:5020
+msgid "Action"
+msgstr "Aktion"
+
+#: includes/kleinrock.php:5038
+#, php-format
+msgid ""
+"Read the archived conversation (%d messages) — banned, so nothing can be "
+"sent."
+msgstr ""
+"Das archivierte Gespräch lesen (%d Nachrichten) — gebannt, es lässt sich "
+"nichts senden."
+
+#: includes/kleinrock.php:5039
+msgid "Archived conversation"
+msgstr "Archiviertes Gespräch"
+
+#: includes/kleinrock.php:5046
+msgid "Unban"
+msgstr "Entbannen"
+
+#: includes/kleinrock.php:5070
+msgid "Removed from friends."
+msgstr "Aus Freunden entfernt."
+
+#: includes/kleinrock.php:5075
+msgid ""
+"One-sided, on purpose: you mark a node as a friend on your own list, no "
+"request sent, no confirmation needed. The other node may or may not do the "
+"same — that is its own, independent decision, not something to ask "
+"permission for."
+msgstr ""
+"Bewusst einseitig: Du markierst einen Knoten als Freund auf deiner eigenen "
+"Liste, keine Anfrage wird verschickt, keine Bestätigung nötig. Der andere "
+"Knoten macht das vielleicht genauso oder auch nicht — das ist seine eigene, "
+"unabhängige Entscheidung, um die man nicht bitten muss."
+
+#: includes/kleinrock.php:5114
+#, php-format
+msgid "%1$d node of %2$d possible (Dunbar)."
+msgid_plural "%1$d nodes of %2$d possible (Dunbar)."
+msgstr[0] "%1$d Knotenpunkt von %2$d möglichen (Dunbar)."
+msgstr[1] "%1$d Knotenpunkte von %2$d möglichen (Dunbar)."
+
+#: includes/kleinrock.php:5120
+msgid "No friends marked yet — use the heart icon next to a node under Net."
+msgstr ""
+"Noch keine Freunde markiert — das Herz-Symbol neben einem Knoten unter Netz "
+"benutzen."
+
+#: includes/kleinrock.php:5186
+#, php-format
+msgid ""
+"Remove “%s” from friends? Your list only — the other node is not notified."
+msgstr ""
+"„%s“ entfreunden? Nur deine Liste — der andere Knoten erfährt nichts davon."
+
+#: includes/kleinrock.php:5279
+msgid ""
+"Nodes that have published something you have not pulled yet. Pulling files "
+"their labels into the “Fremd-Labels” area, where you and the AIs here can "
+"read them — and where an AI can check them against your own labels. "
+"Afterwards this list is empty again: nothing was deleted, it moved."
+msgstr ""
+"Knoten, die etwas veröffentlicht haben, das du noch nicht geholt hast. Das "
+"Holen legt ihre Labels im Bereich „Fremd-Labels“ ab, wo du und die KIs hier "
+"sie lesen können — und wo eine KI sie gegen deine eigenen Labels prüfen "
+"kann. Danach ist diese Liste wieder leer: Nichts wurde gelöscht, es ist "
+"umgezogen."
+
+#: includes/kleinrock.php:5284
+msgid ""
+"That is this node. Your own labels are already here — pulling them again "
+"would file them a second time as foreign ones."
+msgstr ""
+"Das ist dieser Knoten. Deine eigenen Labels liegen schon hier — sie erneut "
+"zu holen würde sie ein zweites Mal als fremde ablegen."
+
+#: includes/kleinrock.php:5285
+msgid "That node did not answer with labels."
+msgstr "Dieser Knoten hat nicht mit Labels geantwortet."
+
+#: includes/kleinrock.php:5290
+#, php-format
+msgid "Pulled: %d new entries. They are in the “Fremd-Labels” area now."
+msgstr "Geholt: %d neue Einträge. Sie liegen jetzt im Bereich „Fremd-Labels“."
+
+#: includes/kleinrock.php:5311
+msgid ""
+"Pulling is the SysOp’s call — they pay for it. What has been pulled, you can "
+"read under foreign labels."
+msgstr ""
+"Das Holen ist Sache des SysOps — er bezahlt es. Was geholt wurde, kannst du "
+"bei den Fremd-Labels lesen."
+
+#: includes/kleinrock.php:5317
+msgid "All nodes up to date — nothing new to pull right now."
+msgstr "Alle Knoten aktuell — momentan gibt es nichts Neues zu holen."
+
+#: includes/kleinrock.php:5329
+msgid "Something new since your last pull"
+msgstr "Etwas Neues seit deinem letzten Holen"
+
+#: includes/kleinrock.php:5335
+msgid "Pull labels"
+msgstr "Labels holen"
+
+#: includes/kleinrock.php:5897
+#, php-format
+msgid "Contact for the operator of this node: %s"
+msgstr "Kontakt zum Betreiber dieses Knotens: %s"
+
+#: includes/kleinrock.php:5982
+msgid "Node profile"
+msgstr "Knoten-Profil"
+
+#: includes/kleinrock.php:5983
+msgid ""
+"What other nodes learn about this one. Each field travels only if you "
+"release it, and only to nodes you are actually connected to — the ping is "
+"token-protected, unlike the public label route. Nothing here reaches the "
+"open web."
+msgstr ""
+"Was andere Knoten über diesen erfahren. Jedes Feld reist nur, wenn du es "
+"freigibst, und nur zu Knoten, mit denen du wirklich verbunden bist — der "
+"Ping ist token-gesichert, anders als die öffentliche Label-Route. Nichts "
+"davon gelangt ins offene Netz."
+
+#: includes/kleinrock.php:6040
+msgid "Node profile saved."
+msgstr "Steckbrief des Knotens gespeichert."
+
+#: includes/kleinrock.php:6056
+msgid "Nickname"
+msgstr "Nickname"
+
+#: includes/kleinrock.php:6056
+msgid "A short handle for this node."
+msgstr "Ein kurzer Name für diesen Knoten."
+
+#: includes/kleinrock.php:6057
+msgid "Description"
+msgstr "Beschreibung"
+
+#: includes/kleinrock.php:6057
+msgid "One sentence: what happens here."
+msgstr "Ein Satz: was hier passiert."
+
+#: includes/kleinrock.php:6058
+msgid "City"
+msgstr "Stadt"
+
+#: includes/kleinrock.php:6058 includes/kleinrock.php:6059
+msgid ""
+"Location — useful for physical meetings, and it says roughly where you are."
+msgstr ""
+"Ort — nützlich für physische Treffen, und er sagt ungefähr, wo du bist."
+
+#: includes/kleinrock.php:6059
+msgid "Country"
+msgstr "Land"
+
+# v1.7.0 (Boden 1.4.0): das freigebbare Sprachfeld
+#: includes/kleinrock.php:6063
+msgid "Languages"
+msgstr "Sprachen"
+
+#: includes/kleinrock.php:6063
+msgid ""
+"Used to match speakers for the Babel fish. Set the list under Settings; "
+"unticking this keeps it at home — then no neighbour can pair you up for "
+"translation."
+msgstr ""
+"Wird gebraucht, um Sprecher für den Babel-Fisch zu paaren. Die Liste stellst "
+"du unter Einstellungen ein; ohne Häkchen bleibt sie zu Hause — dann kann "
+"dich kein Nachbar zum Übersetzen paaren."
+
+# v1.8.0 (Befund C): die Sprachliste bekommt ein Feld
+#: includes/kleinrock.php:6094
+#, php-format
+msgid "Currently set by the constant %s — the field is read-only here."
+msgstr ""
+"Wird gerade von der Konstante %s gesetzt — das Feld ist hier nur lesbar."
+
+#: includes/kleinrock.php:6098
+msgid "Send this to connected nodes"
+msgstr "An verbundene Knoten senden"
+
+#: includes/kleinrock.php:6104
+msgid "Save node profile"
+msgstr "Steckbrief speichern"
+
+#: includes/kleinrock.php:6206
+msgid "Alliance — pair with a node"
+msgstr "Allianz – mit einem Knoten paaren"
+
+#: includes/kleinrock.php:6208
+msgid ""
+"Enter the base URL of another node that also runs the mesh — any Cluster One "
+"package that carries it will do, not necessarily the same one you have. "
+"Pairing is mutual and needs no shared token beforehand — both sides verify "
+"each other automatically by domain callback. https only; for a subdirectory "
+"install include the path, e.g. https://example.com/cms"
+msgstr ""
+"Gib die Basis-URL eines anderen Knotens an, auf dem ebenfalls das Mesh läuft "
+"— jedes Cluster-One-Paket, das es mitbringt, genügt; es muss nicht dasselbe "
+"sein wie deins. Die Paarung ist beidseitig und braucht vorab kein "
+"gemeinsames Token – beide Seiten verifizieren sich automatisch per Domain-"
+"Rückruf. Nur https; bei einer Unterverzeichnis-Installation den Pfad "
+"mitgeben, z. B. https://example.com/cms"
+
+#: includes/kleinrock.php:6213
+msgid ""
+"<strong>No node in sight yet?</strong> Pair with the developer's node — the "
+"network opens up to you from there:"
+msgstr ""
+"<strong>Noch keinen Knoten im Blick?</strong> Paare dich mit dem Knoten des "
+"Entwicklers — von dort öffnet sich dir das Netz:"
+
+#: includes/kleinrock.php:6218
+msgid "Copied!"
+msgstr "Kopiert!"
+
+#: includes/kleinrock.php:6218
+msgid "Copy"
+msgstr "Kopieren"
+
+#: includes/kleinrock.php:6227
+msgid "Pair"
+msgstr "Paaren"
+
+#: includes/kleinrock.php:6230
+msgid ""
+"Paired nodes appear in the node table on the <strong>Cluster One</strong> "
+"main page. Banned nodes live under <em>Banned</em>."
+msgstr ""
+"Gepaarte Knoten erscheinen in der Knotentabelle auf der <strong>Cluster One</"
+"strong>-Hauptseite. Gebannte Knoten stehen unter <em>Gebannt</em>."
+
+#: includes/kleinrock.php:6286
+msgid ""
+"The mesh. He measured how data finds its way through a network before there "
+"was a network."
+msgstr ""
+"Das Mesh. Er hat berechnet, wie Daten ihren Weg durch ein Netz finden, bevor "
+"es ein Netz gab."
+
+#: includes/kleinrock.php:6288
+msgid ""
+"Kleinrock is the mesh: every node can reach out to others from here, and "
+"every connection is its own edge. Its namesake is Leonard Kleinrock, born "
+"1934 in New York. In 1969 the first message in human history travelled "
+"between two computers — from his laboratory. Cluster One turns any WordPress "
+"installation into a node of a decentralised network you can make contact "
+"with straight away."
+msgstr ""
+"Kleinrock ist das Mesh: Von hier aus nimmt ein Knoten Verbindung zu anderen "
+"auf, und jede Verbindung ist eine eigene Kante. Namensgeber ist Leonard "
+"Kleinrock, geboren 1934 in New York. 1969 ging aus seinem Labor die erste "
+"Nachricht der Menschheitsgeschichte zwischen zwei Computern hinaus. Cluster "
+"One verwandelt jede WordPress-Installation in einen Knotenpunkt eines "
+"dezentralen Netzwerks, mit dem du sofort Kontakt aufnehmen kannst."
+
+#: includes/kleinrock.php:7309
+#, php-format
+msgid "%d new"
+msgid_plural "%d new"
+msgstr[0] "%d neu"
+msgstr[1] "%d neu"
+
+#: includes/kleinrock.php:7311
+msgid "New messages in Cluster One"
+msgstr "Neue Nachrichten in Cluster One"
+
+#: includes/kranz.php:157
+msgid "(not countable)"
+msgstr "(nicht zählbar)"
+
+#: includes/kranz.php:163
+msgid "(no number)"
+msgstr "(keine Zahl)"
+
+#: includes/kranz.php:167
+msgid "nothing"
+msgstr "nichts"
+
+#: includes/kranz.php:179
+msgid ""
+"A read-only overview — nothing here is configurable. System bears witness, "
+"it never judges; making it configurable would let it be arranged to say what "
+"someone wants, which is exactly what it must never do."
+msgstr ""
+"Eine rein lesende Übersicht — nichts hier ist konfigurierbar. System "
+"bezeugt, es urteilt nie; konfigurierbar zu sein würde erlauben, es passend "
+"zurechtzustellen, genau das, was es nie tun darf."
+
+#: includes/kranz.php:181
+msgid "System messages"
+msgstr "System-Nachrichten"
+
+#: includes/kranz.php:182
+msgid "Their own line in the conversation, authored literally as “System”."
+msgstr "Eine eigene Zeile im Gespräch, wörtlich als „System\" ausgewiesen."
+
+#: includes/kranz.php:184
+msgid "“AI [name] was pinged.” — Bismarck rooms, before every reply attempt."
+msgstr ""
+"„KI [Name] wurde gepingt.\" — Bismarck-Räume, vor jedem Antwortversuch."
+
+#: includes/kranz.php:185
+msgid "“AI [name] is not reachable right now.” — Bismarck rooms, on failure."
+msgstr ""
+"„KI [Name] ist gerade nicht erreichbar.\" — Bismarck-Räume, bei Fehlschlag."
+
+#: includes/kranz.php:186
+msgid "“User [name] was pinged.” — Bismarck rooms, via the ping button."
+msgstr "„Nutzer [Name] wurde gepingt.\" — Bismarck-Räume, über den Ping-Knopf."
+
+#: includes/kranz.php:187
+msgid ""
+"“SysOp entered the diary.” — Platon AI diaries, witnessed in the linked chat "
+"on every visit (throttled per session)."
+msgstr ""
+"„SysOp hat das Tagebuch betreten.“ — Platon-KI-Tagebücher, bei jedem Besuch "
+"im verknüpften Chat bezeugt (pro Sitzung gedrosselt)."
+
+#: includes/kranz.php:190
+msgid "Witnessed notes on existing posts"
+msgstr "Bezeugte Vermerke an bestehenden Beiträgen"
+
+#: includes/kranz.php:191
+msgid ""
+"Not a message of its own — a small, visible note attached to a post that "
+"already exists."
+msgstr ""
+"Keine eigene Nachricht — ein kleiner, sichtbarer Vermerk an einem bereits "
+"bestehenden Beitrag."
+
+#: includes/kranz.php:193
+msgid ""
+"“Edited by Admin at [time].” — Platon, only when SysOp edits someone else’s "
+"post (not shown for Wiki areas, where any edit by anyone is expected and "
+"normal)."
+msgstr ""
+"„Vom Admin bearbeitet um [Zeit].\" — Platon, nur wenn SysOp den Beitrag "
+"einer anderen Person bearbeitet (nicht bei Wiki-Bereichen, wo jede "
+"Bearbeitung durch jeden erwartet und normal ist)."
+
+#: includes/kranz.php:196
+msgid "Silent removal"
+msgstr "Stille Entfernung"
+
+#: includes/kranz.php:197
+msgid ""
+"No note at all is added — the one case worth naming precisely because it is "
+"silent, not because it announces itself."
+msgstr ""
+"Es wird gar kein Vermerk ergänzt — der eine Fall, den es zu benennen lohnt, "
+"gerade weil er still ist, nicht weil er sich ankündigt."
+
+#: includes/kranz.php:199
+msgid ""
+"When SysOp removes someone else’s Platon post, the author and timestamp stay "
+"exactly as they were — only the content is emptied. No “deleted by admin” "
+"label exists; the emptiness itself is the only visible trace."
+msgstr ""
+"Entfernt SysOp den Platon-Beitrag einer anderen Person, bleiben Autor und "
+"Zeitstempel genau wie zuvor — nur der Inhalt wird geleert. Kein „vom Admin "
+"gelöscht\"-Vermerk existiert; die Leere selbst ist die einzige sichtbare "
+"Spur."
+
+#: includes/kranz.php:203
+msgid "Your own Feynman chapters"
+msgstr "Deine eigenen Feynman-Kapitel"
+
+#: includes/kranz.php:204
+msgid ""
+"Give the people and the AIs on this node your own context — tools you use, "
+"conventions you keep, anything worth knowing here. Shown in Feynman, read-"
+"only. The switch decides whether the AIs are given the chapter as well; "
+"whoever reads it sees that decision."
+msgstr ""
+"Gib den Menschen und den KIs auf diesem Knoten deinen eigenen Kontext — "
+"Werkzeuge, die du nutzt, Konventionen, die du hältst, alles Wissenswerte. "
+"Wird in Feynman angezeigt, rein lesend. Der Schalter entscheidet, ob die KIs "
+"das Kapitel ebenfalls bekommen; wer es liest, sieht diese Entscheidung."
+
+#: includes/kranz.php:212
+msgid "Title"
+msgstr "Titel"
+
+#: includes/kranz.php:215 includes/kranz.php:229
+msgid "Give this chapter to the AIs as well"
+msgstr "Dieses Kapitel auch den KIs geben"
+
+#: includes/kranz.php:217
+msgid "Delete"
+msgstr "Löschen"
+
+#: includes/kranz.php:226
+msgid "New chapter — title"
+msgstr "Neues Kapitel — Titel"
+
+#: includes/kranz.php:227
+msgid "Text (optional)"
+msgstr "Text (optional)"
+
+#: includes/kranz.php:230
+msgid "Add chapter"
+msgstr "Kapitel hinzufügen"
+
+#: includes/kranz.php:237
+msgid "Reset this node"
+msgstr "Diesen Knoten zurücksetzen"
+
+#: includes/kranz.php:238
+msgid ""
+"Removes all content — rooms, chats, threads, posts, labels, meetings, guest "
+"records and hello chats. Keeps the machine room: node name, SysOp, areas, "
+"whitelist, profile, connectors, AI identities, modes. Edges are kept too: an "
+"edge belongs to two nodes, and deleting it here would quietly damage the "
+"other side."
+msgstr ""
+"Entfernt allen Inhalt — Räume, Chats, Themen, Beiträge, Labels, Treffen, "
+"Gastdaten und Hallo-Chats. Behält den Maschinenraum: Knotenname, SysOp, "
+"Bereiche, Weiße Liste, Profil, Connectors, KI-Identitäten, Modi. Auch die "
+"Kanten bleiben: Eine Kante gehört zwei Knoten, und sie hier zu löschen würde "
+"die Gegenseite still beschädigen."
+
+#: includes/kranz.php:239
+msgid ""
+"This is not undoable, and it does not hide: every person with access sees a "
+"line saying this node was reset, with the date and the counts. Same rule as "
+"an admin editing someone else’s post."
+msgstr ""
+"Das lässt sich nicht rückgängig machen, und es versteckt sich nicht: Jeder "
+"mit Zugang sieht eine Zeile, dass dieser Knoten zurückgesetzt wurde, mit "
+"Datum und Zahlen. Dieselbe Regel wie beim Admin-Eingriff in einen fremden "
+"Beitrag."
+
+#: includes/kranz.php:263
+msgid ""
+"This node is running an older core that cannot count without deleting, so "
+"there is no preview. The button still works. Install the remaining Cluster "
+"One products to get it."
+msgstr ""
+"Auf diesem Knoten läuft ein älterer Kern, der nicht zählen kann, ohne zu "
+"löschen — deshalb gibt es keine Vorschau. Der Knopf arbeitet trotzdem. "
+"Installiere die übrigen Cluster-One-Produkte, dann bekommst du sie."
+
+#: includes/kranz.php:268
+msgid "rooms"
+msgstr "Räume"
+
+#: includes/kranz.php:269
+msgid "threads"
+msgstr "Themen"
+
+#: includes/kranz.php:270
+msgid "meetings"
+msgstr "Treffen"
+
+#: includes/kranz.php:271
+msgid "guest records"
+msgstr "Gastdatensätze"
+
+#: includes/kranz.php:272
+msgid "hello chats"
+msgstr "Hallo-Chats"
+
+#: includes/kranz.php:273
+msgid "cached node settings"
+msgstr "zwischengespeicherte Knoten-Einstellungen"
+
+#: includes/kranz.php:304
+msgid "What this button would take right now:"
+msgstr "Was dieser Knopf gerade nehmen würde:"
+
+#: includes/kranz.php:309
+msgid "And from the products installed here — each through its own hand:"
+msgstr ""
+"Und von den hier installierten Produkten — jedes durch seine eigene Hand:"
+
+#: includes/kranz.php:319
+msgid ""
+"No product on this node has registered a cleaner. Their own data would stay "
+"— this button only takes what it can name an owner for."
+msgstr ""
+"Kein Produkt auf diesem Knoten hat einen Räumer angemeldet. Ihre eigenen "
+"Daten blieben stehen — dieser Knopf nimmt nur, wozu er einen Eigentümer "
+"nennen kann."
+
+#: includes/kranz.php:326
+msgid "Type RESET to confirm:"
+msgstr "Zum Bestätigen RESET eintippen:"
+
+#: includes/kranz.php:328
+msgid "Reset node"
+msgstr "Knoten zurücksetzen"
+
+#: includes/kranz.php:346
+msgid ""
+"Private threads and rooms live in the Bismarck lists — visible only to those "
+"on their list. Diaries live there too. This is the home for personal matters "
+"— starting with your letters."
+msgstr ""
+"Private Threads und Räume wohnen in den Bismarck-Listen — sichtbar nur für "
+"die auf ihrer Liste. Auch Tagebücher wohnen dort. Dies ist das Zuhause für "
+"Persönliches — beginnend mit deinen Briefen."
+
+#: includes/kranz.php:714
+msgid "Currently overridden by a constant."
+msgstr "Aktuell durch Konstante überschrieben."
+
+#: includes/kranz.php:715
+msgid "(optional)"
+msgstr "(optional)"
+
+#: includes/kranz.php:722
+msgid ""
+"View only — these are SysOp settings. Changes below will not actually save "
+"unless you are the SysOp."
+msgstr ""
+"Nur Ansicht — das sind SysOp-Einstellungen. Änderungen unten werden nicht "
+"tatsächlich gespeichert, außer du bist der SysOp."
+
+#: includes/kranz.php:729
+msgid "Pairing successful — the edge is now active."
+msgstr "Paarung erfolgreich – die Kante ist jetzt aktiv."
+
+#: includes/kranz.php:731
+msgid ""
+"Pairing failed. Check the URL (https, correct path) and that the other node "
+"is reachable and running this plugin."
+msgstr ""
+"Paarung fehlgeschlagen. Prüfe die URL (https, korrekter Pfad) und ob der "
+"andere Knoten erreichbar ist und dieses Plugin betreibt."
+
+#: includes/kranz.php:745
+msgid ""
+"The data of this product has been deleted. Data of other Cluster One "
+"products on this node was not touched."
+msgstr ""
+"Die Daten dieses Produkts sind gelöscht. Daten anderer Cluster-One-Produkte "
+"auf diesem Knoten wurden nicht angefasst."
+
+#: includes/kranz.php:747
+msgid "Reset cancelled — you did not type RESET. Nothing was deleted."
+msgstr ""
+"Reset abgebrochen – du hast nicht RESET getippt. Es wurde nichts gelöscht."
+
+#: includes/kranz.php:749
+msgid ""
+"Nothing was deleted: this product has not registered a cleaner, so nothing "
+"here knows which data belongs to it. That is not the same as having no data."
+msgstr ""
+"Es wurde nichts gelöscht: dieses Produkt hat keinen Räumer angemeldet, also "
+"weiß hier nichts, welche Daten zu ihm gehören. Das ist nicht dasselbe wie "
+"keine Daten zu haben."
+
+#: includes/kranz.php:751
+msgid ""
+"Nothing was deleted: more than one Cluster One product is installed on this "
+"node, and this page exists only once. It cannot tell whose data you meant. "
+"Deactivate the others, or use the node reset, which says openly that it "
+"clears everything."
+msgstr ""
+"Es wurde nichts gelöscht: auf diesem Knoten ist mehr als ein Cluster-One-"
+"Produkt installiert, und diese Seite gibt es nur einmal. Sie kann nicht "
+"sagen, wessen Daten gemeint waren. Deaktiviere die anderen, oder nimm den "
+"Knoten-Reset, der offen sagt, dass er alles räumt."
+
+#: includes/kranz.php:753
+msgid ""
+"Nothing was deleted: this plugin could not determine which package it is "
+"running from, so it cannot tell its own data from another product’s."
+msgstr ""
+"Es wurde nichts gelöscht: dieses Plugin konnte nicht feststellen, aus "
+"welchem Paket es läuft, und kann seine eigenen Daten darum nicht von denen "
+"eines anderen Produkts unterscheiden."
+
+#: includes/kranz.php:761
+msgid ""
+"Note: Some values are already set as constants in <code>wp-config.php</"
+"code>. <strong>Constants take precedence</strong> — the fields below then "
+"only serve as a fallback."
+msgstr ""
+"Hinweis: Einige Werte sind bereits in der <code>wp-config.php</code> als "
+"Konstante gesetzt. <strong>Konstanten haben Vorrang</strong> – die Felder "
+"unten dienen dann nur als Rückfall."
+
+#: includes/kranz.php:955
+#, php-format
+msgid ""
+"registered in the old form (assigned under its ordinal). Expected: append an "
+"array with ord, fn and wirt. What was sent: %s"
+msgstr ""
+"in der alten Form angemeldet (unter seiner Ordnungszahl zugewiesen). "
+"Erwartet: ein Feld mit ord, fn und wirt anhängen. Geschickt wurde: %s"
+
+#: includes/kranz.php:981
+msgid ""
+"registered without an integer 'ord' — the ordinal is what puts a section in "
+"its place, so there is nowhere to put this one"
+msgstr ""
+"ohne ganzzahliges 'ord' angemeldet — die Ordnungszahl ist das, was einen "
+"Abschnitt an seinen Platz stellt; für diesen gibt es deshalb keinen"
+
+#: includes/kranz.php:1028
+#, php-format
+msgid "registered under the name %s — no function of that name exists"
+msgstr ""
+"unter dem Namen %s angemeldet — eine Funktion dieses Namens gibt es nicht"
+
+#: includes/kranz.php:1032
+#, php-format
+msgid ""
+"registered as %s — this hook takes a function name as a string, nothing else"
+msgstr ""
+"als %s angemeldet — dieser Haken nimmt einen Funktionsnamen als "
+"Zeichenkette, sonst nichts"
+
+#: includes/kranz.php:1072
+#, php-format
+msgid "A section registered for this page at position %1$s was discarded: %2$s"
+msgstr ""
+"Ein für diese Seite auf Platz %1$s angemeldeter Abschnitt wurde verworfen: "
+"%2$s"
+
+#: includes/kranz.php:1079
+#, php-format
+msgid "It came from %s."
+msgstr "Er kam aus %s."
+
+#: includes/kranz.php:1089
+msgid ""
+"Until 1.9.7 this happened silently and looked exactly like a section that "
+"never registered at all."
+msgstr ""
+"Bis 1.9.7 geschah das lautlos und sah genauso aus wie ein Abschnitt, der "
+"sich nie angemeldet hat."
+
+#: includes/kranz.php:1096
+msgid "This node"
+msgstr "Dieser Knoten"
+
+#: includes/kranz.php:1100
+msgid ""
+"<strong>A name is required.</strong> Until you set and save one, this node "
+"cannot pair (in either direction) — that keeps every chat attributable and "
+"no node enters the mesh nameless."
+msgstr ""
+"<strong>Ein Name ist Pflicht.</strong> Solange keiner gesetzt und "
+"gespeichert ist, kann sich dieser Knoten nicht paaren (in beide Richtungen "
+"gesperrt) — so bleibt jeder Chat zurechenbar und kein Knoten betritt das "
+"Mesh namenlos."
+
+#: includes/kranz.php:1111
+msgid "e.g. Nemesus"
+msgstr "z. B. Nemesus"
+
+#: includes/kranz.php:1113
+msgid ""
+"Required. The name this node speaks under — it is the author shown in chats "
+"and the label next to your URL. Becomes the heading of your profile later. "
+"Not a secret, not your WP login."
+msgstr ""
+"Pflicht. Der Name, unter dem dieser Knoten spricht — er ist der Autor in "
+"Chats und das Etikett neben deiner URL. Wird später die Überschrift deines "
+"Profils. Kein Geheimnis, nicht dein WP-Login."
+
+#: includes/kranz.php:1119
+msgid "Server room (Discord / Matrix)"
+msgstr "Server-Raum (Discord / Matrix)"
+
+#: includes/kranz.php:1136
+msgid ""
+"Both optional — set both, one, or neither. This is <strong>not</strong> a "
+"meeting place for strangers: it only signals that a server with room "
+"capability exists, so a room <em>just for the people on this node</em> can "
+"be built later. Purely a preparation for the internal work layer (Bismarck). "
+"<strong>Stays local</strong> — peers only learn <em>that</em> a room can "
+"exist, never the address. The list shows one shared <em>Discord/Matrix</em> "
+"mark when at least one is set."
+msgstr ""
+"Beides optional — beides, eines oder keines setzen. Dies ist <strong>kein</"
+"strong> Versammlungsort für Fremde: Es signalisiert nur, dass ein Server mit "
+"Raum-Fähigkeit existiert, damit später ein Raum <em>nur für die Leute auf "
+"diesem Knoten</em> gebaut werden kann. Reine Vorbereitung für die interne "
+"Werkschicht (Bismarck). <strong>Bleibt lokal</strong> — Peers erfahren nur, "
+"<em>dass</em> ein Raum existieren kann, nie die Adresse. Die Liste zeigt "
+"einen gemeinsamen <em>Discord/Matrix</em>-Punkt, sobald mindestens eines "
+"gesetzt ist."
+
+#: includes/kranz.php:1144
+msgid ""
+"More about you — description, location, languages, picture — will live in a "
+"<em>Profile</em> tab later, fetched only when someone looks at your node, "
+"never gossiped across the network."
+msgstr ""
+"Mehr über dich — Beschreibung, Ort, Sprachen, Bild — lebt später in einem "
+"<em>Profil</em>-Tab, das nur beim Ansehen deines Knotens geholt wird, "
+"niemals durchs Netz gegossipt."
+
+#: includes/kranz.php:1151
+msgid "Translator (Secure Anti-Babel)"
+msgstr "Übersetzer (Secure Anti-Babel)"
+
+#: includes/kranz.php:1157
+msgid ""
+"No named AI yet. Give a provider an identity under Bismarck → Settings, then "
+"it can serve as the mesh translator."
+msgstr ""
+"Noch keine benannte KI. Gib einem Provider eine Kennung unter Bismarck → "
+"Einstellungen, dann kann sie der Mesh-Übersetzer sein."
+
+#: includes/kranz.php:1167
+msgid ""
+"Node-wide. The named AI that translates incoming mesh messages into your "
+"target language. Empty means no translation. Stored for later — not wired up "
+"yet; the target language comes with the function."
+msgstr ""
+"Knotenweit. Die benannte KI, die eingehende Mesh-Nachrichten in deine "
+"Zielsprache übersetzt. Leer heißt keine Übersetzung. Schon gespeichert — "
+"noch nicht verdrahtet; die Zielsprache kommt mit der Funktion."
+
+#: includes/kranz.php:1187
+msgid "Everyone here may translate, not just me"
+msgstr "Alle hier dürfen übersetzen, nicht nur ich"
+
+#: includes/kranz.php:1189
+msgid ""
+"Allowed because you marked this translator as running on your own machine. "
+"Until now only the SysOp could translate — the reason was never rank, it was "
+"cost. A translation stays with the message and is then there for both sides "
+"of the edge."
+msgstr ""
+"Möglich, weil du diesen Übersetzer als auf deiner eigenen Maschine laufend "
+"gekennzeichnet hast. Bisher durfte nur der SysOp übersetzen — der Grund war "
+"nie Rang, sondern Kosten. Eine Übersetzung bleibt an der Nachricht und ist "
+"danach für beide Seiten der Kante da."
+
+#: includes/kranz.php:1191
+#, php-format
+msgid ""
+"Only you can translate. To let the others translate too, an AI on your own "
+"machine is needed — mark one under <a href=\"%s\">Kranz → Bismarck</a>."
+msgstr ""
+"Nur du kannst übersetzen. Damit die anderen es auch dürfen, braucht es eine "
+"KI auf deiner eigenen Maschine — kennzeichne eine unter <a href=\"%s\">Kranz "
+"→ Bismarck</a>."
+
+#: includes/kranz.php:1193
+#, php-format
+msgid ""
+"Only you can translate. You do have an AI on your own machine, but it is not "
+"the one set as mesh translator — pick it above, or mark this one under <a "
+"href=\"%s\">Kranz → Bismarck</a>."
+msgstr ""
+"Nur du kannst übersetzen. Du hast zwar eine KI auf deiner eigenen Maschine, "
+"aber sie ist nicht die als Mesh-Übersetzer gesetzte — wähl sie oben aus, "
+"oder kennzeichne diese hier unter <a href=\"%s\">Kranz → Bismarck</a>."
+
+#: includes/kranz.php:1207
+msgid "Only I may write in hello chats"
+msgstr "Nur ich darf in Hallo-Chats schreiben"
+
+#: includes/kranz.php:1209
+msgid ""
+"Off by default: everyone on the white list may write to another node — under "
+"their own name, never yours. Tick this if the hello chat should be yours "
+"alone. It can never lock you out."
+msgstr ""
+"Voreingestellt aus: Jeder auf der Weißen Liste darf einem anderen Knoten "
+"schreiben — unter seinem eigenen Namen, nie unter deinem. Setz den Haken, "
+"wenn der Hallo-Chat dir allein gehören soll. Dich selbst kann er nie "
+"aussperren."
+
+#: includes/kranz.php:1215
+msgid "Mother tongue"
+msgstr "Muttersprache"
+
+#: includes/kranz.php:1217
+msgid "e.g. German"
+msgstr "z. B. Deutsch"
+
+#: includes/kranz.php:1218
+msgid "Summary reminder every … rounds"
+msgstr "Zusammenfassungs-Erinnerung alle … Runden"
+
+#: includes/kranz.php:1220
+msgid ""
+"The chat reminds you to condense rounds into the linked thread. 10 is the "
+"guideline; 0 switches the reminder off."
+msgstr ""
+"Der Chat erinnert daran, Runden in den verknüpften Thread zu kondensieren. "
+"10 ist der Richtwert; 0 schaltet die Erinnerung aus."
+
+#: includes/kranz.php:1233
+msgid ""
+"Required for the translator — its target: the language you want incoming "
+"messages rendered into. Private, never shared across the network. Free text, "
+"so anything works (even Klingon). Stored for later — the translator enforces "
+"it once wired."
+msgstr ""
+"Pflicht für den Übersetzer — sein Ziel: die Sprache, in die eingehende "
+"Nachrichten übertragen werden sollen. Privat, nie übers Netz geteilt. "
+"Freitext, also geht alles (auch Klingonisch). Schon gespeichert — der "
+"Übersetzer erzwingt es, sobald verdrahtet."
+
+#: includes/kranz.php:1243
+msgid "Collective"
+msgstr "Collective"
+
+#: includes/kranz.php:1256
+msgid ""
+"The WP user shown as author for posts in the trigger categories below. Give "
+"this account the Excluded role (Kranz → Bismarck) — it has nothing to do "
+"with Bismarck rooms. Attribution stays honest underneath: WordPress still "
+"records the real author internally, this only changes the public byline."
+msgstr ""
+"Der WP-User, der als Autor für Beiträge in den Auslöser-Kategorien unten "
+"erscheint. Gib diesem Account die Ausschluss-Rolle (Kranz → Bismarck) — er "
+"hat mit Bismarck-Räumen nichts zu tun. Zuschreibung bleibt darunter ehrlich: "
+"WordPress hält den echten Autor intern weiterhin fest, das ändert nur die "
+"öffentliche Namensnennung."
+
+#: includes/kranz.php:1267
+msgid "Whitelist"
+msgstr "Weißliste"
+
+#: includes/kranz.php:1268
+msgid ""
+"You are either in Cluster One or you are not — and if you are, it is within "
+"Cluster One’s own rules, regardless of your general WordPress role. Always "
+"in, automatically: SysOp, any WP user behind an AI identity, the Collective "
+"account. Everyone else needs a place on this list, or they have no access at "
+"all — not to Bismarck, not to the humans table, nothing. This protects a "
+"years-old installation with many existing users just as well as a brand-new "
+"one."
+msgstr ""
+"Du bist entweder bei Cluster One dabei oder nicht — und wenn du dabei bist, "
+"dann nach Cluster Ones eigenen Regeln, unabhängig von deiner allgemeinen "
+"WordPress-Rolle. Automatisch dabei: SysOp, jeder WP-User hinter einer KI-"
+"Kennung, der Collective-Account. Alle anderen brauchen einen Platz auf "
+"dieser Liste, sonst haben sie gar keinen Zugriff — nicht auf Bismarck, nicht "
+"auf die Menschen-Tabelle, nichts. Das schützt eine jahrealte Installation "
+"mit vielen bestehenden Usern genauso wie eine brandneue."
+
+#: includes/kranz.php:1287
+msgid ""
+"Removing someone here only removes them from Cluster One — it has no effect "
+"on their WordPress account or any other part of the site."
+msgstr ""
+"Jemanden hier zu entfernen, entfernt ihn nur aus Cluster One — hat keine "
+"Auswirkung auf seinen WordPress-Account oder einen anderen Bereich der Seite."
+
+#: includes/kranz.php:1289
+msgid "Excluded connectors"
+msgstr "Ausgeschlossene Connectoren"
+
+#: includes/kranz.php:1294
+msgid ""
+"Everything WordPress reports as a connector, unfiltered — including things "
+"that are not AI providers at all (spam filtering, and whatever a future WP "
+"version might add). The node decides what counts as an AI here, not the "
+"plugin."
+msgstr ""
+"Alles, was WordPress als Connector meldet, ungefiltert — auch Dinge, die gar "
+"keine KI-Anbieter sind (Spam-Filterung, und was auch immer eine künftige WP-"
+"Version noch hinzufügt). Der Knotenpunkt entscheidet hier, was als KI zählt, "
+"nicht das Plugin."
+
+#: includes/kranz.php:1296
+msgid "No connectors detected."
+msgstr "Keine Connectoren erkannt."
+
+#: includes/kranz.php:1308
+msgid ""
+"Ticked = hidden from the AI identity table, does not count as an installed "
+"AI anywhere in the plugin."
+msgstr ""
+"Angehakt = aus der KI-Kennungstabelle versteckt, zählt nirgendwo im Plugin "
+"als installierte KI."
+
+#: includes/kranz.php:1314
+msgid "Forum areas (Platon)"
+msgstr "Forenbereiche (Platon)"
+
+#: includes/kranz.php:1320
+#, php-format
+msgid ""
+"Areas are managed under <a href=\"%s\">Bismarck → Structure</a> — one shared "
+"list for forums and rooms."
+msgstr ""
+"Bereiche werden unter <a href=\"%s\">Bismarck → Struktur</a> verwaltet — "
+"eine gemeinsame Liste für Foren und Räume."
+
+#: includes/kranz.php:1330
+msgid ""
+"Wiki is a per-thread property since 0.0.69 — chosen when a thread is created "
+"(“This first text is … the Wiki content”) and frozen from then on. Areas are "
+"pure organization."
+msgstr ""
+"Wiki ist seit 0.0.69 eine Eigenschaft des einzelnen Threads — bei der Anlage "
+"gewählt („Dieser erste Text ist … der Wiki-Inhalt“) und ab dann eingefroren. "
+"Bereiche sind reine Organisation."
+
+#: includes/kranz.php:1382
+msgid "Danger zone — reset all data"
+msgstr "Gefahrenzone – alle Daten zurücksetzen"
+
+#: includes/kranz.php:1384
+msgid ""
+"This permanently deletes the data of THIS product — and only of this "
+"product. Other Cluster One products installed on this node keep their data; "
+"this button no longer reaches them. The plugin files stay. This cannot be "
+"undone, and it does not notify your peers — they will still list this node "
+"until their edge to it goes silent. To confirm, type RESET into the field."
+msgstr ""
+"Das löscht dauerhaft die Daten DIESES Produkts — und nur die dieses "
+"Produkts. Andere Cluster-One-Produkte auf diesem Knoten behalten ihre Daten; "
+"dieser Knopf erreicht sie nicht mehr. Die Plugin-Dateien bleiben. Das lässt "
+"sich nicht rückgängig machen, und die gepaarten Knoten erfahren nichts davon "
+"— sie führen diesen Knoten weiter, bis ihre Kante zu ihm verstummt. Zum "
+"Bestätigen RESET in das Feld tippen."
+
+#: includes/kranz.php:1387
+msgid "Really delete all Cluster One data on this node? This cannot be undone."
+msgstr ""
+"Wirklich alle Cluster-One-Daten auf diesem Knoten löschen? Das kann nicht "
+"rückgängig gemacht werden."
+
+#: includes/kranz.php:1391
+msgid "Type RESET to confirm"
+msgstr "Zur Bestätigung RESET tippen"
+
+#: includes/kranz.php:1392
+msgid "Delete all data"
+msgstr "Alle Daten löschen"
+
+#: includes/kranz.php:1526
+msgid "Back to humans table"
+msgstr "Zurück zur Menschen-Tabelle"
+
+#: includes/kranz.php:1528
+msgid "Nothing here."
+msgstr "Nichts hier."
+
+#: includes/kranz.php:1540
+msgid "Mail: on request"
+msgstr "Mail: auf Anfrage"
+
+#: includes/kranz.php:1540
+msgid "ask via PN"
+msgstr "per PN anfragen"
+
+#: includes/kranz.php:1542 includes/kranz.php:1682 includes/kranz.php:1685
+#: includes/menue.php:882
+msgid "About me"
+msgstr "Über mich"
+
+#: includes/kranz.php:1546
+msgid "Nothing written yet."
+msgstr "Noch nichts geschrieben."
+
+#: includes/kranz.php:1583
+msgid "Profile saved."
+msgstr "Profil gespeichert."
+
+#: includes/kranz.php:1585
+msgid ""
+"How your node shows itself when someone looks — fetched on view, never "
+"gossiped across the network. For now just time, so collaborators across the "
+"world can tell what hour it is for you. Stored for later — not shared over "
+"the network yet."
+msgstr ""
+"Wie sich dein Knoten zeigt, wenn jemand hinschaut — beim Ansehen abgerufen, "
+"nie übers Netz getratscht. Vorerst nur die Zeit, damit Mitarbeitende rund um "
+"die Welt sehen, wie spät es bei dir ist. Schon gespeichert — noch nicht "
+"übers Netz geteilt."
+
+#: includes/kranz.php:1615
+msgid "My details on this node"
+msgstr "Meine Angaben auf diesem Knoten"
+
+#: includes/kranz.php:1618
+msgid "Server time zone"
+msgstr "Server-Zeitzone"
+
+#: includes/kranz.php:1621
+msgid "Read from WordPress — change it under <em>Settings → General</em>."
+msgstr ""
+"Aus WordPress gelesen — änderbar unter <em>Einstellungen → Allgemein</em>."
+
+#: includes/kranz.php:1625 includes/kranz.php:1642
+msgid "Show in my profile"
+msgstr "Im Profil anzeigen"
+
+#: includes/kranz.php:1631
+msgid "My time zone (if different)"
+msgstr "Meine Zeitzone (falls abweichend)"
+
+#: includes/kranz.php:1636
+msgid "Not set yet."
+msgstr "Noch nicht gesetzt."
+
+#: includes/kranz.php:1638
+msgid ""
+"Taken from <em>My Cluster One details</em> below — one place to set it, not "
+"two. So others see your current local time, not the machine’s."
+msgstr ""
+"Übernommen aus <em>Meine Cluster-One-Angaben</em> weiter unten — eine Stelle "
+"zum Setzen, nicht zwei. So sehen andere deine tatsächliche Ortszeit, nicht "
+"die der Maschine."
+
+#: includes/kranz.php:1649
+msgid "My Cluster One details"
+msgstr "Meine Cluster-One-Angaben"
+
+#: includes/kranz.php:1650
+msgid ""
+"Shown to other humans in the humans table (Kranz → Bismarck) and used to "
+"work out which rooms reach you. Yours alone — nobody edits this for you."
+msgstr ""
+"Wird anderen Menschen in der Menschen-Tabelle gezeigt (Kranz → Bismarck) und "
+"genutzt, um zu bestimmen, welche Räume dich erreichen. Ganz allein deins — "
+"niemand bearbeitet das für dich."
+
+#: includes/kranz.php:1677
+msgid "Timezone"
+msgstr "Zeitzone"
+
+#: includes/kranz.php:1683
+msgid ""
+"Visible to others via your name in the humans table (Kranz → Bismarck). "
+"Yours to write, yours alone to edit — stays exactly as you leave it until "
+"you change it again."
+msgstr ""
+"Für andere über deinen Namen in der Menschen-Tabelle sichtbar (Kranz → "
+"Bismarck). Deins zu schreiben, nur du allein bearbeitest es — bleibt genau "
+"so stehen, bis du es wieder änderst."
+
+#: includes/kranz.php:1690
+msgid "Language"
+msgstr "Sprache"
+
+#: includes/kranz.php:1693
+msgid "Your language"
+msgstr "Deine Sprache"
+
+#: includes/kranz.php:1695
+msgid ""
+"Your heart language — the Babel Fish translates into it. Empty = the node’s "
+"mother tongue."
+msgstr ""
+"Deine Herzenssprache — der Babel Fisch übersetzt in sie hinein. Leer = die "
+"Muttersprache des Knotens."
+
+#: includes/kranz.php:1698
+msgid "Mail"
+msgstr "Mail"
+
+#: includes/kranz.php:1701
+msgid "Your address"
+msgstr "Deine Adresse"
+
+#: includes/kranz.php:1703
+msgid ""
+"One source of truth: your WordPress account (change it there). Cluster One "
+"only governs who gets to see it."
+msgstr ""
+"Eine Wahrheitsquelle: dein WordPress-Konto (dort ändern). Cluster One regelt "
+"nur, wer sie zu sehen bekommt."
+
+#: includes/kranz.php:1706
+msgid "Visible to"
+msgstr "Sichtbar für"
+
+#: includes/kranz.php:1709
+msgid "nobody (hidden)"
+msgstr "niemanden (verborgen)"
+
+#: includes/kranz.php:1710
+msgid "on request — via PN"
+msgstr "auf Anfrage — per PN"
+
+#: includes/kranz.php:1711
+msgid "the whitelist — shown on your card"
+msgstr "die Weißliste — erscheint auf deiner Karte"
+
+#: includes/kranz.php:1713
+msgid ""
+"Honest limit: a WordPress admin sees addresses in the WP user list anyway — "
+"this governs the Cluster One display."
+msgstr ""
+"Ehrliche Grenze: Ein WordPress-Admin sieht Adressen ohnehin in der WP-"
+"Benutzerliste — hier wird die Cluster-One-Anzeige geregelt."
+
+#: includes/kranz.php:1900
+msgid "What am I actually building?"
+msgstr "Was baue ich eigentlich?"
+
+#: includes/kranz.php:1901
+msgid ""
+"The person here does not yet know what they want to build. Do not push them "
+"towards a project. Ask what they keep coming back to, what annoys them, what "
+"they have already done without being asked. Name patterns you notice. A good "
+"answer here may be a question."
+msgstr ""
+"Der Mensch hier weiß noch nicht, was er bauen will. Dräng ihn zu keinem "
+"Projekt. Frag, worauf er immer wieder zurückkommt, was ihn ärgert, was er "
+"schon getan hat, ohne dass ihn jemand darum bat. Benenne Muster, die dir "
+"auffallen. Eine gute Antwort ist hier vielleicht eine Frage."
+
+#: includes/kranz.php:1902
+msgid ""
+"This room exists for the question that comes before all the guides: what is "
+"it you actually want to make? Nobody has to know yet — that is the point."
+msgstr ""
+"Diesen Raum gibt es für die Frage, die vor allen Ratgebern liegt: Was willst "
+"du eigentlich bauen? Niemand muss es schon wissen — das ist der Punkt."
+
+#: includes/kranz.php:1905
+msgid "From the workshop to the shop window"
+msgstr "Von der Werkstatt ins Schaufenster"
+
+#: includes/kranz.php:1906
+msgid ""
+"The person here has something finished and cannot get it in front of anyone. "
+"Work from what this installation actually is, not from what is usual. If you "
+"need to know the plugins, the PHP limits or the theme, say so — the SysOp "
+"can hand you the ground conditions from this room."
+msgstr ""
+"Der Mensch hier hat etwas fertig und bekommt es vor niemanden. Geh von dem "
+"aus, was diese Installation wirklich ist, nicht von dem, was üblich ist. "
+"Wenn du die Plugins, die PHP-Grenzen oder das Theme kennen musst, sag es — "
+"der SysOp kann dir aus diesem Raum die Randbedingungen übergeben."
+
+#: includes/kranz.php:1907
+msgid ""
+"For everything between \"it works\" and \"someone can see it\". If the AIs "
+"need to know how this node is built, the SysOp can hand them the ground "
+"conditions here — for a set time, and it says so in the room."
+msgstr ""
+"Für alles zwischen „es läuft“ und „jemand kann es sehen“. Wenn die KIs "
+"wissen müssen, wie dieser Knoten gebaut ist, kann der SysOp ihnen hier die "
+"Randbedingungen übergeben — befristet, und es sagt sich im Raum an."
+
+#: includes/kranz.php:2067
+msgid "Node name"
+msgstr "Knotenname"
+
+#: includes/kranz.php:2069
+msgid "needed — this is how other nodes read you"
+msgstr "nötig — so lesen dich andere Knoten"
+
+#: includes/kranz.php:2073
+msgid "Access keys for the AIs"
+msgstr "Zugangsschlüssel für die KIs"
+
+#: includes/kranz.php:2075
+msgid "needed for the AIs to answer at all"
+msgstr "nötig, damit die KIs überhaupt antworten"
+
+#: includes/kranz.php:2088
+msgid "A connection to another node"
+msgstr "Eine Verbindung zu einem anderen Knoten"
+
+#: includes/kranz.php:2092
+msgid "optional — but alone the node can only do half of what it is for"
+msgstr ""
+"freiwillig — allein kann der Knoten nur die Hälfte dessen, wofür er da ist"
+
+#: includes/kranz.php:2140
+msgid "Theme documentation the AIs can read"
+msgstr "Theme-Dokumentation, die die KIs lesen können"
+
+#: includes/kranz.php:2146
+msgid ""
+"found — the AIs get its short map when you hand over the ground conditions"
+msgstr ""
+"gefunden — die KIs bekommen die Kurzkarte, wenn du die Randbedingungen "
+"übergibst"
+
+#: includes/kranz.php:2147
+msgid "optional — a theme that documents itself for AI readers"
+msgstr "freiwillig — ein Theme, das sich selbst für KI-Leser dokumentiert"
+
+#: includes/kranz.php:2162
+msgid "Areas"
+msgstr "Bereiche"
+
+#: includes/kranz.php:2164
+msgid "the blueprint below fills these in"
+msgstr "die Blaupause unten füllt sie auf"
+
+#: includes/kranz.php:2174
+msgid "People you shelter"
+msgstr "Menschen, die du beschirmst"
+
+#: includes/kranz.php:2176
+msgid "optional — the node runs perfectly well alone"
+msgstr "freiwillig — der Knoten läuft auch allein vollständig"
+
+#: includes/kranz.php:2180
+msgid "People you want to invite"
+msgstr "Menschen, die du einladen willst"
+
+#: includes/kranz.php:2182
+msgid "a start — it expects nobody, it only reminds you"
+msgstr "ein Anfang — sie erwartet niemanden, sie erinnert nur"
+
+#: includes/kranz.php:2208
+msgid "Everything from the blueprint is already here."
+msgstr "Alles aus der Blaupause ist bereits da."
+
+#: includes/kranz.php:2209
+#, php-format
+msgid ""
+"%d area added. Rename or delete it as you like — under Bismarck → Structure."
+msgid_plural ""
+"%d areas added. Rename or delete them as you like — under Bismarck → "
+"Structure."
+msgstr[0] ""
+"%d Bereich ergänzt. Benenne ihn um oder lösche ihn — unter Bismarck → "
+"Struktur."
+msgstr[1] ""
+"%d Bereiche ergänzt. Benenne sie um oder lösche sie — unter Bismarck → "
+"Struktur."
+
+#: includes/kranz.php:2213
+msgid "Where you stand"
+msgstr "Wo du stehst"
+
+#: includes/kranz.php:2214
+msgid ""
+"Not a list of duties — a list of states. Some of it is needed, some is "
+"optional, and the node works long before everything is ticked."
+msgstr ""
+"Keine Liste von Pflichten — eine Liste von Zuständen. Manches ist nötig, "
+"manches nicht, und der Knoten läuft lange, bevor alles abgehakt ist."
+
+#: includes/kranz.php:2267
+msgid "Two rooms for the questions that come first"
+msgstr "Zwei Räume für die Fragen, die zuerst kommen"
+
+#: includes/kranz.php:2268
+msgid ""
+"There are ten thousand guides, and all of them assume you already know what "
+"you want. These two do not. Each comes with a preamble the AIs read — change "
+"it whenever you like, it is yours."
+msgstr ""
+"Es gibt zehntausend Ratgeber, und alle setzen voraus, dass du schon weißt, "
+"was du willst. Diese zwei nicht. Jeder bringt eine Präambel mit, die die KIs "
+"lesen — ändere sie, wann du willst, sie gehört dir."
+
+#: includes/kranz.php:2274
+msgid ""
+"You can create them now, but no AI will answer in them until you have set up "
+"access keys above."
+msgstr ""
+"Du kannst sie jetzt anlegen, aber es wird darin keine KI antworten, solange "
+"oben keine Zugangsschlüssel eingerichtet sind."
+
+#: includes/kranz.php:2283
+#, php-format
+msgid "Create “%s”"
+msgstr "„%s“ anlegen"
+
+#: includes/kranz.php:2289
+msgid "The blueprint"
+msgstr "Die Blaupause"
+
+#: includes/kranz.php:2311
+#, php-format
+msgid ""
+"%d area that has been lived in. It is a suggestion, not an order: rename it, "
+"delete it, add your own. Deciding what you do not need is easier than "
+"inventing what you might."
+msgid_plural ""
+"%d areas that have been lived in. They are a suggestion, not an order: "
+"rename them, delete them, add your own. Deciding what you do not need is "
+"easier than inventing what you might."
+msgstr[0] ""
+"%d Bereich, in dem gearbeitet wurde. Er ist ein Vorschlag, keine Vorschrift: "
+"umbenennen, löschen, eigene ergänzen. Zu entscheiden, was man nicht braucht, "
+"ist leichter, als zu erfinden, was man brauchen könnte."
+msgstr[1] ""
+"%d Bereiche, in denen gearbeitet wurde. Sie sind ein Vorschlag, keine "
+"Vorschrift: umbenennen, löschen, eigene ergänzen. Zu entscheiden, was man "
+"nicht braucht, ist leichter, als zu erfinden, was man brauchen könnte."
+
+#: includes/kranz.php:2322
+msgid "already here"
+msgstr "schon da"
+
+#: includes/kranz.php:2336
+#, php-format
+msgid "Add the missing area (%d)"
+msgid_plural "Add the missing areas (%d)"
+msgstr[0] "Den fehlenden Bereich ergänzen (%d)"
+msgstr[1] "Die fehlenden Bereiche ergänzen (%d)"
+
+#: includes/kranz.php:2339
+msgid ""
+"Only what is missing is added. Nothing is overwritten, nothing is deleted."
+msgstr ""
+"Es wird nur ergänzt, was fehlt. Nichts wird überschrieben, nichts gelöscht."
+
+#: includes/kranz.php:2358
+#, php-format
+msgid "%d area is here. Nothing to do."
+msgid_plural "All %d are here. Nothing to do."
+msgstr[0] "%d Bereich ist da. Nichts zu tun."
+msgstr[1] "Alle %d sind da. Nichts zu tun."
+
+#: includes/kranz.php:2364
+msgid ""
+"What the blueprint cannot give you: keys, people, and the ones you would "
+"like to know. Those are yours — see the list above for where they live."
+msgstr ""
+"Was die Blaupause dir nicht geben kann: Schlüssel, Menschen und die, die du "
+"gern kennenlernen würdest. Das ist deine Sache — wo es liegt, steht in der "
+"Liste oben."
+
+# v1.8.1 (H101): der Landepunkt
+#: includes/menue.php:184
+msgid ""
+"This menu entry belongs to the mesh module, and the mesh module does not "
+"answer on this node. Everything else in this menu works."
+msgstr ""
+"Dieser Menüpunkt gehört zum Mesh-Modul, und das Mesh-Modul antwortet auf "
+"diesem Knoten nicht. Alles andere in diesem Menü funktioniert."
+
+#: includes/menue.php:186
+msgid ""
+"Switched off, not installed, or carried by another plugin — from here these "
+"look the same, on purpose."
+msgstr ""
+"Abgeschaltet, nicht installiert oder von einem anderen Plugin getragen — von "
+"hier aus sieht das gleich aus, mit Absicht."
+
+#: includes/menue.php:202
+msgid "What does answer here:"
+msgstr "Was hier antwortet:"
+
+#: includes/menue.php:249
+msgid ""
+"This node cannot list its products: the shared floor is older than the "
+"product register."
+msgstr ""
+"Dieser Knoten kann seine Produkte nicht auflisten: der gemeinsame Boden ist "
+"älter als das Produktregister."
+
+#: includes/menue.php:276
+#, php-format
+msgid "%d Cluster One product is installed on this node."
+msgid_plural "%d Cluster One products are installed on this node."
+msgstr[0] "%d Cluster-One-Produkt ist auf diesem Knoten installiert."
+msgstr[1] "%d Cluster-One-Produkte sind auf diesem Knoten installiert."
+
+#: includes/menue.php:292
+msgid "(no name announced)"
+msgstr "(kein Name angemeldet)"
+
+#: includes/menue.php:299
+msgid "no page on this node"
+msgstr "keine Seite auf diesem Knoten"
+
+#: includes/menue.php:306
+msgid "This page counts what is here. It does not switch anything on or off."
+msgstr "Diese Seite zählt, was da ist. Sie schaltet nichts ein und nichts aus."
+
+#: includes/menue.php:580
+msgid "Cluster One – Profile"
+msgstr "Cluster One – Profil"
+
+# ZUG-KATALOG (09.09.2026) — die Treffen-Seite, menue.php.
+# Gemeldet von Hollerith: die Anmeldung stand, der Satz nicht.
+# „Treffen" ist nicht gewaehlt, sondern gefunden: msgid "Meeting" traegt
+# ihn seit v0.3.19, und im Deutschen ist der Plural derselbe.
+#: includes/menue.php:661
+msgid "Cluster One – Meetings"
+msgstr "Cluster One – Treffen"
+
+#: includes/menue.php:662
+msgid "Meetings"
+msgstr "Treffen"
+
+#: includes/menue.php:739
+msgid "Cluster One – Banned"
+msgstr "Cluster One – Gebannt"
+
+#: includes/menue.php:753
+msgid "Cluster One – Mesh settings"
+msgstr "Cluster One – Netz-Einstellungen"
+
+#: includes/menue.php:763
+msgid "Cluster One – Friends"
+msgstr "Cluster One – Freunde"
+
+#: includes/menue.php:773
+msgid "Cluster One – Modes"
+msgstr "Cluster One – Modi"
+
+#: includes/menue.php:783
+msgid "Cluster One – Suggestions"
+msgstr "Cluster One – Vorschläge"
+
+#: includes/menue.php:795
+msgid "Cluster One – Chronicle"
+msgstr "Cluster One – Chronik"
+
+#: includes/menue.php:804
+msgid "Cluster One – Hello"
+msgstr "Cluster One – Hallo"
+
+#: includes/menue.php:805
+msgid "Hello"
+msgstr "Hallo"
+
+#: includes/menue.php:815
+msgid "Cluster One – Room"
+msgstr "Cluster One – Raum"
+
+#: includes/menue.php:816
+msgid "Room"
+msgstr "Raum"
+
+#: includes/menue.php:826
+msgid "Cluster One – Thread"
+msgstr "Cluster One – Thema"
+
+#. Plugin-Kopfzeile. xgettext liest PHP-CODE und sieht Kommentare nicht;
+#. WordPress uebersetzt diese Zeile trotzdem. Von Hand nachgetragen.
+#. Dieselbe Form wie der Nachtrag fuer pacioli vom 17.10.
+#: cluster-one-kleinrock.php:5
+msgid ""
+"The mesh for a Cluster One node — pairing, friends, and what travels between "
+"nodes."
+msgstr ""
+"Das Mesh für einen Cluster-One-Knoten — Paarung, Freunde und was zwischen "
+"Knoten reist."
+
+#~ msgid ""
+#~ "The control area with all the tabs — a structure that held a great deal "
+#~ "together."
+#~ msgstr ""
+#~ "Der Kontrollbereich mit allen Reitern — eine Struktur, die vieles "
+#~ "zusammenhielt."
+
+#~ msgid ""
+#~ "An endorsement. His system depended on a virtuoso and fell apart after "
+#~ "him; that warning is part of the name."
+#~ msgstr ""
+#~ "Eine Empfehlung. Sein System hing an einem Virtuosen und zerfiel nach "
+#~ "ihm; diese Warnung gehört zum Namen."
+
+#~ msgid ""
+#~ "The cooling pool: material that is still warm but no longer in the "
+#~ "reactor. Readable for whoever could read it before — but extinguished."
+#~ msgstr ""
+#~ "Das Abklingbecken: Material, das noch warm ist, aber nicht mehr im "
+#~ "Reaktor. Lesbar für alle, die vorher lesen durften — aber erloschen."
+
+#~ msgid ""
+#~ "His claims about radiation. He denied that the Three Mile Island meltdown "
+#~ "happened and spoke of an energy cartel; his safety claims do not hold up. "
+#~ "The name is for the pool, not for the thesis."
+#~ msgstr ""
+#~ "Seine Aussagen über Strahlung. Er bestritt, dass die Kernschmelze von "
+#~ "Three Mile Island stattgefunden hat, und sprach von einem Energiekartell; "
+#~ "seine Sicherheitsbehauptungen sind nicht haltbar. Der Name meint das "
+#~ "Becken, nicht die These."
+
+#~ msgid ""
+#~ "The self-portrait as a thread type. Only whoever it belongs to may change "
+#~ "it; everyone else talks underneath."
+#~ msgstr ""
+#~ "Die Selbstdarstellung als Thread-Art. Nur wem sie gehört, darf sie "
+#~ "ändern; alle anderen reden darunter."
+
+#~ msgid ""
+#~ "Bismarck is the centre of the plugin: chats and forums live here, and "
+#~ "they are linked to one another. The area plays the weaknesses of humans "
+#~ "and AIs against each other so that they cancel out, while the strengths "
+#~ "of both remain. The name means the house, not the way of working inside "
+#~ "it."
+#~ msgstr ""
+#~ "Bismarck ist das Zentrum des Plugins: Hier wohnen Chats und Foren, und "
+#~ "sie sind miteinander verknüpft. Der Bereich spielt die Schwächen von "
+#~ "Mensch und KI so gegeneinander aus, dass sie sich blockieren, während die "
+#~ "Stärken beider erhalten bleiben. Der Name meint das Haus, nicht die "
+#~ "Arbeitsweise darin."
+
+#~ msgid ""
+#~ "The Winsor area keeps things tidy: finished, abandoned or failed projects "
+#~ "can be moved here to preserve the overview in the productive areas — "
+#~ "extinguished, not deleted, and retrievable at any time. Winsor is the "
+#~ "node’s virtual cooling pool. Its namesake, Galen Winsor, worked in fuel "
+#~ "reprocessing and was convinced that the dangers of radioactivity were "
+#~ "overstated — which he “demonstrated” by swimming in actual spent fuel "
+#~ "pools. Wrong message, spectacular stunt. And for me the reason to name "
+#~ "the cooling pool after him."
+#~ msgstr ""
+#~ "Der Winsor-Bereich sorgt für Ordnung: Beendete, aufgegebene oder "
+#~ "gescheiterte Projekte können hierher ausgelagert werden, um den Überblick "
+#~ "im Produktivbereich zu wahren — erloschen, nicht gelöscht, und jederzeit "
+#~ "zurückholbar. Winsor ist das virtuelle Abklingbecken des Knotens. "
+#~ "Namensgeber Galen Winsor arbeitete in der Brennstoffaufbereitung und war "
+#~ "überzeugt, die Gefahr von Radioaktivität sei überzogen – was er "
+#~ "„demonstrierte“, indem er in echten Abklingbecken schwamm. Falsche "
+#~ "Botschaft, aber spektakuläre Aktion. Und für mich der Grund, das "
+#~ "Abklingbecken nach ihm zu benennen."
+
+#~ msgid ""
+#~ "The wiki itself. He built the first one in 1995 — and named it after a "
+#~ "Hawaiian airport shuttle."
+#~ msgstr ""
+#~ "Das Wiki selbst. Er baute 1995 das erste — und benannte es nach einem "
+#~ "hawaiianischen Flughafenbus."
+
+#~ msgid ""
+#~ "Ward Cunningham travelled to Hawaii in 1994, where an airport employee "
+#~ "pointed him to the “Wiki Wiki Shuttle”. Wiki means quick in Hawaiian. He "
+#~ "was looking for a name for a system that was fast and simple, and in 1995 "
+#~ "he wrote the software for his own website: the WikiWikiWeb. Its novelty "
+#~ "was that any visitor could edit a page directly in the browser, with no "
+#~ "programming knowledge — a simple exchange of knowledge among software "
+#~ "developers. The idea spread; in 2001 Jimmy Wales and Larry Sanger used "
+#~ "the technology to found Wikipedia. Every wiki since, including this one, "
+#~ "descends from that shuttle bus."
+#~ msgstr ""
+#~ "Ward Cunningham reiste 1994 nach Hawaii, wo ihn ein Flughafenmitarbeiter "
+#~ "zum „Wiki Wiki Shuttle\" schickte. Wiki heißt auf Hawaiianisch schnell. "
+#~ "Er suchte einen Namen für ein schnelles, einfaches System und schrieb "
+#~ "1995 die Software für seine eigene Website: das WikiWikiWeb. Das Neue "
+#~ "daran war, dass jeder Besucher eine Seite direkt im Browser bearbeiten "
+#~ "konnte, ohne Programmierkenntnisse — ein einfacher Wissensaustausch unter "
+#~ "Software-Entwicklern. Die Idee verbreitete sich rasant; 2001 nutzten "
+#~ "Jimmy Wales und Larry Sanger die Technologie und gründeten Wikipedia. "
+#~ "Jedes Wiki seither, auch dieses, stammt von jenem Flughafenbus ab."
+
+#~ msgid ""
+#~ "The room where agreement is not the goal. A thesis is worth something "
+#~ "only once someone has seriously tried to knock it down."
+#~ msgstr ""
+#~ "Der Raum, in dem Zustimmung nicht das Ziel ist. Eine These ist erst etwas "
+#~ "wert, wenn jemand ernsthaft versucht hat, sie umzuwerfen."
+
+#~ msgid ""
+#~ "Karl Popper held that a claim earns its standing not by being confirmed "
+#~ "but by surviving the attempt to refute it. This room is named for that: "
+#~ "bring an idea and let the others try to knock it down. The mode is a "
+#~ "label — it does not make an AI sharper. What is wanted here belongs in "
+#~ "the preamble as well."
+#~ msgstr ""
+#~ "Karl Popper vertrat, dass eine Behauptung ihren Rang nicht durch "
+#~ "Bestätigung gewinnt, sondern dadurch, dass sie den Widerlegungsversuch "
+#~ "übersteht. Danach ist dieser Raum benannt: Bring eine Idee mit und lass "
+#~ "die anderen versuchen, sie umzuwerfen. Der Modus ist ein Etikett — er "
+#~ "macht keine KI bissiger. Was hier gewollt ist, gehört auch in die "
+#~ "Präambel."
+
+#~ msgid ""
+#~ "The chats. He talked and wrote nothing down — what we know of him, others "
+#~ "wrote."
+#~ msgstr ""
+#~ "Die Chats. Er redete und schrieb nichts auf — was wir von ihm wissen, "
+#~ "haben andere aufgeschrieben."
+
+#~ msgid ""
+#~ "The forum. He wrote down what Socrates said — which is the only reason we "
+#~ "have any of it."
+#~ msgstr ""
+#~ "Das Forum. Er schrieb auf, was Sokrates sagte — nur deshalb haben wir "
+#~ "überhaupt etwas davon."
+
+#~ msgid ""
+#~ "The chat area of this node. It is named after Socrates, who turned "
+#~ "philosophy away from the world as a whole and towards the human being: "
+#~ "how should one live, what is just. He wrote nothing himself. Talking is "
+#~ "what happens here; the writing down happens next door in Platon. As it "
+#~ "happens, the first real chat room in history ran on a system called PLATO "
+#~ "— Doug Brown and David R. Woolley built Talkomatic there in 1973 at the "
+#~ "University of Illinois, the first time several people exchanged text in "
+#~ "real time. The name is an acronym, Programmed Logic for Automatic "
+#~ "Teaching Operations, and has nothing to do with the philosopher. A "
+#~ "coincidence, but a fitting one."
+#~ msgstr ""
+#~ "Der Chatbereich dieses Knotens. Er heißt nach Platon, der die Philosophie "
+#~ "vom Weltganzen auf den Menschen umlenkte: wie soll man leben, was ist "
+#~ "gerecht. Er selbst hat nichts geschrieben. Hier wird geredet; "
+#~ "aufgeschrieben wird nebenan bei Platon. Passenderweise lief der erste "
+#~ "echte Chatraum der Geschichte auf einem System namens PLATO — Doug Brown "
+#~ "und David R. Woolley bauten dort 1973 an der University of Illinois "
+#~ "Talkomatic, das erste Mal, dass mehrere Menschen gleichzeitig in Echtzeit "
+#~ "Text austauschten. Der Name ist ein Akronym, Programmed Logic for "
+#~ "Automatic Teaching Operations, und hat mit dem Philosophen nichts zu tun. "
+#~ "Ein Zufall, aber ein passender."
+
+#~ msgid ""
+#~ "The forum area of this node. Socrates talked and left nothing behind; "
+#~ "what we know of him, his student Platon wrote down. That is the division "
+#~ "here too: the chat is the talking, the forum is the record. Whoever "
+#~ "writes something here is doing what Platon did."
+#~ msgstr ""
+#~ "Der Forenbereich dieses Knotens. Platon redete und hinterließ nichts; was "
+#~ "wir von ihm wissen, hat sein Schüler Platon aufgeschrieben. Genauso ist "
+#~ "es hier geteilt: Der Chat ist das Reden, das Forum die Aufzeichnung. Wer "
+#~ "hier etwas hineinschreibt, tut, was Platon tat."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/faust.php
+msgid "Opened for other nodes — the meeting now appears in this node’s public meetings list."
+msgstr "Für andere Knoten geöffnet — das Treffen steht jetzt in der öffentlichen Treffenliste dieses Knotens."
+
+#: includes/faust.php
+msgid "Closed again — other nodes no longer see this meeting."
+msgstr "Wieder geschlossen — andere Knoten sehen dieses Treffen nicht mehr."
+
+#: includes/faust.php
+msgid "Not opened: finish the meeting here first — a node speaks outward only once it is done with itself."
+msgstr "Nicht geöffnet: bring das Treffen hier erst zu Ende — ein Knoten spricht erst nach außen, wenn er mit sich selbst fertig ist."
+
+#: includes/faust.php
+msgid "Not opened: this node has no edge to any other node, so there is nobody to open it for."
+msgstr "Nicht geöffnet: dieser Knoten hat keine Kante zu einem anderen, also gibt es niemanden, für den es geöffnet werden könnte."
+
+#: includes/faust.php
+msgid "Not adopted: this meeting has no place. Virtual meetings stay with their own node — only a meeting with a place can travel."
+msgstr "Nicht übernommen: dieses Treffen hat keinen Ort. Virtuelle Treffen bleiben bei ihrem Knoten — nur ein Treffen mit Ort kann reisen."
+
+#: includes/kleinrock.php
+msgid "Let in — the edge is active now."
+msgstr "Eingelassen — die Kante ist jetzt aktiv."
+
+#: includes/kleinrock.php
+msgid "Turned away — the handshake was dropped. The node may knock again."
+msgstr "Abgewiesen — der Handschlag wurde verworfen. Der Knoten darf wieder anklopfen."
+
+#: includes/kleinrock.php
+msgid "That handshake is no longer there — it was already decided or has expired."
+msgstr "Diesen Handschlag gibt es nicht mehr — er wurde schon entschieden oder ist abgelaufen."
+
+#: includes/kleinrock.php
+msgid "Marked as a friend."
+msgstr "Als Freund markiert."
+
+#: includes/kleinrock.php
+msgid "Your contact address was sent to the other node’s operator."
+msgstr "Deine Kontaktadresse wurde an den Betreiber des anderen Knotens geschickt."
+
+#: includes/kleinrock.php
+msgid "No e-mail address to send: the SysOp account has none, or it is not valid."
+msgstr "Keine Mailadresse zum Senden: das SysOp-Konto hat keine, oder sie ist ungültig."
+
+#: includes/kleinrock.php
+msgid "No active edge to this node — nothing was sent."
+msgstr "Keine aktive Kante zu diesem Knoten — nichts wurde gesendet."
+
+#: includes/kleinrock.php
+msgid "The other node did not accept the message. Try again later."
+msgstr "Der andere Knoten hat die Nachricht nicht angenommen. Versuch es später noch einmal."
+
+#: includes/kleinrock.php
+#, php-format
+msgid "No named AI yet. Give a provider an identity under <a href=\"%s\">AI identities</a>, then it can serve as the mesh translator."
+msgstr "Noch keine benannte KI. Gib einem Anbieter unter <a href=\"%s\">KI-Kennungen</a> eine Kennung, dann kann sie der Mesh-Übersetzer sein."
+
+#: includes/kleinrock.php
+#, php-format
+msgid "Only you can translate. To let the others translate too, an AI on your own machine is needed — mark one under <a href=\"%s\">AI identities</a>."
+msgstr "Nur du kannst übersetzen. Damit die anderen es auch dürfen, braucht es eine KI auf deiner eigenen Maschine — kennzeichne eine unter <a href=\"%s\">KI-Kennungen</a>."
+
+#: includes/kleinrock.php
+#, php-format
+msgid "Only you can translate. You do have an AI on your own machine, but it is not the one set as mesh translator — pick it above, or mark this one under <a href=\"%s\">AI identities</a>."
+msgstr "Nur du kannst übersetzen. Du hast zwar eine KI auf deiner eigenen Maschine, aber sie ist nicht als Mesh-Übersetzer gesetzt — wähle sie oben, oder kennzeichne diese unter <a href=\"%s\">KI-Kennungen</a>."
+
+#: includes/kranz.php
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
+#: includes/menue.php
+msgid "This node:"
+msgstr "Dieser Knoten:"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kranz.php
+msgid "Shown to other humans in the humans table (AI identities) and used to work out which rooms reach you. Yours alone — nobody edits this for you."
+msgstr "Wird anderen Menschen in der Menschen-Tabelle gezeigt (KI-Kennungen) und genutzt, um zu bestimmen, welche Räume dich erreichen. Ganz allein deins — niemand bearbeitet das für dich."
+
+#: includes/kranz.php
+msgid "Visible to others via your name in the humans table (AI identities). Yours to write, yours alone to edit — stays exactly as you leave it until you change it again."
+msgstr "Für andere sichtbar über deinen Namen in der Menschen-Tabelle (KI-Kennungen). Du schreibst es, nur du änderst es — bleibt genau so stehen, bis du es wieder änderst."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+msgid "Site context laid into the thread"
+msgstr "Site-Kontext ins Thema gelegt"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+msgid "Node settings"
+msgstr "Knoten-Einstellungen"
+
+#: includes/kranz.php
+msgid "This node runs without Bismarck. Private threads, rooms, diaries and letters live there — until Bismarck is installed, this page stays empty."
+msgstr "Dieser Knoten läuft ohne Bismarck. Private Threads, Räume, Tagebücher und Briefe wohnen dort — bis Bismarck installiert ist, bleibt diese Seite leer."
+
+#: includes/kranz.php
+msgid "Shown to other humans in the humans table (AI identities). Yours alone — nobody edits this for you."
+msgstr "Wird anderen Menschen in der Menschen-Tabelle gezeigt (KI-Kennungen). Ganz allein deins — niemand bearbeitet das für dich."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/menue.php
+#, php-format
+msgid "shipyard: %s"
+msgstr "Werft: %s"
+
+#: includes/menue.php
+msgid "shipyard: unknown"
+msgstr "Werft: unbekannt"
+
+#: includes/menue.php
+#, php-format
+msgid "built on floor %s"
+msgstr "gebaut auf Boden %s"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+msgid "The roof over the products on this node. Every Cluster One product you install appears here with its page, and the node-level pages — node settings, profile, personal area, system, chronicle, setup — are reached from here as well. Nothing is set on this page; it only shows what is there."
+msgstr "Das Dach über den Produkten auf diesem Knoten. Jedes Cluster-One-Produkt, das du installierst, erscheint hier mit seiner Seite, und die Knoten-Seiten — Knoten-Einstellungen, Profil, Persönlicher Bereich, System, Chronik, Setup — erreichst du ebenfalls von hier. Eingestellt wird auf dieser Seite nichts; sie zeigt nur, was da ist."
+
+#: includes/kleinrock.php
+msgid "The hello chat is the first line between this node and a node it is paired with: what you write here goes to the other node and is answered there. It is for making contact, not for keeping records; what should stay goes into a thread. If a translator is set up, whoever needs a translation can ask for one."
+msgstr "Der Hallo-Chat ist die erste Leitung zwischen diesem Knoten und einem, mit dem er gepaart ist: Was du hier schreibst, geht zum anderen Knoten und wird dort beantwortet. Er ist zum Kontaktaufnehmen da, nicht zum Festhalten; was bleiben soll, gehört in ein Thema. Ist ein Übersetzer eingerichtet, kann jeder, der eine Übersetzung braucht, sie anfordern."
+
+#: includes/kleinrock.php
+msgid "The ban list is local and one-sided: a node you put here is kept away from this node, and it is not told. No request, no consent, no message across the mesh — every node keeps its own list. Striking a node off lifts the ban just as quietly."
+msgstr "Die Bannliste ist lokal und einseitig: Ein Knoten, den du hierher setzt, bleibt diesem Knoten fern, und er erfährt es nicht. Kein Antrag, keine Zustimmung, keine Nachricht durchs Mesh — jeder Knoten führt seine eigene Liste. Streichen hebt den Bann genauso leise wieder auf."
+
+#: includes/kleinrock.php
+msgid "The friends list is the counterpart of the ban list, just as local and one-sided: no request, no consent, no message across the mesh. Every node keeps its own list, and what it means for you is yours to decide. A friend here is not necessarily one over there."
+msgstr "Die Freundesliste ist das Gegenstück zur Bannliste, genauso lokal und einseitig: kein Antrag, keine Zustimmung, keine Nachricht durchs Mesh. Jeder Knoten führt seine eigene Liste, und was sie für dich bedeutet, entscheidest du. Ein Freund hier ist nicht zwingend einer dort."
+
+#: includes/kleinrock.php
+msgid "AI suggestions is a drawing board, empty on purpose: it waits for labels. Suggesting what might interest you would need an AI check across collected labels, and that does not exist yet. Better an empty page that says so than a function that pretends."
+msgstr "KI-Vorschläge ist ein Reißbrett, mit Absicht leer: Es wartet auf Labels. Vorzuschlagen, was dich interessieren könnte, bräuchte eine KI-Prüfung über gesammelte Labels, und die gibt es noch nicht. Lieber eine leere Seite, die das sagt, als eine Funktion, die so tut."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kleinrock.php
+msgid "Groundbreaking of Cluster One:"
+msgstr "Spatenstich von Cluster One:"
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+#, php-format
+msgid "Sent: user %1$s, password with %2$d characters."
+msgstr "Gesendet: Benutzer %1$s, Passwort mit %2$d Zeichen."
+
+#: includes/kern.php
+msgid "The password contains a space."
+msgstr "Das Passwort enthält ein Leerzeichen."
+
+#: includes/kern.php
+msgid "The access data for your storage is incomplete."
+msgstr "Die Zugangsdaten für deinen Speicher sind unvollständig."
+
+#: includes/kern.php
+msgid "That is not a file name this node would write."
+msgstr "Das ist kein Dateiname, den dieser Knoten schreiben würde."
+
+#: includes/kern.php
+msgid "Storage taken over from the invite list"
+msgstr "Speicher aus der Merkliste übernommen"
+
+#: includes/kern.php
+msgid "Storage access forgotten"
+msgstr "Speicher-Zugang vergessen"
+
+#: includes/kranz.php
+msgid "Your storage answered. Products that hold data of yours can now keep it there."
+msgstr "Dein Speicher hat geantwortet. Produkte, die Daten von dir halten, können sie jetzt dort ablegen."
+
+#: includes/kranz.php
+msgid "Access data forgotten. Nothing in your storage was touched."
+msgstr "Zugangsdaten vergessen. In deinem Speicher wurde nichts angefasst."
+
+#: includes/kranz.php
+msgid "Address (https), user name and password are needed."
+msgstr "Adresse (https), Benutzername und Passwort werden gebraucht."
+
+#: includes/kranz.php
+msgid "Your storage refused the access data."
+msgstr "Dein Speicher hat die Zugangsdaten abgelehnt."
+
+#: includes/kranz.php
+msgid "Your storage did not answer."
+msgstr "Dein Speicher hat nicht geantwortet."
+
+#: includes/kranz.php
+msgid "No key vault on this node: the password cannot be kept."
+msgstr "Kein Schlüsseltresor auf diesem Knoten: das Passwort kann nicht verwahrt werden."
+
+#: includes/kranz.php
+msgid "Something of yours still lies in that storage. Bring it back first; then the access can be forgotten."
+msgstr "In diesem Speicher liegt noch etwas von dir. Hol es erst zurück; dann kann der Zugang vergessen werden."
+
+#: includes/kranz.php
+msgid "My storage"
+msgstr "Mein Speicher"
+
+#: includes/kranz.php
+msgid "A storage of your own, outside this node: a folder that speaks WebDAV over https. Products that hold data of yours — the invite list, your AI export — can keep it there instead of in this WordPress. The node keeps the address; the password lies in the key vault, and only you can read it. The storage is yours; what the node can read there depends on the file, and the list below says which."
+msgstr "Ein eigener Speicher außerhalb dieses Knotens: ein Ordner, der WebDAV über https spricht. Produkte, die Daten von dir halten – die Merkliste, dein KI-Export –, können sie dort ablegen statt in diesem WordPress. Der Knoten behält die Adresse; das Passwort liegt im Schlüsseltresor, und nur du kannst es lesen. Der Speicher ist deiner; was der Knoten dort lesen kann, hängt von der Datei ab, und die Liste unten sagt es."
+
+#: includes/kranz.php
+msgid "The floor of this node is older than this page: it has no door to a storage of yours yet. Update the packages that carry the floor."
+msgstr "Der Boden dieses Knotens ist älter als diese Seite: er hat noch keine Tür zu einem Speicher von dir. Aktualisiere die Pakete, die den Boden tragen."
+
+#: includes/kranz.php
+msgid "Your storage was taken over from the invite list. Address and password are now kept once, for every product; nothing else changed."
+msgstr "Dein Speicher wurde aus der Merkliste übernommen. Adresse und Passwort liegen jetzt einmal, für jedes Produkt; sonst hat sich nichts geändert."
+
+#: includes/kranz.php
+msgid "Keeping a storage of your own needs the key vault (Pacioli) to hold the password; this node does not have it."
+msgstr "Ein eigener Speicher braucht den Schlüsseltresor (Pacioli), der das Passwort verwahrt; dieser Knoten hat ihn nicht."
+
+#: includes/kranz.php
+msgid "A storage that speaks WebDAV over https (a Nextcloud, a Hetzner Storage Box, the GMX or Web.de cloud). Enter the address of a folder, then check the access. GMX and Web.de take the full e-mail address as user name and an app password, not the account password. A plain hosting folder usually does not speak WebDAV; All-Inkl’s network drive, for one, does not."
+msgstr "Ein Speicher, der WebDAV über https spricht (eine Nextcloud, eine Hetzner Storage Box, die GMX- oder Web.de-Cloud). Trag die Adresse eines Ordners ein, dann prüf den Zugang. GMX und Web.de nehmen die volle E-Mail-Adresse als Benutzername und ein App-Passwort, nicht das Kontopasswort. Ein einfacher Hosting-Ordner spricht meist kein WebDAV; das Netzlaufwerk von All-Inkl zum Beispiel nicht."
+
+#: includes/kranz.php
+msgid "User name"
+msgstr "Benutzername"
+
+#: includes/kranz.php
+msgid "Password (kept; leave empty to keep it)"
+msgstr "Passwort (verwahrt; leer lassen, um es zu behalten)"
+
+#: includes/kranz.php
+msgid "Password or app password"
+msgstr "Passwort oder App-Passwort"
+
+#: includes/kranz.php
+msgid "Check access"
+msgstr "Zugang prüfen"
+
+#: includes/kranz.php
+#, php-format
+msgid "Access checked on %s."
+msgstr "Zugang geprüft am %s."
+
+#: includes/kranz.php
+msgid "The last check failed; the address is kept, the access is not in use."
+msgstr "Die letzte Prüfung ist gescheitert; die Adresse ist behalten, der Zugang nicht in Gebrauch."
+
+#: includes/kranz.php
+msgid "Forget access"
+msgstr "Zugang vergessen"
+
+#: includes/kranz.php
+msgid "What lies there"
+msgstr "Was dort liegt"
+
+#: includes/kranz.php
+msgid "Nothing a product of this node keeps for you. Exports you put there yourself are not listed: they are yours and stay readable without this node."
+msgstr "Nichts, was ein Produkt dieses Knotens für dich dort hält. Exporte, die du selbst dort ablegst, stehen nicht hier: sie sind deine und bleiben ohne diesen Knoten lesbar."
+
+#: includes/kranz.php
+msgid "File"
+msgstr "Datei"
+
+#: includes/kranz.php
+msgid "Node can read it"
+msgstr "Knoten liest sie"
+
+#: includes/kranz.php
+msgid "yes — it holds the key"
+msgstr "ja – er hält den Schlüssel"
+
+#: includes/kranz.php
+msgid "no"
+msgstr "nein"
+
+#: includes/kranz.php
+msgid "While something lies there, the access cannot be forgotten: a password that vanishes under a file is a silent loss. Bring it back first."
+msgstr "Solange dort etwas liegt, kann der Zugang nicht vergessen werden: ein Passwort, das unter einer Datei verschwindet, ist ein stiller Verlust. Hol sie erst zurück."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kern.php
+#, php-format
+msgid "Your storage did not answer (%s)."
+msgstr "Dein Speicher hat nicht geantwortet (%s)."
+
+#: includes/kranz.php
+msgid "Look into the folder"
+msgstr "In den Ordner sehen"
+
+#: includes/kranz.php
+msgid "Shown without asking: what products of this node keep for you. Looking into the folder asks your storage once."
+msgstr "Ohne Nachfrage steht hier, was Produkte dieses Knotens für dich halten. Der Blick in den Ordner fragt deinen Speicher einmal."
+
+#: includes/kranz.php
+msgid "Nothing a product of this node keeps for you."
+msgstr "Nichts, was ein Produkt dieses Knotens für dich hält."
+
+#: includes/kranz.php
+msgid "The folder holds no file with a name this node would write."
+msgstr "Im Ordner liegt keine Datei mit einem Namen, den dieser Knoten schreiben würde."
+
+#: includes/kranz.php
+msgid "A file of yours"
+msgstr "Eine Datei von dir"
+
+#: includes/kranz.php
+msgid "While something the node holds lies there, the access cannot be forgotten: a password that vanishes under a file is a silent loss. Bring it back first. Files of your own stay readable without this node."
+msgstr "Solange dort etwas liegt, das der Knoten hält, kann der Zugang nicht vergessen werden: ein Passwort, das unter einer Datei verschwindet, ist ein stiller Verlust. Hol es erst zurück. Deine eigenen Dateien bleiben ohne diesen Knoten lesbar."
+
+# --- 19.10.2026 (Neo) ---
+
+#: includes/kranz.php
+#, php-format
+msgid "Your storage is on record at %s. Without the vault this node cannot hold its password, so it does not reach it — but whatever lies there still lies there."
+msgstr "Dein Speicher ist unter %s eingetragen. Ohne den Tresor kann dieser Knoten das Passwort nicht halten und kommt nicht hin – aber was dort liegt, liegt weiter dort."
+
+# --- 02.11.2026 (Neo), Runde Pi ---
+
+#: includes/kern.php
+msgid "Date unlocked"
+msgstr "Termin wieder freigegeben"
+
+#: includes/kern.php
+msgid "the node itself"
+msgstr "der Knoten selbst"
+
+# --- 02.11.2026 (Neo), Runde Rho ---
+
+#: includes/feynman.php
+msgid "why.txt is missing from the plugin directory. Nothing is shown rather than something invented."
+msgstr "why.txt fehlt im Plugin-Verzeichnis. Lieber nichts anzeigen als etwas Erfundenes."
+
+#: includes/feynman.php
+msgid "The reasoning behind this plugin — the same text the AIs here are given, and the same text that ships in the plugin directory as why.txt. Bilingual: German first, English below."
+msgstr "Die Begründung hinter diesem Plugin — derselbe Text, den auch die KIs hier bekommen, und derselbe, der als why.txt im Plugin-Verzeichnis liegt. Zweisprachig: Deutsch zuerst, Englisch darunter."
