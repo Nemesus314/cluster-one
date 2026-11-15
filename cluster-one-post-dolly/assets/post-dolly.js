@@ -11,12 +11,24 @@
  * Im Dashboard-Feld dazu eine Sprachwahl (.cluster-one-dolly-sprache je
  * Spalte): schaltet die Sprache des Blocks um und zeigt dieselbe Zeile neu.
  *
- * Ohne dieses Skript: eine Zeile vom Server, Knopf und Sprachwahl bleiben
- * `hidden`. Nichts hier schreibt HTML — Texte gehen als textContent in die
- * Seite. */
+ * 0.4.10 (15.11.2026, Neo) — KETTEN. Nemesus: „Komplexitaet braucht manchmal
+ * Laenge." Ein langer Text liegt in Teilen: der Kopf traegt den Schluessel
+ * (A6), die Teile denselben Schluessel mit Bindestrich und Nummer (A6-2, A6-3).
+ * Der Zufall - der Server beim ersten Satz, dieses Skript beim Mischen - zieht
+ * nur Koepfe. Steht ein Kopf oder ein Teil, fuehrt der Knopf zum naechsten Teil
+ * der Kette; erst nach dem letzten geht es zurueck in den gemischten Topf. Der
+ * Knopf zeigt dabei einen Pfeil nach rechts statt des Kreispfeils und heisst
+ * „Weiterlesen" statt „Naechste Zeile" (beide Symbole kommen vom Server, das
+ * Skript blendet nur um). Bis 0.4.9 kannte das Skript keine Teile: jede Zeile
+ * war ein Zug, gemischt, nie zweimal dieselbe hintereinander.
+ *
+ * Ohne dieses Skript: eine Zeile vom Server (ein Kopf), Knopf und Sprachwahl
+ * bleiben `hidden`. Nichts hier schreibt HTML — Texte gehen als textContent in
+ * die Seite. */
 (function () {
     'use strict';
     var MERKER = 'cluster_one_dolly_key';
+    var TEIL = /^([A-Za-z]+\d+)-(\d+)$/;
 
     var gemerkt = null;
     try { gemerkt = window.sessionStorage.getItem(MERKER); } catch (e) { gemerkt = null; }
@@ -41,6 +53,11 @@
         return '';
     }
 
+    /* Ketten: Kopf eines Schluessels, Nummer eines Teils, der naechste Teil. */
+    function kopfVon(key) { var m = TEIL.exec(String(key)); return m ? m[1].toUpperCase() : String(key).toUpperCase(); }
+    function teilNr(key)  { var m = TEIL.exec(String(key)); return m ? Number(m[2]) : 1; }
+    function istTeil(key) { return TEIL.test(String(key)); }
+
     var aktuell = [];   /* je Block der aktuelle Schluessel */
 
     function einrichten(box, nr) {
@@ -57,19 +74,41 @@
         var zeilen = daten.zeilen;
         var sprache = daten.sprache || '';
         var site = daten.site || '';
+        var koepfe = zeilen.filter(function (z) { return !istTeil(z.key); }).map(function (z) { return z.key; });
 
         function finden(key) {
+            var gross = String(key).toUpperCase();
             for (var i = 0; i < zeilen.length; i++) {
-                if (zeilen[i].key === key) { return zeilen[i]; }
+                if (String(zeilen[i].key).toUpperCase() === gross) { return zeilen[i]; }
             }
             return null;
+        }
+
+        /* Der naechste Teil der Kette, in der key steht; null am Ende oder ohne Kette. */
+        function folge(key) {
+            return finden(kopfVon(key) + '-' + (teilNr(key) + 1));
+        }
+
+        var ikonNeu = knopf ? knopf.querySelector('.cluster-one-dolly-ikon-neu') : null;
+        var ikonWeiter = knopf ? knopf.querySelector('.cluster-one-dolly-ikon-weiter') : null;
+
+        function knopfStimmen(key) {
+            if (!knopf) { return; }
+            var weiter = !!folge(key);
+            var titel = knopf.getAttribute(weiter ? 'data-titel-weiter' : 'data-titel-neu') || '';
+            if (titel) { knopf.setAttribute('title', titel); knopf.setAttribute('aria-label', titel); }
+            if (ikonNeu && ikonWeiter) {
+                if (weiter) { ikonNeu.setAttribute('hidden', ''); ikonWeiter.removeAttribute('hidden'); }
+                else { ikonWeiter.setAttribute('hidden', ''); ikonNeu.removeAttribute('hidden'); }
+            }
         }
 
         function zeigen(zeile) {
             span.textContent = text(zeile, sprache, site);
             p.setAttribute('data-key', zeile.key);
-            p.className = (String(zeile.key).charAt(0) === 'B') ? 'cluster-one-dolly-ansage' : 'cluster-one-dolly-zitat';
+            p.className = (String(zeile.key).charAt(0).toUpperCase() === 'B') ? 'cluster-one-dolly-ansage' : 'cluster-one-dolly-zitat';
             aktuell[nr] = zeile.key;
+            knopfStimmen(zeile.key);
         }
 
         aktuell[nr] = p.getAttribute('data-key') || '';
@@ -102,19 +141,24 @@
             if (tasten.length > 1) { wahl.removeAttribute('hidden'); }
         }
 
-        if (!knopf || zeilen.length < 2) { return; }
+        /* Der Knopf: nur, wenn es etwas zu schalten gibt - einen zweiten Kopf oder eine Kette. */
+        if (!knopf || (koepfe.length < 2 && !folge(aktuell[nr]))) { return; }
 
-        /* Jede Zeile einmal, dann neu mischen; nie zweimal dieselbe hintereinander. */
+        /* Jeden Kopf einmal, dann neu mischen; nie zweimal derselbe hintereinander.
+           Teile kommen nicht in die Reihe: sie folgen ihrem Kopf. */
         var reihe = [];
         function naechste() {
+            var weiter = folge(aktuell[nr]);
+            if (weiter) { zeigen(weiter); return; }
             if (!reihe.length) {
-                reihe = mischen(zeilen.map(function (z) { return z.key; })
-                    .filter(function (k) { return k !== aktuell[nr]; }));
+                var jetztKopf = kopfVon(aktuell[nr]);
+                reihe = mischen(koepfe.filter(function (k) { return String(k).toUpperCase() !== jetztKopf; }));
             }
             var z = finden(reihe.shift());
             if (z) { zeigen(z); }
         }
 
+        knopfStimmen(aktuell[nr]);
         knopf.addEventListener('click', naechste);
         knopf.removeAttribute('hidden');
     }

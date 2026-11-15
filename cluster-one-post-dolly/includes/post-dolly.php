@@ -397,6 +397,62 @@ function cluster_one_post_dolly_sprache(): string {
     return cluster_one_post_dolly_code((string) determine_locale());
 }
 
+/* 0.4.10 (15.11.2026, Neo) — KETTEN. Nemesus: „Komplexitaet braucht manchmal Laenge. Wenn ich ein
+ * PlugIn so baue, dass die Darstellung von Komplexitaet nicht moeglich ist, habe ich versagt."
+ * Ein langer Text liegt in Teilen: der Kopf traegt den Schluessel (A6), die Teile denselben
+ * Schluessel mit Bindestrich und Nummer (A6-2, A6-3 …). Der Bindestrich geht durch den
+ * Schluesselreiniger (A–Z, 0–9, _ und -), ein Punkt nicht - darum der Strich. Die Teile tippt
+ * der SysOp selbst ins Schluesselfeld; Koepfe bekommen ihre Nummer wie bisher beim Speichern.
+ *
+ * Drei Regeln, und sie gelten fuer A wie fuer B:
+ *   - der Zufall zieht nur Koepfe (hier der Server, in assets/post-dolly.js der Browser);
+ *   - der Knopf hinter einem Kopf oder Teil fuehrt zum naechsten Teil, erst nach dem letzten
+ *     zurueck in den gemischten Topf (Browser);
+ *   - ein Schluessel im Shortcode zeigt genau diese Zeile, Teil oder Kopf (unveraendert).
+ * Ein Teil ohne Kopf (A9-2, aber kein A9) ist kein Fehler: er kommt nie durch den Zufall und
+ * steht im Shortcode weiter zur Verfuegung. */
+function cluster_one_post_dolly_ist_teil(string $c1_key): bool {
+    return (bool) preg_match('~^[A-Z]+[0-9]+-[0-9]+$~', strtoupper(trim($c1_key)));
+}
+
+/** Der Kopf eines Schluessels: A6-3 -> A6, A6 -> A6. */
+function cluster_one_post_dolly_kopf(string $c1_key): string {
+    return (string) preg_replace('~-[0-9]+$~', '', strtoupper(trim($c1_key)));
+}
+
+/** Nur die Koepfe einer Liste - der Topf, aus dem der Zufall zieht. */
+function cluster_one_post_dolly_koepfe(array $c1_zeilen): array {
+    return array_values(array_filter($c1_zeilen, function ($c1_z) {
+        return !cluster_one_post_dolly_ist_teil((string) ($c1_z['key'] ?? ''));
+    }));
+}
+
+/** Dieselbe Liste, Teile unter ihrem Kopf, nach Nummer; Koepfe in gespeicherter Reihenfolge,
+ *  Teile ohne Kopf am Ende. Nur fuer die Anzeige der Tabelle - gespeichert wird, was das
+ *  Formular schickt, und das ist danach diese Reihenfolge. */
+function cluster_one_post_dolly_sortiert(array $c1_zeilen): array {
+    $c1_koepfe = array(); $c1_teile = array(); $c1_waisen = array();
+    foreach ($c1_zeilen as $c1_z) {
+        $c1_k = strtoupper(trim((string) ($c1_z['key'] ?? '')));
+        if ($c1_k !== '' && cluster_one_post_dolly_ist_teil($c1_k)) { $c1_teile[cluster_one_post_dolly_kopf($c1_k)][] = $c1_z; }
+        else { $c1_koepfe[] = $c1_z; }
+    }
+    $c1_aus = array();
+    foreach ($c1_koepfe as $c1_z) {
+        $c1_aus[] = $c1_z;
+        $c1_k = strtoupper(trim((string) ($c1_z['key'] ?? '')));
+        if ($c1_k !== '' && isset($c1_teile[$c1_k])) {
+            usort($c1_teile[$c1_k], function ($a, $b) {
+                return (int) substr(strrchr((string) $a['key'], '-'), 1) <=> (int) substr(strrchr((string) $b['key'], '-'), 1);
+            });
+            foreach ($c1_teile[$c1_k] as $c1_t) { $c1_aus[] = $c1_t; }
+            unset($c1_teile[$c1_k]);
+        }
+    }
+    foreach ($c1_teile as $c1_rest) { foreach ($c1_rest as $c1_t) { $c1_aus[] = $c1_t; } }
+    return $c1_aus;
+}
+
 /** Der Topf, aus dem der nackte Shortcode zieht: alle Zitate (A…), und die
  * Ansagen (B…) dazu, wenn der Knoten sich bekennt. EIN Topf, nicht zwei
  * Tabellen — 27.10.2026, Nemesus' Entscheidung auf der DEV: „Wenn also die
@@ -437,7 +493,7 @@ function cluster_one_post_dolly_topf(): array {
  *     Ein zweiter Zufall im Haus ist ein zweiter Zustand, den kein Zeuge
  *     festhalten kann. */
 function cluster_one_post_dolly_zug(): array {
-    $c1_v = cluster_one_post_dolly_topf();
+    $c1_v = cluster_one_post_dolly_koepfe(cluster_one_post_dolly_topf());   // 0.4.10: nur Koepfe, die Teile folgen im Browser (s. _ist_teil)
     if (!$c1_v) { return array(); }
 
     return $c1_v[wp_rand(0, count($c1_v) - 1)];
@@ -1095,6 +1151,7 @@ function cluster_one_post_dolly_block(bool $c1_weiter = false, bool $c1_sprachwa
     }
     wp_enqueue_script('cluster-one-dolly', plugin_dir_url(dirname(__FILE__)) . 'assets/post-dolly.js', array(), CLUSTER_ONE_POST_DOLLY_VERSION, true);
     $c1_titel = __('Next line', 'cluster-one-post-dolly');
+    $c1_weiterlesen = __('Read on', 'cluster-one-post-dolly');   // 0.4.10: der Titel in einer Kette
 
     $c1_wahl = '';
     if ($c1_sprachwahl) {
@@ -1113,9 +1170,14 @@ function cluster_one_post_dolly_block(bool $c1_weiter = false, bool $c1_sprachwa
             „de en refresh". Vorher stand der Knopf vor den Tasten. */
          . '<p class="' . cluster_one_post_dolly_klasse($c1_z) . '" data-key="' . esc_attr((string) $c1_z['key']) . '">' . $c1_text
          . $c1_wahl
+         /* 0.4.10 (15.11.2026, Neo): zwei Symbole im Knopf, beide vom Server, das Skript blendet um -
+            Kreispfeil „Naechste Zeile" im Topf, Pfeil nach rechts „Weiterlesen" in einer Kette (s. _ist_teil).
+            Bis 0.4.9 stand hier nur der Kreispfeil mit $c1_titel. */
          . ' <button type="button" class="cluster-one-dolly-weiter" hidden title="' . esc_attr($c1_titel) . '" aria-label="' . esc_attr($c1_titel) . '"'
+         . ' data-titel-neu="' . esc_attr($c1_titel) . '" data-titel-weiter="' . esc_attr($c1_weiterlesen) . '"'
          . ' style="background:none;border:0;padding:0;margin:0 0 0 .35em;cursor:pointer;color:inherit;font:inherit;line-height:1;vertical-align:middle;">'
-         . '<svg aria-hidden="true" focusable="false" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>'
+         . '<svg class="cluster-one-dolly-ikon-neu" aria-hidden="true" focusable="false" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>'
+         . '<svg class="cluster-one-dolly-ikon-weiter" hidden aria-hidden="true" focusable="false" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>'
          . '</button></p></div>';
 }
 
@@ -1875,48 +1937,13 @@ function cluster_one_settings_seite_post_dolly(array $opts = array()): void {
  * laesst stehen, was nicht ankommt (s. dort). Was hier NICHT steht und
  * absichtlich nicht: verborgene Felder mit 'ort' und 'foederation'. */
 if (!function_exists('cluster_one_post_dolly_zitate_teil')) {
-/* 0.4.8 (13.11.2026, Neo) — WIE VIELE LEERE ZEILEN. Bis 0.4.7 haengte die Tabelle fest drei
- * leere Zeilen an: drei fuellen, speichern, drei neue. Nemesus (13.11.): „Koennen wir das
- * nicht dynamisch machen? Felder in den beiden Tabellen auf Wunsch hinzufuegen?"
- *
- * Jetzt sagt die Adresse, wie viele: c1_leer=3|6|12|24, Vorgabe 3, Grenze
- * CLUSTER_ONE_POST_DOLLY_LEER_MAX. Die Zahl wird nur GELESEN und schaltet die Ansicht,
- * geschrieben wird weiter allein ueber options.php mit Nonce — darum ohne eigene Nonce,
- * wie c1_zeigen (0.3.63). Kein JavaScript, kein neues Skript: ein Link, eine Zahl. Die
- * Wahl gilt fuer beide Tabellen und fuer diesen einen Aufruf; nach dem Speichern kommt
- * die Seite ohne den Parameter zurueck und zeigt wieder drei. Der Satz von 20.10. gilt
- * weiter: zwanzig leere Zeilen sehen aus wie zwanzig verlorene Zitate — deshalb ist es
- * eine Wahl und keine neue Vorgabe, und die Zeile sagt dazu, dass Leeres nicht
- * gespeichert wird (der Sanitizer laesst eine Zeile ohne Text ohnehin fallen). */
-if (!defined('CLUSTER_ONE_POST_DOLLY_LEER_MAX')) {
-    define('CLUSTER_ONE_POST_DOLLY_LEER_MAX', 30);
-}
-
-/** Wie viele leere Zeilen jede Tabelle unten anhaengt (0.4.8). */
-function cluster_one_post_dolly_leere_zeilen(): int {
-    $c1_n = isset($_GET['c1_leer']) ? absint(wp_unslash($_GET['c1_leer'])) : 3; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- nur gelesen, schaltet die Ansicht; geschrieben wird ueber options.php mit Nonce
-    if ($c1_n < 1) { $c1_n = 3; }
-    return min($c1_n, (int) CLUSTER_ONE_POST_DOLLY_LEER_MAX);
-}
-
-/** Die Zeile ueber den Tabellen: 3 · 6 · 12 · 24, die gewaehlte Zahl fett, die anderen als
- *  Verweis auf diese Seite mit c1_leer (0.4.8). Nur wer speichern darf, sieht sie — die
- *  lesende Ansicht hat keine leeren Zeilen. */
-function cluster_one_post_dolly_leere_wahl(): void {
-    $c1_jetzt = cluster_one_post_dolly_leere_zeilen();
-    $c1_basis = admin_url('admin.php?page=cluster_one_post_dolly_tabelle');
-    $c1_teile = array();
-    foreach (array(3, 6, 12, 24) as $c1_n) {
-        $c1_teile[] = ($c1_n === $c1_jetzt)
-            ? '<strong>' . (int) $c1_n . '</strong>'
-            : '<a href="' . esc_url(add_query_arg('c1_leer', (int) $c1_n, $c1_basis)) . '">' . (int) $c1_n . '</a>';
-    }
-    echo '<p class="description" style="max-width:720px;">'
-        . esc_html__('Empty lines under each table:', 'cluster-one-post-dolly') . ' '
-        . implode(' · ', $c1_teile) // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- eigenes Markup: Zahlen sind int, die Adresse ist esc_url
-        . ' — ' . esc_html__('the page reloads, so choose before you type. Lines left empty are not saved.', 'cluster-one-post-dolly')
-        . '</p>';
-}
+/* 0.4.8 bis 0.4.9 standen hier CLUSTER_ONE_POST_DOLLY_LEER_MAX (30), cluster_one_post_dolly_leere_zeilen()
+   (c1_leer aus der Adresse, 3|6|12|24, nur gelesen, Vorgabe 3) und cluster_one_post_dolly_leere_wahl()
+   (die Zeile „Leere Zeilen unter jeder Tabelle: 3 · 6 · 12 · 24" ueber dem Formular). 0.4.10
+   (15.11.2026, Neo): fort. Nemesus am Tag nach dem Einbau: „Wir killen die ueberfluessigen leeren
+   Felder. Stattdessen kommt ein Button neues Zitat hinzufuegen." Der Knopf steht unter jeder Tabelle
+   (assets/post-dolly-admin.js, haengt eine Zeile an, ohne Neuladen, das Getippte bleibt); der Server
+   zeichnet nur noch EINE leere Zeile, als Rueckfall ohne JavaScript und als Vorlage fuer den Klon. */
 
 /** Eine der zwei Tabellen: Schluessel, dann eine Spalte je Sprache des
  *  Knotens (cluster_one_post_dolly_sprachen), plus drei leere Zeilen zum
@@ -1924,26 +1951,33 @@ function cluster_one_post_dolly_leere_wahl(): void {
  *  aus wie zwanzig verlorene Zitate. (20.10.2026, Neo)
  *  27.10.2026 (Neo): bis dahin fest „Schluessel · Deutsch · Englisch".
  *  0.4.8 (13.11.2026, Neo): die drei leeren Zeilen sind die Vorgabe geblieben, aber keine
- *  Grenze mehr — s. cluster_one_post_dolly_leere_zeilen() direkt darueber. */
+ *  Grenze mehr — s. cluster_one_post_dolly_leere_zeilen() direkt darueber.
+ *  0.4.10 (15.11.2026, Neo): eine leere Zeile als Rueckfall, der Knopf „Neue Zeile" haengt an;
+ *  Teile einer Kette stehen unter ihrem Kopf (cluster_one_post_dolly_sortiert).
+ *  0.4.11 (15.11.2026, Neo): rechts die Spalte „Teile" mit einem Plus je Zeile, das den naechsten
+ *  Teil anlegt und seinen Schluessel selbst schreibt. */
 function cluster_one_post_dolly_tabelle(string $c1_liste, array $c1_zeilen, bool $c1_lesen = false): void {
     /* 0.3.59 (31.10.2026, Neo): $c1_lesen — dieselbe Tabelle als Text, fuer Mitglieder
        ohne Speicherrecht. Keine Felder, keine leeren Zeilen zum Nachtragen. */
     $c1_sprachen = cluster_one_post_dolly_sprachen();
     /* 0.4.8 (13.11.2026, Neo): bis 0.4.7 stand hier fest
            if (!$c1_lesen) { for ($c1_i = 0; $c1_i < 3; $c1_i++) { $c1_zeilen[] = array('key' => ''); } }
-       Jetzt sagt cluster_one_post_dolly_leere_zeilen(), wie viele; 3 bleibt die Vorgabe. */
-    if (!$c1_lesen) {
-        $c1_leer = cluster_one_post_dolly_leere_zeilen();
-        for ($c1_i = 0; $c1_i < $c1_leer; $c1_i++) { $c1_zeilen[] = array('key' => ''); }
-    }
+       0.4.8/0.4.9: so viele, wie cluster_one_post_dolly_leere_zeilen() sagte (3|6|12|24).
+       0.4.10: genau EINE - Rueckfall ohne JavaScript und Vorlage fuer den Knopf „Neue Zeile".
+       Davor die Sortierung: Teile einer Kette unter ihrem Kopf. */
+    $c1_zeilen = cluster_one_post_dolly_sortiert($c1_zeilen);
+    if (!$c1_lesen) { $c1_zeilen[] = array('key' => ''); }
     ?>
-        <table class="widefat striped" style="max-width:960px;">
+        <table class="widefat striped" style="max-width:960px;" data-liste="<?php echo esc_attr($c1_liste); ?>">
             <thead>
                 <tr>
                     <th style="width:8em;"><?php esc_html_e('Key', 'cluster-one-post-dolly'); ?></th>
                     <?php foreach ($c1_sprachen as $c1_s) : ?>
                         <th><?php echo esc_html(cluster_one_post_dolly_sprachname($c1_s)); ?> <code><?php echo esc_html($c1_s); ?></code></th>
                     <?php endforeach; ?>
+                    <?php if (!$c1_lesen) : /* 0.4.11: die Spalte „Teile", s. assets/post-dolly-admin.js */ ?>
+                        <th class="cluster-one-dolly-teile" style="width:4em;text-align:center;" hidden><?php esc_html_e('Parts', 'cluster-one-post-dolly'); ?></th>
+                    <?php endif; ?>
                 </tr>
             </thead>
             <tbody>
@@ -1969,11 +2003,23 @@ function cluster_one_post_dolly_tabelle(string $c1_liste, array $c1_zeilen, bool
                                    value="<?php echo esc_attr((string) ($c1_z[$c1_s] ?? '')); ?>">
                         </td>
                         <?php endforeach; ?>
+                        <td class="cluster-one-dolly-teile" style="text-align:center;" hidden>
+                            <?php /* 0.4.11 (15.11.2026, Neo): das Plus legt unter dem letzten Teil dieser Kette eine
+                                     Zeile an, Schluessel eingetragen (A6 -> A6-2). Nemesus: „Komfort … die Daten nicht
+                                     manuell eingegeben, sondern automatisch reingeschrieben." Ohne Schluessel (noch
+                                     nicht gespeichert) schaltet das Skript es ab. */ ?>
+                            <button type="button" class="button cluster-one-dolly-teil" title="<?php esc_attr_e('Add a part: a new line under this chain, key filled in', 'cluster-one-post-dolly'); ?>" aria-label="<?php esc_attr_e('Add a part: a new line under this chain, key filled in', 'cluster-one-post-dolly'); ?>" hidden>+</button>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
-    <?php
+        <?php if (!$c1_lesen) : ?>
+        <p><button type="button" class="button cluster-one-dolly-neu" data-liste="<?php echo esc_attr($c1_liste); ?>" hidden><?php esc_html_e('New line', 'cluster-one-post-dolly'); ?></button></p>
+        <?php
+            /* 0.4.10: das Skript zum Knopf, nur hier, nur fuer den, der speichern darf; in den Fuss. */
+            wp_enqueue_script('cluster-one-dolly-admin', plugin_dir_url(dirname(__FILE__)) . 'assets/post-dolly-admin.js', array(), CLUSTER_ONE_POST_DOLLY_VERSION, true);
+        endif;
 }
 
 function cluster_one_post_dolly_zitate_teil(): void {
@@ -2002,7 +2048,6 @@ function cluster_one_post_dolly_zitate_teil(): void {
         </p>
 
         <?php if ($c1_darf) : ?>
-        <?php cluster_one_post_dolly_leere_wahl(); // 0.4.8: 3 · 6 · 12 · 24 ?>
         <form method="post" action="<?php echo esc_url(admin_url('options.php')); ?>">
             <?php settings_fields('cluster_one_post_dolly_group'); ?>
         <?php endif; ?>
@@ -2017,7 +2062,7 @@ function cluster_one_post_dolly_zitate_teil(): void {
         <p class="description" style="max-width:760px;margin-top:1em;">
             <?php echo wp_kses_post(sprintf(
                 /* translators: 1: shortcode without attributes, 2: shortcode with key, 3: shortcode with key and language */
-                __('The key names a line for the shortcode. %1$s shows one random line from the pool (quotes, plus federation lines if this node declares itself); %2$s shows exactly that line; %3$s forces the language. A key left empty is filled in when you save (A1, A2 … for quotes, B1, B2 … for federation lines) and then stays, even if lines above it are removed.', 'cluster-one-post-dolly'),
+                __('The key names a line for the shortcode. %1$s shows one random line from the pool (quotes, plus federation lines if this node declares itself); %2$s shows exactly that line; %3$s forces the language. A key left empty is filled in when you save (A1, A2 … for quotes, B1, B2 … for federation lines) and then stays, even if lines above it are removed. A long text can be split into parts: give each part the key of its first line plus a hyphen and a number, A6-2, A6-3 … The random draw shows only first lines; the arrow behind a first line leads through its parts, then back to the pool.', 'cluster-one-post-dolly'),
                 '<code>[cluster_one_dolly]</code>', '<code>[cluster_one_dolly schluessel="A1"]</code>', '<code>[cluster_one_dolly schluessel="B1" sprache="en"]</code>')); ?>
         </p>
 

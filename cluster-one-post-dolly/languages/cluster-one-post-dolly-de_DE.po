@@ -2861,3 +2861,28 @@ msgstr "Leere Zeilen unter jeder Tabelle:"
 #: includes/post-dolly.php
 msgid "the page reloads, so choose before you type. Lines left empty are not saved."
 msgstr "die Seite lädt neu, also vor dem Tippen wählen. Zeilen, die leer bleiben, werden nicht gespeichert."
+
+# --- 15.11.2026 (Neo), Post Dolly 0.4.10 Ketten + Neue Zeile ---
+
+#: includes/post-dolly.php
+msgid "Read on"
+msgstr "Weiterlesen"
+
+#: includes/post-dolly.php
+msgid "New line"
+msgstr "Neue Zeile"
+
+#: includes/post-dolly.php
+#, php-format
+msgid "The key names a line for the shortcode. %1$s shows one random line from the pool (quotes, plus federation lines if this node declares itself); %2$s shows exactly that line; %3$s forces the language. A key left empty is filled in when you save (A1, A2 … for quotes, B1, B2 … for federation lines) and then stays, even if lines above it are removed. A long text can be split into parts: give each part the key of its first line plus a hyphen and a number, A6-2, A6-3 … The random draw shows only first lines; the arrow behind a first line leads through its parts, then back to the pool."
+msgstr "Der Schlüssel nennt eine Zeile für den Shortcode. %1$s zeigt eine zufällige Zeile aus dem Topf (Zitate, dazu Ansagen, wenn dieser Knoten sich bekennt); %2$s zeigt genau diese Zeile; %3$s erzwingt die Sprache. Ein leerer Schlüssel wird beim Speichern gesetzt (A1, A2 … für Zitate, B1, B2 … für Ansagen) und bleibt dann stehen, auch wenn Zeilen darüber verschwinden. Ein langer Text lässt sich in Teile zerlegen: Die Teile bekommen den Schlüssel ihrer ersten Zeile plus Bindestrich und Nummer, A6-2, A6-3 … Der Zufall zeigt nur erste Zeilen; der Pfeil hinter einer ersten Zeile führt durch ihre Teile und dann zurück in den Topf."
+
+# --- 15.11.2026 (Neo), Post Dolly 0.4.11 Spalte Teile ---
+
+#: includes/post-dolly.php
+msgid "Parts"
+msgstr "Teile"
+
+#: includes/post-dolly.php
+msgid "Add a part: a new line under this chain, key filled in"
+msgstr "Teil anfügen: eine neue Zeile unter dieser Kette, Schlüssel schon eingetragen"

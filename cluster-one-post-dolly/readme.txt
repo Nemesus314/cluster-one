@@ -4,7 +4,7 @@ Tags: quotes, shortcode, federation
 Requires at least: 7.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.4.9
+Stable tag: 0.4.11
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,13 @@ the plugin itself.
 
 The version history lives in the header comments of the source files, next to the
 code it explains. The Chronik on the node records what happened on that node.
+
+= 0.4.11 =
+* Backend: a column "Parts" on the right with a plus per line. The plus adds the next part of that chain right below it, key already filled in (A6 -> A6-2, A6-3 …); the cursor lands in the text. Lines not yet saved have no plus, their key comes with saving. Same data as 0.4.10, the key carries the chain; the button types it.
+
+= 0.4.10 =
+* Chains: a long text can be split into parts. The first line keeps its key (A6), the parts take the same key with a hyphen and a number (A6-2, A6-3 …). The random draw shows first lines only; the button behind a first line turns into an arrow and leads through the parts, then back to the pool. Works for A and B alike; a key in the shortcode still shows exactly that line.
+* Backend: the empty lines and the 3 · 6 · 12 · 24 switch are gone. A button "New line" under each table adds a line without reloading (new assets/post-dolly-admin.js); without JavaScript one empty line remains. The table lists parts under their first line.
 
 = 0.4.9 =
 * Menu order: Post Dolly now stands last under Cluster One, after Pacioli (order number 40 -> 50; Pacioli 0.10.3 takes 40). Nothing else.

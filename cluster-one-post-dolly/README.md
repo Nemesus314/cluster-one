@@ -1,12 +1,12 @@
 # Cluster One — Post Dolly
 
-*Quotes from the admin, wherever they are wanted: dashboard or shortcode, in the languages of the node.*
+*Quotes from the admin, wherever they are wanted: dashboard or shortcode, in the languages of the node; long quotes as a chain, part by part.*
 
-Version 0.4.9 · WordPress 7.0+ (getestet mit 7.1 / tested up to 7.1) · PHP 7.4+ · GPL-2.0-or-later
+Version 0.4.11 · WordPress 7.0+ (getestet mit 7.1 / tested up to 7.1) · PHP 7.4+ · GPL-2.0-or-later
 
 ## Deutsch
 
-Zitate des Admins, dort, wo sie gewollt sind: Dashboard oder Shortcode, in den Sprachen des Knotens.
+Zitate des Admins, dort, wo sie gewollt sind: Dashboard oder Shortcode, in den Sprachen des Knotens; lange Zitate als Kette, Teil für Teil.
 
 **Installation:** diesen Ordner `cluster-one-post-dolly` nach `wp-content/plugins/` legen und aktivieren, oder den ganzen Satz mit Turing aufspielen (siehe das README eine Ebene höher). Die Übersetzung liegt in `languages/` und wird vom Plugin selbst geladen.
 
@@ -16,7 +16,7 @@ Zitate des Admins, dort, wo sie gewollt sind: Dashboard oder Shortcode, in den S
 
 ## English
 
-Quotes from the admin, wherever they are wanted: dashboard or shortcode, in the languages of the node.
+Quotes from the admin, wherever they are wanted: dashboard or shortcode, in the languages of the node; long quotes as a chain, part by part.
 
 **Install:** put this folder `cluster-one-post-dolly` into `wp-content/plugins/` and activate it, or install the whole set with Turing (see the README one level up). The translation lives in `languages/` and is loaded by the plugin itself.
 

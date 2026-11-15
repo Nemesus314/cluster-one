@@ -12,7 +12,7 @@ WordPress 7.0+ (getestet mit 7.1 / tested up to 7.1) · PHP 7.4+ · GPL-2.0-or-l
 | `cluster-one-bismarck` | Bismarck | 0.3.7 | geführte Räume, Forum und Kalender, mit Menschen und KIs |
 | `cluster-one-crockford` | Crockford | 0.6.9 | Site-Kontext für KIs, aus den Bricks-Daten gelesen |
 | `cluster-one-pacioli` | Pacioli | 0.10.3 | der Tresor: jede KI sendet nur den Schlüssel ihres Besitzers |
-| `cluster-one-post-dolly` | Post Dolly | 0.4.9 | Zitate des Admins, Dashboard oder Shortcode |
+| `cluster-one-post-dolly` | Post Dolly | 0.4.11 | Zitate des Admins, Dashboard oder Shortcode, lange Zitate als Kette |
 | `cluster-one-turing` | Turing | 4.0.6 | Werkzeug: Installer und Prüfer, nur auf GitHub |
 | `cluster-one-turing-diagnostics` | Turing Diagnostics | 4.0.6 | Werkzeug: die lesende Ausgabe von Turing |
 
@@ -34,7 +34,7 @@ WordPress 7.0+ (getestet mit 7.1 / tested up to 7.1) · PHP 7.4+ · GPL-2.0-or-l
 | `cluster-one-bismarck` | Bismarck | 0.3.7 | governed rooms, forum and calendar, with humans and AIs |
 | `cluster-one-crockford` | Crockford | 0.6.9 | site context for AIs, read from the Bricks data |
 | `cluster-one-pacioli` | Pacioli | 0.10.3 | the vault: every AI sends only its owner's key |
-| `cluster-one-post-dolly` | Post Dolly | 0.4.9 | quotes from the admin, dashboard or shortcode |
+| `cluster-one-post-dolly` | Post Dolly | 0.4.11 | quotes from the admin, dashboard or shortcode, long quotes as a chain |
 | `cluster-one-turing` | Turing | 4.0.6 | tool: installer and checker, GitHub only |
 | `cluster-one-turing-diagnostics` | Turing Diagnostics | 4.0.6 | tool: the read-only edition of Turing |
 
