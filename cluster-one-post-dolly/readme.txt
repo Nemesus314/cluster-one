@@ -4,7 +4,7 @@ Tags: quotes, shortcode, federation
 Requires at least: 7.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.4.11
+Stable tag: 0.4.12
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,10 @@ the plugin itself.
 
 The version history lives in the header comments of the source files, next to the
 code it explains. The Chronik on the node records what happened on that node.
+
+= 0.4.12 =
+* Front and dashboard: the next-line button now stands before the text, so it stays in one place however long the line is; in the dashboard the language buttons moved with it.
+* Fixed: since 0.4.10 both button icons (circle and arrow) were visible at once, because the hidden attribute does nothing on SVG; the icons are now switched by style.
 
 = 0.4.11 =
 * Backend: a column "Parts" on the right with a plus per line. The plus adds the next part of that chain right below it, key already filled in (A6 -> A6-2, A6-3 …); the cursor lands in the text. Lines not yet saved have no plus, their key comes with saving. Same data as 0.4.10, the key carries the chain; the button types it.

@@ -3,7 +3,7 @@
  * Plugin Name:       Cluster One — Post Dolly
  * Plugin URI:        https://christianermisch.com/
  * Description:       Quotes from the admin, wherever they are wanted.
- * Version:           0.4.11
+ * Version:           0.4.12
  * Requires at least: 7.0
  * Requires PHP:      7.4
  * Author:            Christian Ermisch (Nemesus)
@@ -129,7 +129,7 @@ defined('ABSPATH') || exit;
        Werkzeug, das TEXT liest, zwei verschiedene Dinge.
    Also die Form des Hauses und nicht meine. */
 if (!defined('CLUSTER_ONE_POST_DOLLY_VERSION')) {
-    define('CLUSTER_ONE_POST_DOLLY_VERSION', '0.4.11');
+    define('CLUSTER_ONE_POST_DOLLY_VERSION', '0.4.12');
 }
 
 /* Kasper zuerst. Er steht vollstaendig hinter einem function_exists-Riegel:

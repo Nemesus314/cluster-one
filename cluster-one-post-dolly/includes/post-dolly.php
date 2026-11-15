@@ -1155,7 +1155,7 @@ function cluster_one_post_dolly_block(bool $c1_weiter = false, bool $c1_sprachwa
 
     $c1_wahl = '';
     if ($c1_sprachwahl) {
-        $c1_wahl = '<span class="cluster-one-dolly-sprachen" hidden style="display:inline-block;margin-left:.6em;font-size:.8em;">';
+        $c1_wahl = '<span class="cluster-one-dolly-sprachen" hidden style="display:inline-block;margin-right:.6em;font-size:.8em;">';   // 0.4.12: margin-right (war margin-left, als sie hinter dem Text standen)
         foreach (cluster_one_post_dolly_sprachen() as $c1_s) {
             $c1_wahl .= '<button type="button" class="cluster-one-dolly-sprache" data-sprache="' . esc_attr($c1_s) . '"'
                       . ' aria-pressed="' . (($c1_s === $c1_daten['sprache']) ? 'true' : 'false') . '"'
@@ -1165,20 +1165,26 @@ function cluster_one_post_dolly_block(bool $c1_weiter = false, bool $c1_sprachwa
         $c1_wahl .= '</span>';
     }
 
+    /* 0.4.12 (15.11.2026, Neo) — DER KNOPF VOR DEM TEXT. Nemesus: „Sätze sind unterschiedlich lang. Aber wenn
+       der Button davor kommt, bleibt er an derselben Stelle. Dann muss man mit der Maus nicht woanders
+       hinreisen." Ein Ziel, das man in einer Kette drei-, viermal trifft, darf nicht wandern. Reihenfolge
+       jetzt: Knopf, Sprachtasten, Text. Die Sprachtasten ziehen mit nach vorn, sonst wanderten sie weiter.
+       Bis 0.4.11 (Nemesus, 27.10.2026 abends: „de en refresh"): Text, Sprachtasten, Knopf; davor stand der
+       Knopf vor den Tasten. Das Skript findet alles per Klasse, es aendert sich nicht.
+       0.4.10: zwei Symbole im Knopf, beide vom Server, das Skript blendet um - Kreispfeil „Naechste Zeile"
+       im Topf, Pfeil nach rechts „Weiterlesen" in einer Kette (s. _ist_teil). Bis 0.4.9 nur der Kreispfeil.
+       0.4.12 auch: das zweite Symbol traegt style="display:none" statt `hidden` - `hidden` wirkt in Chromium
+       nicht auf SVG (gemessen: display blieb inline), seit 0.4.10 standen beide Symbole nebeneinander. */
     return '<div class="cluster-one-dolly" data-dolly="' . esc_attr((string) wp_json_encode($c1_daten)) . '">'
-         /* Reihenfolge: Satz, Sprachtasten, Knopf — Nemesus, 27.10.2026 abends:
-            „de en refresh". Vorher stand der Knopf vor den Tasten. */
-         . '<p class="' . cluster_one_post_dolly_klasse($c1_z) . '" data-key="' . esc_attr((string) $c1_z['key']) . '">' . $c1_text
-         . $c1_wahl
-         /* 0.4.10 (15.11.2026, Neo): zwei Symbole im Knopf, beide vom Server, das Skript blendet um -
-            Kreispfeil „Naechste Zeile" im Topf, Pfeil nach rechts „Weiterlesen" in einer Kette (s. _ist_teil).
-            Bis 0.4.9 stand hier nur der Kreispfeil mit $c1_titel. */
-         . ' <button type="button" class="cluster-one-dolly-weiter" hidden title="' . esc_attr($c1_titel) . '" aria-label="' . esc_attr($c1_titel) . '"'
+         . '<p class="' . cluster_one_post_dolly_klasse($c1_z) . '" data-key="' . esc_attr((string) $c1_z['key']) . '">'
+         . '<button type="button" class="cluster-one-dolly-weiter" hidden title="' . esc_attr($c1_titel) . '" aria-label="' . esc_attr($c1_titel) . '"'
          . ' data-titel-neu="' . esc_attr($c1_titel) . '" data-titel-weiter="' . esc_attr($c1_weiterlesen) . '"'
-         . ' style="background:none;border:0;padding:0;margin:0 0 0 .35em;cursor:pointer;color:inherit;font:inherit;line-height:1;vertical-align:middle;">'
+         . ' style="background:none;border:0;padding:0;margin:0 .35em 0 0;cursor:pointer;color:inherit;font:inherit;line-height:1;vertical-align:middle;">'
          . '<svg class="cluster-one-dolly-ikon-neu" aria-hidden="true" focusable="false" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>'
-         . '<svg class="cluster-one-dolly-ikon-weiter" hidden aria-hidden="true" focusable="false" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>'
-         . '</button></p></div>';
+         . '<svg class="cluster-one-dolly-ikon-weiter" style="display:none" aria-hidden="true" focusable="false" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>'
+         . '</button>'
+         . $c1_wahl
+         . $c1_text . '</p></div>';
 }
 
 /** Der Shortcode. Er ist der einzige Weg ins Frontend.

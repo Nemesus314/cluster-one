@@ -2,7 +2,7 @@
 
 *Quotes from the admin, wherever they are wanted: dashboard or shortcode, in the languages of the node; long quotes as a chain, part by part.*
 
-Version 0.4.11 · WordPress 7.0+ (getestet mit 7.1 / tested up to 7.1) · PHP 7.4+ · GPL-2.0-or-later
+Version 0.4.12 · WordPress 7.0+ (getestet mit 7.1 / tested up to 7.1) · PHP 7.4+ · GPL-2.0-or-later
 
 ## Deutsch
 

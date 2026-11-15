@@ -19,7 +19,11 @@
  * der Kette; erst nach dem letzten geht es zurueck in den gemischten Topf. Der
  * Knopf zeigt dabei einen Pfeil nach rechts statt des Kreispfeils und heisst
  * „Weiterlesen" statt „Naechste Zeile" (beide Symbole kommen vom Server, das
- * Skript blendet nur um). Bis 0.4.9 kannte das Skript keine Teile: jede Zeile
+ * Skript blendet nur um; seit 0.4.12 per style.display, weil `hidden` bei SVG
+ * nichts tut).
+ *
+ * 0.4.12 (15.11.2026): der Knopf steht vor dem Text (Nemesus: ein Ziel, das
+ * stehen bleibt); hier nichts zu tun, alles wird per Klasse gefunden. Bis 0.4.9 kannte das Skript keine Teile: jede Zeile
  * war ein Zug, gemischt, nie zweimal dieselbe hintereinander.
  *
  * Ohne dieses Skript: eine Zeile vom Server (ein Kopf), Knopf und Sprachwahl
@@ -97,9 +101,11 @@
             var weiter = !!folge(key);
             var titel = knopf.getAttribute(weiter ? 'data-titel-weiter' : 'data-titel-neu') || '';
             if (titel) { knopf.setAttribute('title', titel); knopf.setAttribute('aria-label', titel); }
+            /* 0.4.12: style.display statt `hidden` - das Attribut wirkt in Chromium nicht auf SVG,
+               seit 0.4.10 standen beide Symbole nebeneinander. */
             if (ikonNeu && ikonWeiter) {
-                if (weiter) { ikonNeu.setAttribute('hidden', ''); ikonWeiter.removeAttribute('hidden'); }
-                else { ikonWeiter.setAttribute('hidden', ''); ikonNeu.removeAttribute('hidden'); }
+                ikonNeu.style.display = weiter ? 'none' : '';
+                ikonWeiter.style.display = weiter ? '' : 'none';
             }
         }
 
